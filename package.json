@@ -1,0 +1,29 @@
+{
+  "name": "@audi/audi-icon",
+  "version": "3.18.0",
+  "description": "Audi Icons as SVG, PNG, Icon Font and EPS.",
+  "author": "Audi",
+  "private": false,
+  "homepage": "https://github.com/audi/audi-icon",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/audi/audi-icon.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-iconfont": "^11.0.1"
+  },
+  "scripts": {
+    "demo": "browser-sync start --server . --startPath ./demo/index.html",
+    "font": "gulp Iconfont"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/audi/audi-icon/issues"
+  },
+  "main": "index.js",
+  "license": "Apache-2.0"
+}
