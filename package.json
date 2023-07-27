@@ -12,7 +12,8 @@
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
-    "gulp-iconfont": "^11.0.1"
+    "gulp-iconfont": "^11.0.1",
+    "gulp-iconfont-css": "^3.0.0"
   },
   "scripts": {
     "demo": "browser-sync start --server . --startPath ./demo/index.html",

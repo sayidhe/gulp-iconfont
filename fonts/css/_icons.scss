@@ -1,0 +1,4592 @@
+@font-face {
+	font-family: "Icons";
+	src: url('../css/icons-css/Icons.eot');
+	src: url('../css/icons-css/Icons.eot?#iefix') format('eot'),
+		url('../css/icons-css/Icons.woff2') format('woff2'),
+		url('../css/icons-css/Icons.woff') format('woff'),
+		url('../css/icons-css/Icons.ttf') format('truetype'),
+		url('../css/icons-css/Icons.svg#Icons') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "Icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == uEA02-adblue-alert-large {
+		$char: "\E001";
+	}
+	@if $filename == uEA03-adblue-alert-small {
+		$char: "\E002";
+	}
+	@if $filename == uEA04-adblue-large {
+		$char: "\E003";
+	}
+	@if $filename == uEA05-adblue-small {
+		$char: "\E004";
+	}
+	@if $filename == uEA06-address-book-large {
+		$char: "\E005";
+	}
+	@if $filename == uEA07-address-book-small {
+		$char: "\E006";
+	}
+	@if $filename == uEA08-administrator-large {
+		$char: "\E007";
+	}
+	@if $filename == uEA09-administrator-small {
+		$char: "\E008";
+	}
+	@if $filename == uEA0A-air-filter-large {
+		$char: "\E009";
+	}
+	@if $filename == uEA0B-air-filter-small {
+		$char: "\E00A";
+	}
+	@if $filename == uEA0C-announcements-large {
+		$char: "\E00B";
+	}
+	@if $filename == uEA0D-announcements-small {
+		$char: "\E00C";
+	}
+	@if $filename == uEA0E-anti-theft-alarm-system-alert-large {
+		$char: "\E00D";
+	}
+	@if $filename == uEA0F-anti-theft-alarm-system-alert-small {
+		$char: "\E00E";
+	}
+	@if $filename == uEA10-anti-theft-alarm-system-large {
+		$char: "\E00F";
+	}
+	@if $filename == uEA11-anti-theft-alarm-system-small {
+		$char: "\E010";
+	}
+	@if $filename == uEA12-apps-large {
+		$char: "\E011";
+	}
+	@if $filename == uEA13-apps-small {
+		$char: "\E012";
+	}
+	@if $filename == uEA14-arrow-down-large {
+		$char: "\E013";
+	}
+	@if $filename == uEA15-arrow-down-small {
+		$char: "\E014";
+	}
+	@if $filename == uEA16-arrow-left-light-large {
+		$char: "\E015";
+	}
+	@if $filename == uEA17-arrow-left-light-small {
+		$char: "\E016";
+	}
+	@if $filename == uEA18-arrow-left-normal-large {
+		$char: "\E017";
+	}
+	@if $filename == uEA19-arrow-left-normal-small {
+		$char: "\E018";
+	}
+	@if $filename == uEA1A-arrow-left-sharp-large {
+		$char: "\E019";
+	}
+	@if $filename == uEA1B-arrow-left-sharp-small {
+		$char: "\E01A";
+	}
+	@if $filename == uEA1C-arrow-left-u-turn-large {
+		$char: "\E01B";
+	}
+	@if $filename == uEA1D-arrow-left-u-turn-small {
+		$char: "\E01C";
+	}
+	@if $filename == uEA1E-arrow-right-light-large {
+		$char: "\E01D";
+	}
+	@if $filename == uEA1F-arrow-right-light-small {
+		$char: "\E01E";
+	}
+	@if $filename == uEA20-arrow-right-normal-large {
+		$char: "\E01F";
+	}
+	@if $filename == uEA21-arrow-right-normal-small {
+		$char: "\E020";
+	}
+	@if $filename == uEA22-arrow-right-sharp-large {
+		$char: "\E021";
+	}
+	@if $filename == uEA23-arrow-right-sharp-small {
+		$char: "\E022";
+	}
+	@if $filename == uEA24-arrow-right-u-turn-large {
+		$char: "\E023";
+	}
+	@if $filename == uEA25-arrow-right-u-turn-small {
+		$char: "\E024";
+	}
+	@if $filename == uEA26-arrow-straight-down-large {
+		$char: "\E025";
+	}
+	@if $filename == uEA27-arrow-straight-down-small {
+		$char: "\E026";
+	}
+	@if $filename == uEA28-arrow-straight-up-large {
+		$char: "\E027";
+	}
+	@if $filename == uEA29-arrow-straight-up-small {
+		$char: "\E028";
+	}
+	@if $filename == uEA2A-arrow-up-large {
+		$char: "\E029";
+	}
+	@if $filename == uEA2B-arrow-up-small {
+		$char: "\E02A";
+	}
+	@if $filename == uEA2C-audio-volume-large {
+		$char: "\E02B";
+	}
+	@if $filename == uEA2D-audio-volume-small {
+		$char: "\E02C";
+	}
+	@if $filename == uEA2E-aupeo-large {
+		$char: "\E02D";
+	}
+	@if $filename == uEA2F-aupeo-small {
+		$char: "\E02E";
+	}
+	@if $filename == uEA30-back-large {
+		$char: "\E02F";
+	}
+	@if $filename == uEA31-back-small {
+		$char: "\E030";
+	}
+	@if $filename == uEA32-battery-large {
+		$char: "\E031";
+	}
+	@if $filename == uEA33-battery-small {
+		$char: "\E032";
+	}
+	@if $filename == uEA34-blog-post-large {
+		$char: "\E033";
+	}
+	@if $filename == uEA35-blog-post-small {
+		$char: "\E034";
+	}
+	@if $filename == uEA36-bonnet-open-large {
+		$char: "\E035";
+	}
+	@if $filename == uEA37-bonnet-open-small {
+		$char: "\E036";
+	}
+	@if $filename == uEA38-bookmark-large {
+		$char: "\E037";
+	}
+	@if $filename == uEA39-bookmark-small {
+		$char: "\E038";
+	}
+	@if $filename == uEA3A-brake-fluid-large {
+		$char: "\E039";
+	}
+	@if $filename == uEA3B-brake-fluid-small {
+		$char: "\E03A";
+	}
+	@if $filename == uEA3C-brake-pad-alert-large {
+		$char: "\E03B";
+	}
+	@if $filename == uEA3D-brake-pad-alert-small {
+		$char: "\E03C";
+	}
+	@if $filename == uEA3E-brake-pad-large {
+		$char: "\E03D";
+	}
+	@if $filename == uEA3F-brake-pad-small {
+		$char: "\E03E";
+	}
+	@if $filename == uEA40-break-large {
+		$char: "\E03F";
+	}
+	@if $filename == uEA41-break-small {
+		$char: "\E040";
+	}
+	@if $filename == uEA42-brush-large {
+		$char: "\E041";
+	}
+	@if $filename == uEA43-brush-small {
+		$char: "\E042";
+	}
+	@if $filename == uEA44-business-address-large {
+		$char: "\E043";
+	}
+	@if $filename == uEA45-business-address-small {
+		$char: "\E044";
+	}
+	@if $filename == uEA46-business-customer-large {
+		$char: "\E045";
+	}
+	@if $filename == uEA47-business-customer-small {
+		$char: "\E046";
+	}
+	@if $filename == uEA48-calculator-large {
+		$char: "\E047";
+	}
+	@if $filename == uEA49-calculator-small {
+		$char: "\E048";
+	}
+	@if $filename == uEA4A-calendar-events-large {
+		$char: "\E049";
+	}
+	@if $filename == uEA4B-calendar-events-small {
+		$char: "\E04A";
+	}
+	@if $filename == uEA4C-camera-large {
+		$char: "\E04B";
+	}
+	@if $filename == uEA4D-camera-small {
+		$char: "\E04C";
+	}
+	@if $filename == uEA4E-cancel-large {
+		$char: "\E04D";
+	}
+	@if $filename == uEA4F-cancel-small {
+		$char: "\E04E";
+	}
+	@if $filename == uEA50-car-dimensions-large {
+		$char: "\E04F";
+	}
+	@if $filename == uEA51-car-dimensions-small {
+		$char: "\E050";
+	}
+	@if $filename == uEA52-car-handover-large {
+		$char: "\E051";
+	}
+	@if $filename == uEA53-car-handover-small {
+		$char: "\E052";
+	}
+	@if $filename == uEA54-car-large {
+		$char: "\E053";
+	}
+	@if $filename == uEA55-car-search-large {
+		$char: "\E054";
+	}
+	@if $filename == uEA56-car-search-small {
+		$char: "\E055";
+	}
+	@if $filename == uEA57-car-small {
+		$char: "\E056";
+	}
+	@if $filename == uEA58-catalogue-large {
+		$char: "\E057";
+	}
+	@if $filename == uEA59-catalogue-small {
+		$char: "\E058";
+	}
+	@if $filename == uEA5A-caution-large {
+		$char: "\E059";
+	}
+	@if $filename == uEA5B-caution-small {
+		$char: "\E05A";
+	}
+	@if $filename == uEA5C-charge-level-large {
+		$char: "\E05B";
+	}
+	@if $filename == uEA5D-charge-level-small {
+		$char: "\E05C";
+	}
+	@if $filename == uEA5E-charging-large {
+		$char: "\E05D";
+	}
+	@if $filename == uEA5F-charging-plate-large {
+		$char: "\E05E";
+	}
+	@if $filename == uEA60-charging-plate-small {
+		$char: "\E05F";
+	}
+	@if $filename == uEA61-charging-small {
+		$char: "\E060";
+	}
+	@if $filename == uEA62-charging-station-large {
+		$char: "\E061";
+	}
+	@if $filename == uEA63-charging-station-small {
+		$char: "\E062";
+	}
+	@if $filename == uEA64-city-large {
+		$char: "\E063";
+	}
+	@if $filename == uEA65-city-small {
+		$char: "\E064";
+	}
+	@if $filename == uEA66-climate-auto-large {
+		$char: "\E065";
+	}
+	@if $filename == uEA67-climate-auto-small {
+		$char: "\E066";
+	}
+	@if $filename == uEA68-climate-electric-large {
+		$char: "\E067";
+	}
+	@if $filename == uEA69-climate-electric-small {
+		$char: "\E068";
+	}
+	@if $filename == uEA6A-climate-large {
+		$char: "\E069";
+	}
+	@if $filename == uEA6B-climate-small {
+		$char: "\E06A";
+	}
+	@if $filename == uEA6C-clothing-large {
+		$char: "\E06B";
+	}
+	@if $filename == uEA6D-clothing-small {
+		$char: "\E06C";
+	}
+	@if $filename == uEA6E-co2-emission-large {
+		$char: "\E06D";
+	}
+	@if $filename == uEA6F-co2-emission-small {
+		$char: "\E06E";
+	}
+	@if $filename == uEA70-code-large {
+		$char: "\E06F";
+	}
+	@if $filename == uEA71-code-small {
+		$char: "\E070";
+	}
+	@if $filename == uEA72-collapsed-tabs-large {
+		$char: "\E071";
+	}
+	@if $filename == uEA73-collapsed-tabs-small {
+		$char: "\E072";
+	}
+	@if $filename == uEA74-commute-large {
+		$char: "\E073";
+	}
+	@if $filename == uEA75-commute-small {
+		$char: "\E074";
+	}
+	@if $filename == uEA76-compare-large {
+		$char: "\E075";
+	}
+	@if $filename == uEA77-compare-small {
+		$char: "\E076";
+	}
+	@if $filename == uEA78-compass-large {
+		$char: "\E077";
+	}
+	@if $filename == uEA79-compass-small {
+		$char: "\E078";
+	}
+	@if $filename == uEA7A-connect-key-large {
+		$char: "\E079";
+	}
+	@if $filename == uEA7B-connect-key-small {
+		$char: "\E07A";
+	}
+	@if $filename == uEA7C-consumption-large {
+		$char: "\E07B";
+	}
+	@if $filename == uEA7D-consumption-small {
+		$char: "\E07C";
+	}
+	@if $filename == uEA7E-content-activities-large {
+		$char: "\E07D";
+	}
+	@if $filename == uEA7F-content-activities-small {
+		$char: "\E07E";
+	}
+	@if $filename == uEA80-copy-large {
+		$char: "\E07F";
+	}
+	@if $filename == uEA81-copy-small {
+		$char: "\E080";
+	}
+	@if $filename == uEA82-country-large {
+		$char: "\E081";
+	}
+	@if $filename == uEA83-country-small {
+		$char: "\E082";
+	}
+	@if $filename == uEA84-credit-card-large {
+		$char: "\E083";
+	}
+	@if $filename == uEA85-credit-card-small {
+		$char: "\E084";
+	}
+	@if $filename == uEA86-cross-traffic-assist-rear-large {
+		$char: "\E085";
+	}
+	@if $filename == uEA87-cross-traffic-assist-rear-small {
+		$char: "\E086";
+	}
+	@if $filename == uEA88-cubic-capacity-large {
+		$char: "\E087";
+	}
+	@if $filename == uEA89-cubic-capacity-small {
+		$char: "\E088";
+	}
+	@if $filename == uEA8A-damper-large {
+		$char: "\E089";
+	}
+	@if $filename == uEA8B-damper-small {
+		$char: "\E08A";
+	}
+	@if $filename == uEA8C-dashboard-large {
+		$char: "\E08B";
+	}
+	@if $filename == uEA8D-dashboard-small {
+		$char: "\E08C";
+	}
+	@if $filename == uEA8E-dealer-request-large {
+		$char: "\E08D";
+	}
+	@if $filename == uEA8F-dealer-request-small {
+		$char: "\E08E";
+	}
+	@if $filename == uEA90-dealer-search-large {
+		$char: "\E08F";
+	}
+	@if $filename == uEA91-dealer-search-small {
+		$char: "\E090";
+	}
+	@if $filename == uEA92-diagnostics-large {
+		$char: "\E091";
+	}
+	@if $filename == uEA93-diagnostics-small {
+		$char: "\E092";
+	}
+	@if $filename == uEA94-direct-mail-large {
+		$char: "\E093";
+	}
+	@if $filename == uEA95-direct-mail-small {
+		$char: "\E094";
+	}
+	@if $filename == uEA96-discussion-large {
+		$char: "\E095";
+	}
+	@if $filename == uEA97-discussion-small {
+		$char: "\E096";
+	}
+	@if $filename == uEA98-display-large {
+		$char: "\E097";
+	}
+	@if $filename == uEA99-display-small {
+		$char: "\E098";
+	}
+	@if $filename == uEA9A-distance-large {
+		$char: "\E099";
+	}
+	@if $filename == uEA9B-distance-small {
+		$char: "\E09A";
+	}
+	@if $filename == uEA9C-document-pdf-large {
+		$char: "\E09B";
+	}
+	@if $filename == uEA9D-document-pdf-small {
+		$char: "\E09C";
+	}
+	@if $filename == uEA9E-document-pricelist-dollar-large {
+		$char: "\E09D";
+	}
+	@if $filename == uEA9F-document-pricelist-dollar-small {
+		$char: "\E09E";
+	}
+	@if $filename == uEAA0-document-pricelist-euro-large {
+		$char: "\E09F";
+	}
+	@if $filename == uEAA1-document-pricelist-euro-small {
+		$char: "\E0A0";
+	}
+	@if $filename == uEAA2-document-taxation-large {
+		$char: "\E0A1";
+	}
+	@if $filename == uEAA3-document-taxation-small {
+		$char: "\E0A2";
+	}
+	@if $filename == uEAA4-documents-large {
+		$char: "\E0A3";
+	}
+	@if $filename == uEAA5-documents-small {
+		$char: "\E0A4";
+	}
+	@if $filename == uEAA6-door-open-large {
+		$char: "\E0A5";
+	}
+	@if $filename == uEAA7-door-open-small {
+		$char: "\E0A6";
+	}
+	@if $filename == uEAA8-download-large {
+		$char: "\E0A7";
+	}
+	@if $filename == uEAA9-download-small {
+		$char: "\E0A8";
+	}
+	@if $filename == uEAAA-drive-belt-large {
+		$char: "\E0A9";
+	}
+	@if $filename == uEAAB-drive-belt-small {
+		$char: "\E0AA";
+	}
+	@if $filename == uEAAC-eco-cycle-large {
+		$char: "\E0AB";
+	}
+	@if $filename == uEAAD-eco-cycle-small {
+		$char: "\E0AC";
+	}
+	@if $filename == uEAAE-eco-friendly-large {
+		$char: "\E0AD";
+	}
+	@if $filename == uEAAF-eco-friendly-small {
+		$char: "\E0AE";
+	}
+	@if $filename == uEAB0-edit-large {
+		$char: "\E0AF";
+	}
+	@if $filename == uEAB1-edit-small {
+		$char: "\E0B0";
+	}
+	@if $filename == uEAB2-editorial-large {
+		$char: "\E0B1";
+	}
+	@if $filename == uEAB3-editorial-small {
+		$char: "\E0B2";
+	}
+	@if $filename == uEAB4-electric-range-large {
+		$char: "\E0B3";
+	}
+	@if $filename == uEAB5-electric-range-small {
+		$char: "\E0B4";
+	}
+	@if $filename == uEAB6-energy-green-large {
+		$char: "\E0B5";
+	}
+	@if $filename == uEAB7-energy-green-small {
+		$char: "\E0B6";
+	}
+	@if $filename == uEAB8-engine-large {
+		$char: "\E0B7";
+	}
+	@if $filename == uEAB9-engine-small {
+		$char: "\E0B8";
+	}
+	@if $filename == uEABA-erase-large {
+		$char: "\E0B9";
+	}
+	@if $filename == uEABB-erase-small {
+		$char: "\E0BA";
+	}
+	@if $filename == uEABC-external-link-large {
+		$char: "\E0BB";
+	}
+	@if $filename == uEABD-external-link-small {
+		$char: "\E0BC";
+	}
+	@if $filename == uEABE-eye-crossed-large {
+		$char: "\E0BD";
+	}
+	@if $filename == uEABF-eye-crossed-small {
+		$char: "\E0BE";
+	}
+	@if $filename == uEAC0-eye-large {
+		$char: "\E0BF";
+	}
+	@if $filename == uEAC1-eye-small {
+		$char: "\E0C0";
+	}
+	@if $filename == uEAC2-facebook-large {
+		$char: "\E0C1";
+	}
+	@if $filename == uEAC3-facebook-small {
+		$char: "\E0C2";
+	}
+	@if $filename == uEAC4-factory-large {
+		$char: "\E0C3";
+	}
+	@if $filename == uEAC5-factory-small {
+		$char: "\E0C4";
+	}
+	@if $filename == uEAC6-favorite-filled-large {
+		$char: "\E0C5";
+	}
+	@if $filename == uEAC7-favorite-filled-small {
+		$char: "\E0C6";
+	}
+	@if $filename == uEAC8-favorite-large {
+		$char: "\E0C7";
+	}
+	@if $filename == uEAC9-favorite-small {
+		$char: "\E0C8";
+	}
+	@if $filename == uEACA-feature-on-demand-large {
+		$char: "\E0C9";
+	}
+	@if $filename == uEACB-feature-on-demand-small {
+		$char: "\E0CA";
+	}
+	@if $filename == uEACC-feed-large {
+		$char: "\E0CB";
+	}
+	@if $filename == uEACD-feed-small {
+		$char: "\E0CC";
+	}
+	@if $filename == uEACE-filter-large {
+		$char: "\E0CD";
+	}
+	@if $filename == uEACF-filter-small {
+		$char: "\E0CE";
+	}
+	@if $filename == uEAD0-financial-services-large {
+		$char: "\E0CF";
+	}
+	@if $filename == uEAD1-financial-services-small {
+		$char: "\E0D0";
+	}
+	@if $filename == uEAD2-first-aid-large {
+		$char: "\E0D1";
+	}
+	@if $filename == uEAD3-first-aid-small {
+		$char: "\E0D2";
+	}
+	@if $filename == uEAD4-flashlight-large {
+		$char: "\E0D3";
+	}
+	@if $filename == uEAD5-flashlight-small {
+		$char: "\E0D4";
+	}
+	@if $filename == uEAD6-forward-large {
+		$char: "\E0D5";
+	}
+	@if $filename == uEAD7-forward-small {
+		$char: "\E0D6";
+	}
+	@if $filename == uEAD8-fuel-range-large {
+		$char: "\E0D7";
+	}
+	@if $filename == uEAD9-fuel-range-small {
+		$char: "\E0D8";
+	}
+	@if $filename == uEADA-fuel-station-large {
+		$char: "\E0D9";
+	}
+	@if $filename == uEADB-fuel-station-small {
+		$char: "\E0DA";
+	}
+	@if $filename == uEADC-gas-station-large {
+		$char: "\E0DB";
+	}
+	@if $filename == uEADD-gas-station-small {
+		$char: "\E0DC";
+	}
+	@if $filename == uEADE-geofence-alert-large {
+		$char: "\E0DD";
+	}
+	@if $filename == uEADF-geofence-alert-small {
+		$char: "\E0DE";
+	}
+	@if $filename == uEAE0-geofence-large {
+		$char: "\E0DF";
+	}
+	@if $filename == uEAE1-geofence-small {
+		$char: "\E0E0";
+	}
+	@if $filename == uEAE2-gift-large {
+		$char: "\E0E1";
+	}
+	@if $filename == uEAE3-gift-small {
+		$char: "\E0E2";
+	}
+	@if $filename == uEAE4-google-plus-large {
+		$char: "\E0E3";
+	}
+	@if $filename == uEAE5-google-plus-small {
+		$char: "\E0E4";
+	}
+	@if $filename == uEAE6-gps-large {
+		$char: "\E0E5";
+	}
+	@if $filename == uEAE7-gps-small {
+		$char: "\E0E6";
+	}
+	@if $filename == uEAE8-grab-large {
+		$char: "\E0E7";
+	}
+	@if $filename == uEAE9-grab-small {
+		$char: "\E0E8";
+	}
+	@if $filename == uEAEA-group-discussion-large {
+		$char: "\E0E9";
+	}
+	@if $filename == uEAEB-group-discussion-small {
+		$char: "\E0EA";
+	}
+	@if $filename == uEAEC-groups-large {
+		$char: "\E0EB";
+	}
+	@if $filename == uEAED-groups-small {
+		$char: "\E0EC";
+	}
+	@if $filename == uEAEE-handshake-large {
+		$char: "\E0ED";
+	}
+	@if $filename == uEAEF-handshake-small {
+		$char: "\E0EE";
+	}
+	@if $filename == uEAF0-history-large {
+		$char: "\E0EF";
+	}
+	@if $filename == uEAF1-history-small {
+		$char: "\E0F0";
+	}
+	@if $filename == uEAF2-home-large {
+		$char: "\E0F1";
+	}
+	@if $filename == uEAF3-home-small {
+		$char: "\E0F2";
+	}
+	@if $filename == uEAF4-honk-and-flash-large {
+		$char: "\E0F3";
+	}
+	@if $filename == uEAF5-honk-and-flash-small {
+		$char: "\E0F4";
+	}
+	@if $filename == uEAF6-honk-large {
+		$char: "\E0F5";
+	}
+	@if $filename == uEAF7-honk-small {
+		$char: "\E0F6";
+	}
+	@if $filename == uEAF8-hotline-large {
+		$char: "\E0F7";
+	}
+	@if $filename == uEAF9-hotline-small {
+		$char: "\E0F8";
+	}
+	@if $filename == uEAFA-idea-large {
+		$char: "\E0F9";
+	}
+	@if $filename == uEAFB-idea-small {
+		$char: "\E0FA";
+	}
+	@if $filename == uEAFC-indicators-large {
+		$char: "\E0FB";
+	}
+	@if $filename == uEAFD-indicators-small {
+		$char: "\E0FC";
+	}
+	@if $filename == uEAFE-inspection-large {
+		$char: "\E0FD";
+	}
+	@if $filename == uEAFF-inspection-small {
+		$char: "\E0FE";
+	}
+	@if $filename == uEB00-instagram-large {
+		$char: "\E0FF";
+	}
+	@if $filename == uEB01-instagram-small {
+		$char: "\E100";
+	}
+	@if $filename == uEB02-interior-configuration-large {
+		$char: "\E101";
+	}
+	@if $filename == uEB03-interior-configuration-small {
+		$char: "\E102";
+	}
+	@if $filename == uEB04-languages-large {
+		$char: "\E103";
+	}
+	@if $filename == uEB05-languages-small {
+		$char: "\E104";
+	}
+	@if $filename == uEB06-laptop-large {
+		$char: "\E105";
+	}
+	@if $filename == uEB07-laptop-small {
+		$char: "\E106";
+	}
+	@if $filename == uEB08-lights-crossed-large {
+		$char: "\E107";
+	}
+	@if $filename == uEB09-lights-crossed-small {
+		$char: "\E108";
+	}
+	@if $filename == uEB0A-lights-day-large {
+		$char: "\E109";
+	}
+	@if $filename == uEB0B-lights-day-small {
+		$char: "\E10A";
+	}
+	@if $filename == uEB0C-lights-dim-large {
+		$char: "\E10B";
+	}
+	@if $filename == uEB0D-lights-dim-small {
+		$char: "\E10C";
+	}
+	@if $filename == uEB0E-lights-full-beam-large {
+		$char: "\E10D";
+	}
+	@if $filename == uEB0F-lights-full-beam-small {
+		$char: "\E10E";
+	}
+	@if $filename == uEB10-lights-led-large {
+		$char: "\E10F";
+	}
+	@if $filename == uEB11-lights-led-small {
+		$char: "\E110";
+	}
+	@if $filename == uEB12-lights-xenon-large {
+		$char: "\E111";
+	}
+	@if $filename == uEB13-lights-xenon-small {
+		$char: "\E112";
+	}
+	@if $filename == uEB14-line-large {
+		$char: "\E113";
+	}
+	@if $filename == uEB15-line-me-large {
+		$char: "\E114";
+	}
+	@if $filename == uEB16-line-me-small {
+		$char: "\E115";
+	}
+	@if $filename == uEB17-line-small {
+		$char: "\E116";
+	}
+	@if $filename == uEB18-linkedin-large {
+		$char: "\E117";
+	}
+	@if $filename == uEB19-linkedin-small {
+		$char: "\E118";
+	}
+	@if $filename == uEB1A-list-large {
+		$char: "\E119";
+	}
+	@if $filename == uEB1B-list-small {
+		$char: "\E11A";
+	}
+	@if $filename == uEB1C-lock-large {
+		$char: "\E11B";
+	}
+	@if $filename == uEB1D-lock-small {
+		$char: "\E11C";
+	}
+	@if $filename == uEB1E-lock-unlock-large {
+		$char: "\E11D";
+	}
+	@if $filename == uEB1F-lock-unlock-small {
+		$char: "\E11E";
+	}
+	@if $filename == uEB20-logbook-large {
+		$char: "\E11F";
+	}
+	@if $filename == uEB21-logbook-small {
+		$char: "\E120";
+	}
+	@if $filename == uEB22-login-large {
+		$char: "\E121";
+	}
+	@if $filename == uEB23-login-small {
+		$char: "\E122";
+	}
+	@if $filename == uEB24-logout-large {
+		$char: "\E123";
+	}
+	@if $filename == uEB25-logout-small {
+		$char: "\E124";
+	}
+	@if $filename == uEB26-loose-wheel-indicator-large {
+		$char: "\E125";
+	}
+	@if $filename == uEB27-loose-wheel-indicator-small {
+		$char: "\E126";
+	}
+	@if $filename == uEB28-main-user-large {
+		$char: "\E127";
+	}
+	@if $filename == uEB29-main-user-small {
+		$char: "\E128";
+	}
+	@if $filename == uEB2A-maintenance-large {
+		$char: "\E129";
+	}
+	@if $filename == uEB2B-maintenance-small {
+		$char: "\E12A";
+	}
+	@if $filename == uEB2C-maneuvering-assist-large {
+		$char: "\E12B";
+	}
+	@if $filename == uEB2D-maneuvering-assist-small {
+		$char: "\E12C";
+	}
+	@if $filename == uEB2E-map-layer-large {
+		$char: "\E12D";
+	}
+	@if $filename == uEB2F-map-layer-small {
+		$char: "\E12E";
+	}
+	@if $filename == uEB30-merchandise-large {
+		$char: "\E12F";
+	}
+	@if $filename == uEB31-merchandise-small {
+		$char: "\E130";
+	}
+	@if $filename == uEB32-microphone-off-large {
+		$char: "\E131";
+	}
+	@if $filename == uEB33-microphone-off-small {
+		$char: "\E132";
+	}
+	@if $filename == uEB34-microphone-on-large {
+		$char: "\E133";
+	}
+	@if $filename == uEB35-microphone-on-small {
+		$char: "\E134";
+	}
+	@if $filename == uEB36-mileage-large {
+		$char: "\E135";
+	}
+	@if $filename == uEB37-mileage-small {
+		$char: "\E136";
+	}
+	@if $filename == uEB38-mmi-large {
+		$char: "\E137";
+	}
+	@if $filename == uEB39-mmi-small {
+		$char: "\E138";
+	}
+	@if $filename == uEB3A-mobile-phone-large {
+		$char: "\E139";
+	}
+	@if $filename == uEB3B-mobile-phone-small {
+		$char: "\E13A";
+	}
+	@if $filename == uEB3C-more-large {
+		$char: "\E13B";
+	}
+	@if $filename == uEB3D-more-small {
+		$char: "\E13C";
+	}
+	@if $filename == uEB3E-motorway-large {
+		$char: "\E13D";
+	}
+	@if $filename == uEB3F-motorway-small {
+		$char: "\E13E";
+	}
+	@if $filename == uEB40-my-dealer-large {
+		$char: "\E13F";
+	}
+	@if $filename == uEB41-my-dealer-small {
+		$char: "\E140";
+	}
+	@if $filename == uEB42-myaudi-destinations-large {
+		$char: "\E141";
+	}
+	@if $filename == uEB43-myaudi-destinations-small {
+		$char: "\E142";
+	}
+	@if $filename == uEB44-napster-large {
+		$char: "\E143";
+	}
+	@if $filename == uEB45-napster-small {
+		$char: "\E144";
+	}
+	@if $filename == uEB46-network-large {
+		$char: "\E145";
+	}
+	@if $filename == uEB47-network-small {
+		$char: "\E146";
+	}
+	@if $filename == uEB48-news-large {
+		$char: "\E147";
+	}
+	@if $filename == uEB49-news-small {
+		$char: "\E148";
+	}
+	@if $filename == uEB4A-nfc-inactive-large {
+		$char: "\E149";
+	}
+	@if $filename == uEB4B-nfc-inactive-small {
+		$char: "\E14A";
+	}
+	@if $filename == uEB4C-nfc-large {
+		$char: "\E14B";
+	}
+	@if $filename == uEB4D-nfc-small {
+		$char: "\E14C";
+	}
+	@if $filename == uEB4E-notepad-large {
+		$char: "\E14D";
+	}
+	@if $filename == uEB4F-notepad-small {
+		$char: "\E14E";
+	}
+	@if $filename == uEB50-off-canvas-large {
+		$char: "\E14F";
+	}
+	@if $filename == uEB51-off-canvas-small {
+		$char: "\E150";
+	}
+	@if $filename == uEB52-offline-maps-large {
+		$char: "\E151";
+	}
+	@if $filename == uEB53-offline-maps-small {
+		$char: "\E152";
+	}
+	@if $filename == uEB54-oil-change-large {
+		$char: "\E153";
+	}
+	@if $filename == uEB55-oil-change-small {
+		$char: "\E154";
+	}
+	@if $filename == uEB56-options-large {
+		$char: "\E155";
+	}
+	@if $filename == uEB57-options-small {
+		$char: "\E156";
+	}
+	@if $filename == uEB58-order-reverse-large {
+		$char: "\E157";
+	}
+	@if $filename == uEB59-order-reverse-small {
+		$char: "\E158";
+	}
+	@if $filename == uEB5A-over-the-air-car-large {
+		$char: "\E159";
+	}
+	@if $filename == uEB5B-over-the-air-car-small {
+		$char: "\E15A";
+	}
+	@if $filename == uEB5C-over-the-air-large {
+		$char: "\E15B";
+	}
+	@if $filename == uEB5D-over-the-air-small {
+		$char: "\E15C";
+	}
+	@if $filename == uEB5E-parking-in-left-large {
+		$char: "\E15D";
+	}
+	@if $filename == uEB5F-parking-in-left-long-large {
+		$char: "\E15E";
+	}
+	@if $filename == uEB60-parking-in-left-long-small {
+		$char: "\E15F";
+	}
+	@if $filename == uEB61-parking-in-left-small {
+		$char: "\E160";
+	}
+	@if $filename == uEB62-parking-in-right-large {
+		$char: "\E161";
+	}
+	@if $filename == uEB63-parking-in-right-long-large {
+		$char: "\E162";
+	}
+	@if $filename == uEB64-parking-in-right-long-small {
+		$char: "\E163";
+	}
+	@if $filename == uEB65-parking-in-right-small {
+		$char: "\E164";
+	}
+	@if $filename == uEB66-parking-in-straight-large {
+		$char: "\E165";
+	}
+	@if $filename == uEB67-parking-in-straight-small {
+		$char: "\E166";
+	}
+	@if $filename == uEB68-parking-large {
+		$char: "\E167";
+	}
+	@if $filename == uEB69-parking-out-left-large {
+		$char: "\E168";
+	}
+	@if $filename == uEB6A-parking-out-left-long-large {
+		$char: "\E169";
+	}
+	@if $filename == uEB6B-parking-out-left-long-small {
+		$char: "\E16A";
+	}
+	@if $filename == uEB6C-parking-out-left-small {
+		$char: "\E16B";
+	}
+	@if $filename == uEB6D-parking-out-right-large {
+		$char: "\E16C";
+	}
+	@if $filename == uEB6E-parking-out-right-long-large {
+		$char: "\E16D";
+	}
+	@if $filename == uEB6F-parking-out-right-long-small {
+		$char: "\E16E";
+	}
+	@if $filename == uEB70-parking-out-right-small {
+		$char: "\E16F";
+	}
+	@if $filename == uEB71-parking-out-straight-large {
+		$char: "\E170";
+	}
+	@if $filename == uEB72-parking-out-straight-small {
+		$char: "\E171";
+	}
+	@if $filename == uEB73-parking-small {
+		$char: "\E172";
+	}
+	@if $filename == uEB74-pause-large {
+		$char: "\E173";
+	}
+	@if $filename == uEB75-pause-small {
+		$char: "\E174";
+	}
+	@if $filename == uEB76-photo-large {
+		$char: "\E175";
+	}
+	@if $filename == uEB77-photo-small {
+		$char: "\E176";
+	}
+	@if $filename == uEB78-piloted-parking-large {
+		$char: "\E177";
+	}
+	@if $filename == uEB79-piloted-parking-small {
+		$char: "\E178";
+	}
+	@if $filename == uEB7A-pinterest-large {
+		$char: "\E179";
+	}
+	@if $filename == uEB7B-pinterest-small {
+		$char: "\E17A";
+	}
+	@if $filename == uEB7C-plan-route-large {
+		$char: "\E17B";
+	}
+	@if $filename == uEB7D-plan-route-small {
+		$char: "\E17C";
+	}
+	@if $filename == uEB7E-play-large {
+		$char: "\E17D";
+	}
+	@if $filename == uEB7F-play-small {
+		$char: "\E17E";
+	}
+	@if $filename == uEB80-plug-ccs-dc-large {
+		$char: "\E17F";
+	}
+	@if $filename == uEB81-plug-ccs-dc-small {
+		$char: "\E180";
+	}
+	@if $filename == uEB82-plug-ccs1-large {
+		$char: "\E181";
+	}
+	@if $filename == uEB83-plug-ccs1-small {
+		$char: "\E182";
+	}
+	@if $filename == uEB84-plug-cee3-large {
+		$char: "\E183";
+	}
+	@if $filename == uEB85-plug-cee3-small {
+		$char: "\E184";
+	}
+	@if $filename == uEB86-plug-cee5-large {
+		$char: "\E185";
+	}
+	@if $filename == uEB87-plug-cee5-small {
+		$char: "\E186";
+	}
+	@if $filename == uEB88-plug-chademo-dc-large {
+		$char: "\E187";
+	}
+	@if $filename == uEB89-plug-chademo-dc-small {
+		$char: "\E188";
+	}
+	@if $filename == uEB8A-plug-schuko-large {
+		$char: "\E189";
+	}
+	@if $filename == uEB8B-plug-schuko-small {
+		$char: "\E18A";
+	}
+	@if $filename == uEB8C-plug-type1-ac-large {
+		$char: "\E18B";
+	}
+	@if $filename == uEB8D-plug-type1-ac-small {
+		$char: "\E18C";
+	}
+	@if $filename == uEB8E-plug-type2-ac-large {
+		$char: "\E18D";
+	}
+	@if $filename == uEB8F-plug-type2-ac-small {
+		$char: "\E18E";
+	}
+	@if $filename == uEB90-poi-calendar-large {
+		$char: "\E18F";
+	}
+	@if $filename == uEB91-poi-calendar-small {
+		$char: "\E190";
+	}
+	@if $filename == uEB92-poi-car-large {
+		$char: "\E191";
+	}
+	@if $filename == uEB93-poi-car-small {
+		$char: "\E192";
+	}
+	@if $filename == uEB94-poi-contact-large {
+		$char: "\E193";
+	}
+	@if $filename == uEB95-poi-contact-small {
+		$char: "\E194";
+	}
+	@if $filename == uEB96-poi-favorite-large {
+		$char: "\E195";
+	}
+	@if $filename == uEB97-poi-favorite-small {
+		$char: "\E196";
+	}
+	@if $filename == uEB98-poi-home-large {
+		$char: "\E197";
+	}
+	@if $filename == uEB99-poi-home-small {
+		$char: "\E198";
+	}
+	@if $filename == uEB9A-poi-large {
+		$char: "\E199";
+	}
+	@if $filename == uEB9B-poi-last-destination-large {
+		$char: "\E19A";
+	}
+	@if $filename == uEB9C-poi-last-destination-small {
+		$char: "\E19B";
+	}
+	@if $filename == uEB9D-poi-on-map-large {
+		$char: "\E19C";
+	}
+	@if $filename == uEB9E-poi-on-map-small {
+		$char: "\E19D";
+	}
+	@if $filename == uEB9F-poi-search-large {
+		$char: "\E19E";
+	}
+	@if $filename == uEBA0-poi-search-small {
+		$char: "\E19F";
+	}
+	@if $filename == uEBA1-poi-small {
+		$char: "\E1A0";
+	}
+	@if $filename == uEBA2-poi-work-large {
+		$char: "\E1A1";
+	}
+	@if $filename == uEBA3-poi-work-small {
+		$char: "\E1A2";
+	}
+	@if $filename == uEBA4-pois-large {
+		$char: "\E1A3";
+	}
+	@if $filename == uEBA5-pois-small {
+		$char: "\E1A4";
+	}
+	@if $filename == uEBA6-polls-large {
+		$char: "\E1A5";
+	}
+	@if $filename == uEBA7-polls-small {
+		$char: "\E1A6";
+	}
+	@if $filename == uEBA8-power-large {
+		$char: "\E1A7";
+	}
+	@if $filename == uEBA9-power-small {
+		$char: "\E1A8";
+	}
+	@if $filename == uEBAA-pre-heating-large {
+		$char: "\E1A9";
+	}
+	@if $filename == uEBAB-pre-heating-small {
+		$char: "\E1AA";
+	}
+	@if $filename == uEBAC-print-large {
+		$char: "\E1AB";
+	}
+	@if $filename == uEBAD-print-small {
+		$char: "\E1AC";
+	}
+	@if $filename == uEBAE-privacy-mode-large {
+		$char: "\E1AD";
+	}
+	@if $filename == uEBAF-privacy-mode-small {
+		$char: "\E1AE";
+	}
+	@if $filename == uEBB0-private-customer-large {
+		$char: "\E1AF";
+	}
+	@if $filename == uEBB1-private-customer-small {
+		$char: "\E1B0";
+	}
+	@if $filename == uEBB2-profile-large {
+		$char: "\E1B1";
+	}
+	@if $filename == uEBB3-profile-small {
+		$char: "\E1B2";
+	}
+	@if $filename == uEBB4-projects-large {
+		$char: "\E1B3";
+	}
+	@if $filename == uEBB5-projects-small {
+		$char: "\E1B4";
+	}
+	@if $filename == uEBB6-public-transport-large {
+		$char: "\E1B5";
+	}
+	@if $filename == uEBB7-public-transport-small {
+		$char: "\E1B6";
+	}
+	@if $filename == uEBB8-quattro-large {
+		$char: "\E1B7";
+	}
+	@if $filename == uEBB9-quattro-small {
+		$char: "\E1B8";
+	}
+	@if $filename == uEBBA-rating-filled-50-large {
+		$char: "\E1B9";
+	}
+	@if $filename == uEBBB-rating-filled-50-small {
+		$char: "\E1BA";
+	}
+	@if $filename == uEBBC-rating-filled-large {
+		$char: "\E1BB";
+	}
+	@if $filename == uEBBD-rating-filled-small {
+		$char: "\E1BC";
+	}
+	@if $filename == uEBBE-rating-large {
+		$char: "\E1BD";
+	}
+	@if $filename == uEBBF-rating-small {
+		$char: "\E1BE";
+	}
+	@if $filename == uEBC0-receive-e-mail-notification-large {
+		$char: "\E1BF";
+	}
+	@if $filename == uEBC1-receive-e-mail-notification-small {
+		$char: "\E1C0";
+	}
+	@if $filename == uEBC2-recommended-destination-large {
+		$char: "\E1C1";
+	}
+	@if $filename == uEBC3-recommended-destination-small {
+		$char: "\E1C2";
+	}
+	@if $filename == uEBC4-refresh-large {
+		$char: "\E1C3";
+	}
+	@if $filename == uEBC5-refresh-small {
+		$char: "\E1C4";
+	}
+	@if $filename == uEBC6-replay-large {
+		$char: "\E1C5";
+	}
+	@if $filename == uEBC7-replay-small {
+		$char: "\E1C6";
+	}
+	@if $filename == uEBC8-resize-decrease-large {
+		$char: "\E1C7";
+	}
+	@if $filename == uEBC9-resize-decrease-small {
+		$char: "\E1C8";
+	}
+	@if $filename == uEBCA-resize-increase-large {
+		$char: "\E1C9";
+	}
+	@if $filename == uEBCB-resize-increase-small {
+		$char: "\E1CA";
+	}
+	@if $filename == uEBCC-restaurant-large {
+		$char: "\E1CB";
+	}
+	@if $filename == uEBCD-restaurant-small {
+		$char: "\E1CC";
+	}
+	@if $filename == uEBCE-restroom-large {
+		$char: "\E1CD";
+	}
+	@if $filename == uEBCF-restroom-small {
+		$char: "\E1CE";
+	}
+	@if $filename == uEBD0-results-list-large {
+		$char: "\E1CF";
+	}
+	@if $filename == uEBD1-results-list-small {
+		$char: "\E1D0";
+	}
+	@if $filename == uEBD2-roof-open-large {
+		$char: "\E1D1";
+	}
+	@if $filename == uEBD3-roof-open-small {
+		$char: "\E1D2";
+	}
+	@if $filename == uEBD4-rotate-device-large {
+		$char: "\E1D3";
+	}
+	@if $filename == uEBD5-rotate-device-small {
+		$char: "\E1D4";
+	}
+	@if $filename == uEBD6-rotate-image-left-large {
+		$char: "\E1D5";
+	}
+	@if $filename == uEBD7-rotate-image-left-small {
+		$char: "\E1D6";
+	}
+	@if $filename == uEBD8-rotate-image-right-large {
+		$char: "\E1D7";
+	}
+	@if $filename == uEBD9-rotate-image-right-small {
+		$char: "\E1D8";
+	}
+	@if $filename == uEBDA-rotate-left-large {
+		$char: "\E1D9";
+	}
+	@if $filename == uEBDB-rotate-left-small {
+		$char: "\E1DA";
+	}
+	@if $filename == uEBDC-rotate-right-large {
+		$char: "\E1DB";
+	}
+	@if $filename == uEBDD-rotate-right-small {
+		$char: "\E1DC";
+	}
+	@if $filename == uEBDE-roundabout-left-large {
+		$char: "\E1DD";
+	}
+	@if $filename == uEBDF-roundabout-left-small {
+		$char: "\E1DE";
+	}
+	@if $filename == uEBE0-roundabout-long-left-large {
+		$char: "\E1DF";
+	}
+	@if $filename == uEBE1-roundabout-long-left-small {
+		$char: "\E1E0";
+	}
+	@if $filename == uEBE2-roundabout-long-right-large {
+		$char: "\E1E1";
+	}
+	@if $filename == uEBE3-roundabout-long-right-small {
+		$char: "\E1E2";
+	}
+	@if $filename == uEBE4-roundabout-right-large {
+		$char: "\E1E3";
+	}
+	@if $filename == uEBE5-roundabout-right-small {
+		$char: "\E1E4";
+	}
+	@if $filename == uEBE6-roundabout-sharp-left-large {
+		$char: "\E1E5";
+	}
+	@if $filename == uEBE7-roundabout-sharp-left-small {
+		$char: "\E1E6";
+	}
+	@if $filename == uEBE8-roundabout-sharp-right-large {
+		$char: "\E1E7";
+	}
+	@if $filename == uEBE9-roundabout-sharp-right-small {
+		$char: "\E1E8";
+	}
+	@if $filename == uEBEA-roundabout-straight-large {
+		$char: "\E1E9";
+	}
+	@if $filename == uEBEB-roundabout-straight-small {
+		$char: "\E1EA";
+	}
+	@if $filename == uEBEC-search-large {
+		$char: "\E1EB";
+	}
+	@if $filename == uEBED-search-small {
+		$char: "\E1EC";
+	}
+	@if $filename == uEBEE-select-all-large {
+		$char: "\E1ED";
+	}
+	@if $filename == uEBEF-select-all-small {
+		$char: "\E1EE";
+	}
+	@if $filename == uEBF0-select-large {
+		$char: "\E1EF";
+	}
+	@if $filename == uEBF1-select-small {
+		$char: "\E1F0";
+	}
+	@if $filename == uEBF2-send-large {
+		$char: "\E1F1";
+	}
+	@if $filename == uEBF3-send-small {
+		$char: "\E1F2";
+	}
+	@if $filename == uEBF4-send-to-vehicle-large {
+		$char: "\E1F3";
+	}
+	@if $filename == uEBF5-send-to-vehicle-small {
+		$char: "\E1F4";
+	}
+	@if $filename == uEBF6-settings-large {
+		$char: "\E1F5";
+	}
+	@if $filename == uEBF7-settings-small {
+		$char: "\E1F6";
+	}
+	@if $filename == uEBF8-share-android-large {
+		$char: "\E1F7";
+	}
+	@if $filename == uEBF9-share-android-small {
+		$char: "\E1F8";
+	}
+	@if $filename == uEBFA-share-large {
+		$char: "\E1F9";
+	}
+	@if $filename == uEBFB-share-small {
+		$char: "\E1FA";
+	}
+	@if $filename == uEBFC-shopping-basket-large {
+		$char: "\E1FB";
+	}
+	@if $filename == uEBFD-shopping-basket-small {
+		$char: "\E1FC";
+	}
+	@if $filename == uEBFE-shuffle-large {
+		$char: "\E1FD";
+	}
+	@if $filename == uEBFF-shuffle-small {
+		$char: "\E1FE";
+	}
+	@if $filename == uEC00-side-assist-large {
+		$char: "\E1FF";
+	}
+	@if $filename == uEC01-side-assist-small {
+		$char: "\E200";
+	}
+	@if $filename == uEC02-signal-large {
+		$char: "\E201";
+	}
+	@if $filename == uEC03-signal-small {
+		$char: "\E202";
+	}
+	@if $filename == uEC04-skip-next-large {
+		$char: "\E203";
+	}
+	@if $filename == uEC05-skip-next-small {
+		$char: "\E204";
+	}
+	@if $filename == uEC06-skip-previous-large {
+		$char: "\E205";
+	}
+	@if $filename == uEC07-skip-previous-small {
+		$char: "\E206";
+	}
+	@if $filename == uEC08-slider-large {
+		$char: "\E207";
+	}
+	@if $filename == uEC09-slider-small {
+		$char: "\E208";
+	}
+	@if $filename == uEC0A-smartwatch-large {
+		$char: "\E209";
+	}
+	@if $filename == uEC0B-smartwatch-small {
+		$char: "\E20A";
+	}
+	@if $filename == uEC0C-smiley-happy-large {
+		$char: "\E20B";
+	}
+	@if $filename == uEC0D-smiley-happy-small {
+		$char: "\E20C";
+	}
+	@if $filename == uEC0E-smiley-neutral-large {
+		$char: "\E20D";
+	}
+	@if $filename == uEC0F-smiley-neutral-small {
+		$char: "\E20E";
+	}
+	@if $filename == uEC10-smiley-unhappy-large {
+		$char: "\E20F";
+	}
+	@if $filename == uEC11-smiley-unhappy-small {
+		$char: "\E210";
+	}
+	@if $filename == uEC12-snapchat-large {
+		$char: "\E211";
+	}
+	@if $filename == uEC13-snapchat-small {
+		$char: "\E212";
+	}
+	@if $filename == uEC14-social-reader-large {
+		$char: "\E213";
+	}
+	@if $filename == uEC15-social-reader-small {
+		$char: "\E214";
+	}
+	@if $filename == uEC16-spark-plug-large {
+		$char: "\E215";
+	}
+	@if $filename == uEC17-spark-plug-small {
+		$char: "\E216";
+	}
+	@if $filename == uEC18-special-offer-large {
+		$char: "\E217";
+	}
+	@if $filename == uEC19-special-offer-small {
+		$char: "\E218";
+	}
+	@if $filename == uEC1A-split-large {
+		$char: "\E219";
+	}
+	@if $filename == uEC1B-split-small {
+		$char: "\E21A";
+	}
+	@if $filename == uEC1C-status-update-large {
+		$char: "\E21B";
+	}
+	@if $filename == uEC1D-status-update-small {
+		$char: "\E21C";
+	}
+	@if $filename == uEC1E-sync-large {
+		$char: "\E21D";
+	}
+	@if $filename == uEC1F-sync-off-large {
+		$char: "\E21E";
+	}
+	@if $filename == uEC20-sync-off-small {
+		$char: "\E21F";
+	}
+	@if $filename == uEC21-sync-small {
+		$char: "\E220";
+	}
+	@if $filename == uEC22-system-add-large {
+		$char: "\E221";
+	}
+	@if $filename == uEC23-system-add-small {
+		$char: "\E222";
+	}
+	@if $filename == uEC24-system-audio-off-large {
+		$char: "\E223";
+	}
+	@if $filename == uEC25-system-audio-off-small {
+		$char: "\E224";
+	}
+	@if $filename == uEC26-system-audio-on-large {
+		$char: "\E225";
+	}
+	@if $filename == uEC27-system-audio-on-small {
+		$char: "\E226";
+	}
+	@if $filename == uEC28-system-cancel-large {
+		$char: "\E227";
+	}
+	@if $filename == uEC29-system-cancel-small {
+		$char: "\E228";
+	}
+	@if $filename == uEC2A-system-code-large {
+		$char: "\E229";
+	}
+	@if $filename == uEC2B-system-code-small {
+		$char: "\E22A";
+	}
+	@if $filename == uEC2C-system-compare-large {
+		$char: "\E22B";
+	}
+	@if $filename == uEC2D-system-compare-small {
+		$char: "\E22C";
+	}
+	@if $filename == uEC2E-system-download-large {
+		$char: "\E22D";
+	}
+	@if $filename == uEC2F-system-download-small {
+		$char: "\E22E";
+	}
+	@if $filename == uEC30-system-facebook-large {
+		$char: "\E22F";
+	}
+	@if $filename == uEC31-system-facebook-small {
+		$char: "\E230";
+	}
+	@if $filename == uEC32-system-favorites-large {
+		$char: "\E231";
+	}
+	@if $filename == uEC33-system-favorites-small {
+		$char: "\E232";
+	}
+	@if $filename == uEC34-system-follow-large {
+		$char: "\E233";
+	}
+	@if $filename == uEC35-system-follow-small {
+		$char: "\E234";
+	}
+	@if $filename == uEC36-system-google-plus-large {
+		$char: "\E235";
+	}
+	@if $filename == uEC37-system-google-plus-small {
+		$char: "\E236";
+	}
+	@if $filename == uEC38-system-help-large {
+		$char: "\E237";
+	}
+	@if $filename == uEC39-system-help-small {
+		$char: "\E238";
+	}
+	@if $filename == uEC3A-system-info-large {
+		$char: "\E239";
+	}
+	@if $filename == uEC3B-system-info-small {
+		$char: "\E23A";
+	}
+	@if $filename == uEC3C-system-instagram-large {
+		$char: "\E23B";
+	}
+	@if $filename == uEC3D-system-instagram-small {
+		$char: "\E23C";
+	}
+	@if $filename == uEC3E-system-line-me-large {
+		$char: "\E23D";
+	}
+	@if $filename == uEC3F-system-line-me-small {
+		$char: "\E23E";
+	}
+	@if $filename == uEC40-system-linkedin-large {
+		$char: "\E23F";
+	}
+	@if $filename == uEC41-system-linkedin-small {
+		$char: "\E240";
+	}
+	@if $filename == uEC42-system-paragraph-large {
+		$char: "\E241";
+	}
+	@if $filename == uEC43-system-paragraph-small {
+		$char: "\E242";
+	}
+	@if $filename == uEC44-system-pause-large {
+		$char: "\E243";
+	}
+	@if $filename == uEC45-system-pause-small {
+		$char: "\E244";
+	}
+	@if $filename == uEC46-system-pinterest-large {
+		$char: "\E245";
+	}
+	@if $filename == uEC47-system-pinterest-small {
+		$char: "\E246";
+	}
+	@if $filename == uEC48-system-play-backwards-large {
+		$char: "\E247";
+	}
+	@if $filename == uEC49-system-play-backwards-small {
+		$char: "\E248";
+	}
+	@if $filename == uEC4A-system-play-large {
+		$char: "\E249";
+	}
+	@if $filename == uEC4B-system-play-small {
+		$char: "\E24A";
+	}
+	@if $filename == uEC4C-system-print-large {
+		$char: "\E24B";
+	}
+	@if $filename == uEC4D-system-print-small {
+		$char: "\E24C";
+	}
+	@if $filename == uEC4E-system-remove-large {
+		$char: "\E24D";
+	}
+	@if $filename == uEC4F-system-remove-small {
+		$char: "\E24E";
+	}
+	@if $filename == uEC50-system-replay-large {
+		$char: "\E24F";
+	}
+	@if $filename == uEC51-system-replay-small {
+		$char: "\E250";
+	}
+	@if $filename == uEC52-system-resize-decrease-large {
+		$char: "\E251";
+	}
+	@if $filename == uEC53-system-resize-decrease-small {
+		$char: "\E252";
+	}
+	@if $filename == uEC54-system-resize-increase-large {
+		$char: "\E253";
+	}
+	@if $filename == uEC55-system-resize-increase-small {
+		$char: "\E254";
+	}
+	@if $filename == uEC56-system-save-as-large {
+		$char: "\E255";
+	}
+	@if $filename == uEC57-system-save-as-small {
+		$char: "\E256";
+	}
+	@if $filename == uEC58-system-search-large {
+		$char: "\E257";
+	}
+	@if $filename == uEC59-system-search-small {
+		$char: "\E258";
+	}
+	@if $filename == uEC5A-system-select-large {
+		$char: "\E259";
+	}
+	@if $filename == uEC5B-system-select-small {
+		$char: "\E25A";
+	}
+	@if $filename == uEC5C-system-settings-large {
+		$char: "\E25B";
+	}
+	@if $filename == uEC5D-system-settings-small {
+		$char: "\E25C";
+	}
+	@if $filename == uEC5E-system-share-android-large {
+		$char: "\E25D";
+	}
+	@if $filename == uEC5F-system-share-android-small {
+		$char: "\E25E";
+	}
+	@if $filename == uEC60-system-share-large {
+		$char: "\E25F";
+	}
+	@if $filename == uEC61-system-share-small {
+		$char: "\E260";
+	}
+	@if $filename == uEC62-system-skip-next-large {
+		$char: "\E261";
+	}
+	@if $filename == uEC63-system-skip-next-small {
+		$char: "\E262";
+	}
+	@if $filename == uEC64-system-skip-previous-large {
+		$char: "\E263";
+	}
+	@if $filename == uEC65-system-skip-previous-small {
+		$char: "\E264";
+	}
+	@if $filename == uEC66-system-snapchat-large {
+		$char: "\E265";
+	}
+	@if $filename == uEC67-system-snapchat-small {
+		$char: "\E266";
+	}
+	@if $filename == uEC68-system-sync-large {
+		$char: "\E267";
+	}
+	@if $filename == uEC69-system-sync-small {
+		$char: "\E268";
+	}
+	@if $filename == uEC6A-system-twitter-large {
+		$char: "\E269";
+	}
+	@if $filename == uEC6B-system-twitter-small {
+		$char: "\E26A";
+	}
+	@if $filename == uEC6C-system-upload-large {
+		$char: "\E26B";
+	}
+	@if $filename == uEC6D-system-upload-small {
+		$char: "\E26C";
+	}
+	@if $filename == uEC6E-system-vimeo-large {
+		$char: "\E26D";
+	}
+	@if $filename == uEC6F-system-vimeo-small {
+		$char: "\E26E";
+	}
+	@if $filename == uEC70-system-wechat-large {
+		$char: "\E26F";
+	}
+	@if $filename == uEC71-system-wechat-small {
+		$char: "\E270";
+	}
+	@if $filename == uEC72-system-weibo-large {
+		$char: "\E271";
+	}
+	@if $filename == uEC73-system-weibo-small {
+		$char: "\E272";
+	}
+	@if $filename == uEC74-system-whatsapp-large {
+		$char: "\E273";
+	}
+	@if $filename == uEC75-system-whatsapp-small {
+		$char: "\E274";
+	}
+	@if $filename == uEC76-system-xing-large {
+		$char: "\E275";
+	}
+	@if $filename == uEC77-system-xing-small {
+		$char: "\E276";
+	}
+	@if $filename == uEC78-system-yelp-large {
+		$char: "\E277";
+	}
+	@if $filename == uEC79-system-yelp-small {
+		$char: "\E278";
+	}
+	@if $filename == uEC7A-system-youku-large {
+		$char: "\E279";
+	}
+	@if $filename == uEC7B-system-youku-small {
+		$char: "\E27A";
+	}
+	@if $filename == uEC7C-system-youtube-large {
+		$char: "\E27B";
+	}
+	@if $filename == uEC7D-system-youtube-small {
+		$char: "\E27C";
+	}
+	@if $filename == uEC7E-system-zhihu-large {
+		$char: "\E27D";
+	}
+	@if $filename == uEC7F-system-zhihu-small {
+		$char: "\E27E";
+	}
+	@if $filename == uEC80-tag-large {
+		$char: "\E27F";
+	}
+	@if $filename == uEC81-tag-small {
+		$char: "\E280";
+	}
+	@if $filename == uEC82-test-drive-large {
+		$char: "\E281";
+	}
+	@if $filename == uEC83-test-drive-small {
+		$char: "\E282";
+	}
+	@if $filename == uEC84-thumbs-down-large {
+		$char: "\E283";
+	}
+	@if $filename == uEC85-thumbs-down-small {
+		$char: "\E284";
+	}
+	@if $filename == uEC86-thumbs-up-large {
+		$char: "\E285";
+	}
+	@if $filename == uEC87-thumbs-up-small {
+		$char: "\E286";
+	}
+	@if $filename == uEC88-time-climate1-large {
+		$char: "\E287";
+	}
+	@if $filename == uEC89-time-climate1-small {
+		$char: "\E288";
+	}
+	@if $filename == uEC8A-time-climate2-large {
+		$char: "\E289";
+	}
+	@if $filename == uEC8B-time-climate2-small {
+		$char: "\E28A";
+	}
+	@if $filename == uEC8C-time-large {
+		$char: "\E28B";
+	}
+	@if $filename == uEC8D-time-long-large {
+		$char: "\E28C";
+	}
+	@if $filename == uEC8E-time-long-small {
+		$char: "\E28D";
+	}
+	@if $filename == uEC8F-time-middle-large {
+		$char: "\E28E";
+	}
+	@if $filename == uEC90-time-middle-small {
+		$char: "\E28F";
+	}
+	@if $filename == uEC91-time-short-large {
+		$char: "\E290";
+	}
+	@if $filename == uEC92-time-short-small {
+		$char: "\E291";
+	}
+	@if $filename == uEC93-time-small {
+		$char: "\E292";
+	}
+	@if $filename == uEC94-tire-battery-large {
+		$char: "\E293";
+	}
+	@if $filename == uEC95-tire-battery-small {
+		$char: "\E294";
+	}
+	@if $filename == uEC96-tire-large {
+		$char: "\E295";
+	}
+	@if $filename == uEC97-tire-sealant-large {
+		$char: "\E296";
+	}
+	@if $filename == uEC98-tire-sealant-small {
+		$char: "\E297";
+	}
+	@if $filename == uEC99-tire-small {
+		$char: "\E298";
+	}
+	@if $filename == uEC9A-top-speed-large {
+		$char: "\E299";
+	}
+	@if $filename == uEC9B-top-speed-small {
+		$char: "\E29A";
+	}
+	@if $filename == uEC9C-torque-large {
+		$char: "\E29B";
+	}
+	@if $filename == uEC9D-torque-small {
+		$char: "\E29C";
+	}
+	@if $filename == uEC9E-tour-large {
+		$char: "\E29D";
+	}
+	@if $filename == uEC9F-tour-small {
+		$char: "\E29E";
+	}
+	@if $filename == uECA0-traffic-large {
+		$char: "\E29F";
+	}
+	@if $filename == uECA1-traffic-sign-recognition-alert-large {
+		$char: "\E2A0";
+	}
+	@if $filename == uECA2-traffic-sign-recognition-alert-small {
+		$char: "\E2A1";
+	}
+	@if $filename == uECA3-traffic-sign-recognition-large {
+		$char: "\E2A2";
+	}
+	@if $filename == uECA4-traffic-sign-recognition-small {
+		$char: "\E2A3";
+	}
+	@if $filename == uECA5-traffic-small {
+		$char: "\E2A4";
+	}
+	@if $filename == uECA6-trailer-maneuver-large {
+		$char: "\E2A5";
+	}
+	@if $filename == uECA7-trailer-maneuver-small {
+		$char: "\E2A6";
+	}
+	@if $filename == uECA8-train-large {
+		$char: "\E2A7";
+	}
+	@if $filename == uECA9-train-small {
+		$char: "\E2A8";
+	}
+	@if $filename == uECAA-training-large {
+		$char: "\E2A9";
+	}
+	@if $filename == uECAB-training-small {
+		$char: "\E2AA";
+	}
+	@if $filename == uECAC-transmission-large {
+		$char: "\E2AB";
+	}
+	@if $filename == uECAD-transmission-small {
+		$char: "\E2AC";
+	}
+	@if $filename == uECAE-trunk-open-large {
+		$char: "\E2AD";
+	}
+	@if $filename == uECAF-trunk-open-small {
+		$char: "\E2AE";
+	}
+	@if $filename == uECB0-tube-large {
+		$char: "\E2AF";
+	}
+	@if $filename == uECB1-tube-small {
+		$char: "\E2B0";
+	}
+	@if $filename == uECB2-twitter-large {
+		$char: "\E2B1";
+	}
+	@if $filename == uECB3-twitter-small {
+		$char: "\E2B2";
+	}
+	@if $filename == uECB4-upload-large {
+		$char: "\E2B3";
+	}
+	@if $filename == uECB5-upload-small {
+		$char: "\E2B4";
+	}
+	@if $filename == uECB6-used-car-search-large {
+		$char: "\E2B5";
+	}
+	@if $filename == uECB7-used-car-search-small {
+		$char: "\E2B6";
+	}
+	@if $filename == uECB8-used-cars-large {
+		$char: "\E2B7";
+	}
+	@if $filename == uECB9-used-cars-small {
+		$char: "\E2B8";
+	}
+	@if $filename == uECBA-user-large {
+		$char: "\E2B9";
+	}
+	@if $filename == uECBB-user-small {
+		$char: "\E2BA";
+	}
+	@if $filename == uECBC-user-whole-body-large {
+		$char: "\E2BB";
+	}
+	@if $filename == uECBD-user-whole-body-small {
+		$char: "\E2BC";
+	}
+	@if $filename == uECBE-valet-parking-large {
+		$char: "\E2BD";
+	}
+	@if $filename == uECBF-valet-parking-small {
+		$char: "\E2BE";
+	}
+	@if $filename == uECC0-vehicle-signal-large {
+		$char: "\E2BF";
+	}
+	@if $filename == uECC1-vehicle-signal-small {
+		$char: "\E2C0";
+	}
+	@if $filename == uECC2-vehicle-wi-fi-1-large {
+		$char: "\E2C1";
+	}
+	@if $filename == uECC3-vehicle-wi-fi-1-small {
+		$char: "\E2C2";
+	}
+	@if $filename == uECC4-vehicle-wi-fi-2-large {
+		$char: "\E2C3";
+	}
+	@if $filename == uECC5-vehicle-wi-fi-2-small {
+		$char: "\E2C4";
+	}
+	@if $filename == uECC6-vehicle-wi-fi-3-large {
+		$char: "\E2C5";
+	}
+	@if $filename == uECC7-vehicle-wi-fi-3-small {
+		$char: "\E2C6";
+	}
+	@if $filename == uECC8-vehicle-wi-fi-4-large {
+		$char: "\E2C7";
+	}
+	@if $filename == uECC9-vehicle-wi-fi-4-small {
+		$char: "\E2C8";
+	}
+	@if $filename == uECCA-velocity-alert-large {
+		$char: "\E2C9";
+	}
+	@if $filename == uECCB-velocity-alert-small {
+		$char: "\E2CA";
+	}
+	@if $filename == uECCC-velocity-large {
+		$char: "\E2CB";
+	}
+	@if $filename == uECCD-velocity-small {
+		$char: "\E2CC";
+	}
+	@if $filename == uECCE-video-call-large {
+		$char: "\E2CD";
+	}
+	@if $filename == uECCF-video-call-small {
+		$char: "\E2CE";
+	}
+	@if $filename == uECD0-video-large {
+		$char: "\E2CF";
+	}
+	@if $filename == uECD1-video-small {
+		$char: "\E2D0";
+	}
+	@if $filename == uECD2-view-360-large {
+		$char: "\E2D1";
+	}
+	@if $filename == uECD3-view-360-small {
+		$char: "\E2D2";
+	}
+	@if $filename == uECD4-vimeo-large {
+		$char: "\E2D3";
+	}
+	@if $filename == uECD5-vimeo-small {
+		$char: "\E2D4";
+	}
+	@if $filename == uECD6-voice-call-1-large {
+		$char: "\E2D5";
+	}
+	@if $filename == uECD7-voice-call-1-small {
+		$char: "\E2D6";
+	}
+	@if $filename == uECD8-voice-call-2-large {
+		$char: "\E2D7";
+	}
+	@if $filename == uECD9-voice-call-2-small {
+		$char: "\E2D8";
+	}
+	@if $filename == uECDA-voice-call-3-large {
+		$char: "\E2D9";
+	}
+	@if $filename == uECDB-voice-call-3-small {
+		$char: "\E2DA";
+	}
+	@if $filename == uECDC-voice-call-large {
+		$char: "\E2DB";
+	}
+	@if $filename == uECDD-voice-call-small {
+		$char: "\E2DC";
+	}
+	@if $filename == uECDE-walk-large {
+		$char: "\E2DD";
+	}
+	@if $filename == uECDF-walk-small {
+		$char: "\E2DE";
+	}
+	@if $filename == uECE0-wallbox-large {
+		$char: "\E2DF";
+	}
+	@if $filename == uECE1-wallbox-small {
+		$char: "\E2E0";
+	}
+	@if $filename == uECE2-warranty-large {
+		$char: "\E2E1";
+	}
+	@if $filename == uECE3-warranty-small {
+		$char: "\E2E2";
+	}
+	@if $filename == uECE4-weblink-large {
+		$char: "\E2E3";
+	}
+	@if $filename == uECE5-weblink-small {
+		$char: "\E2E4";
+	}
+	@if $filename == uECE6-wechat-large {
+		$char: "\E2E5";
+	}
+	@if $filename == uECE7-wechat-small {
+		$char: "\E2E6";
+	}
+	@if $filename == uECE8-weibo-large {
+		$char: "\E2E7";
+	}
+	@if $filename == uECE9-weibo-small {
+		$char: "\E2E8";
+	}
+	@if $filename == uECEA-whatsapp-large {
+		$char: "\E2E9";
+	}
+	@if $filename == uECEB-whatsapp-small {
+		$char: "\E2EA";
+	}
+	@if $filename == uECEC-work-large {
+		$char: "\E2EB";
+	}
+	@if $filename == uECED-work-small {
+		$char: "\E2EC";
+	}
+	@if $filename == uECEE-xing-large {
+		$char: "\E2ED";
+	}
+	@if $filename == uECEF-xing-small {
+		$char: "\E2EE";
+	}
+	@if $filename == uECF0-yelp-large {
+		$char: "\E2EF";
+	}
+	@if $filename == uECF1-yelp-small {
+		$char: "\E2F0";
+	}
+	@if $filename == uECF2-youku-large {
+		$char: "\E2F1";
+	}
+	@if $filename == uECF3-youku-small {
+		$char: "\E2F2";
+	}
+	@if $filename == uECF4-youtube-large {
+		$char: "\E2F3";
+	}
+	@if $filename == uECF5-youtube-small {
+		$char: "\E2F4";
+	}
+	@if $filename == uECF6-zhihu-large {
+		$char: "\E2F5";
+	}
+	@if $filename == uECF7-zhihu-small {
+		$char: "\E2F6";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-uEA02-adblue-alert-large {
+	@include icon(uEA02-adblue-alert-large);
+}
+.icon-uEA03-adblue-alert-small {
+	@include icon(uEA03-adblue-alert-small);
+}
+.icon-uEA04-adblue-large {
+	@include icon(uEA04-adblue-large);
+}
+.icon-uEA05-adblue-small {
+	@include icon(uEA05-adblue-small);
+}
+.icon-uEA06-address-book-large {
+	@include icon(uEA06-address-book-large);
+}
+.icon-uEA07-address-book-small {
+	@include icon(uEA07-address-book-small);
+}
+.icon-uEA08-administrator-large {
+	@include icon(uEA08-administrator-large);
+}
+.icon-uEA09-administrator-small {
+	@include icon(uEA09-administrator-small);
+}
+.icon-uEA0A-air-filter-large {
+	@include icon(uEA0A-air-filter-large);
+}
+.icon-uEA0B-air-filter-small {
+	@include icon(uEA0B-air-filter-small);
+}
+.icon-uEA0C-announcements-large {
+	@include icon(uEA0C-announcements-large);
+}
+.icon-uEA0D-announcements-small {
+	@include icon(uEA0D-announcements-small);
+}
+.icon-uEA0E-anti-theft-alarm-system-alert-large {
+	@include icon(uEA0E-anti-theft-alarm-system-alert-large);
+}
+.icon-uEA0F-anti-theft-alarm-system-alert-small {
+	@include icon(uEA0F-anti-theft-alarm-system-alert-small);
+}
+.icon-uEA10-anti-theft-alarm-system-large {
+	@include icon(uEA10-anti-theft-alarm-system-large);
+}
+.icon-uEA11-anti-theft-alarm-system-small {
+	@include icon(uEA11-anti-theft-alarm-system-small);
+}
+.icon-uEA12-apps-large {
+	@include icon(uEA12-apps-large);
+}
+.icon-uEA13-apps-small {
+	@include icon(uEA13-apps-small);
+}
+.icon-uEA14-arrow-down-large {
+	@include icon(uEA14-arrow-down-large);
+}
+.icon-uEA15-arrow-down-small {
+	@include icon(uEA15-arrow-down-small);
+}
+.icon-uEA16-arrow-left-light-large {
+	@include icon(uEA16-arrow-left-light-large);
+}
+.icon-uEA17-arrow-left-light-small {
+	@include icon(uEA17-arrow-left-light-small);
+}
+.icon-uEA18-arrow-left-normal-large {
+	@include icon(uEA18-arrow-left-normal-large);
+}
+.icon-uEA19-arrow-left-normal-small {
+	@include icon(uEA19-arrow-left-normal-small);
+}
+.icon-uEA1A-arrow-left-sharp-large {
+	@include icon(uEA1A-arrow-left-sharp-large);
+}
+.icon-uEA1B-arrow-left-sharp-small {
+	@include icon(uEA1B-arrow-left-sharp-small);
+}
+.icon-uEA1C-arrow-left-u-turn-large {
+	@include icon(uEA1C-arrow-left-u-turn-large);
+}
+.icon-uEA1D-arrow-left-u-turn-small {
+	@include icon(uEA1D-arrow-left-u-turn-small);
+}
+.icon-uEA1E-arrow-right-light-large {
+	@include icon(uEA1E-arrow-right-light-large);
+}
+.icon-uEA1F-arrow-right-light-small {
+	@include icon(uEA1F-arrow-right-light-small);
+}
+.icon-uEA20-arrow-right-normal-large {
+	@include icon(uEA20-arrow-right-normal-large);
+}
+.icon-uEA21-arrow-right-normal-small {
+	@include icon(uEA21-arrow-right-normal-small);
+}
+.icon-uEA22-arrow-right-sharp-large {
+	@include icon(uEA22-arrow-right-sharp-large);
+}
+.icon-uEA23-arrow-right-sharp-small {
+	@include icon(uEA23-arrow-right-sharp-small);
+}
+.icon-uEA24-arrow-right-u-turn-large {
+	@include icon(uEA24-arrow-right-u-turn-large);
+}
+.icon-uEA25-arrow-right-u-turn-small {
+	@include icon(uEA25-arrow-right-u-turn-small);
+}
+.icon-uEA26-arrow-straight-down-large {
+	@include icon(uEA26-arrow-straight-down-large);
+}
+.icon-uEA27-arrow-straight-down-small {
+	@include icon(uEA27-arrow-straight-down-small);
+}
+.icon-uEA28-arrow-straight-up-large {
+	@include icon(uEA28-arrow-straight-up-large);
+}
+.icon-uEA29-arrow-straight-up-small {
+	@include icon(uEA29-arrow-straight-up-small);
+}
+.icon-uEA2A-arrow-up-large {
+	@include icon(uEA2A-arrow-up-large);
+}
+.icon-uEA2B-arrow-up-small {
+	@include icon(uEA2B-arrow-up-small);
+}
+.icon-uEA2C-audio-volume-large {
+	@include icon(uEA2C-audio-volume-large);
+}
+.icon-uEA2D-audio-volume-small {
+	@include icon(uEA2D-audio-volume-small);
+}
+.icon-uEA2E-aupeo-large {
+	@include icon(uEA2E-aupeo-large);
+}
+.icon-uEA2F-aupeo-small {
+	@include icon(uEA2F-aupeo-small);
+}
+.icon-uEA30-back-large {
+	@include icon(uEA30-back-large);
+}
+.icon-uEA31-back-small {
+	@include icon(uEA31-back-small);
+}
+.icon-uEA32-battery-large {
+	@include icon(uEA32-battery-large);
+}
+.icon-uEA33-battery-small {
+	@include icon(uEA33-battery-small);
+}
+.icon-uEA34-blog-post-large {
+	@include icon(uEA34-blog-post-large);
+}
+.icon-uEA35-blog-post-small {
+	@include icon(uEA35-blog-post-small);
+}
+.icon-uEA36-bonnet-open-large {
+	@include icon(uEA36-bonnet-open-large);
+}
+.icon-uEA37-bonnet-open-small {
+	@include icon(uEA37-bonnet-open-small);
+}
+.icon-uEA38-bookmark-large {
+	@include icon(uEA38-bookmark-large);
+}
+.icon-uEA39-bookmark-small {
+	@include icon(uEA39-bookmark-small);
+}
+.icon-uEA3A-brake-fluid-large {
+	@include icon(uEA3A-brake-fluid-large);
+}
+.icon-uEA3B-brake-fluid-small {
+	@include icon(uEA3B-brake-fluid-small);
+}
+.icon-uEA3C-brake-pad-alert-large {
+	@include icon(uEA3C-brake-pad-alert-large);
+}
+.icon-uEA3D-brake-pad-alert-small {
+	@include icon(uEA3D-brake-pad-alert-small);
+}
+.icon-uEA3E-brake-pad-large {
+	@include icon(uEA3E-brake-pad-large);
+}
+.icon-uEA3F-brake-pad-small {
+	@include icon(uEA3F-brake-pad-small);
+}
+.icon-uEA40-break-large {
+	@include icon(uEA40-break-large);
+}
+.icon-uEA41-break-small {
+	@include icon(uEA41-break-small);
+}
+.icon-uEA42-brush-large {
+	@include icon(uEA42-brush-large);
+}
+.icon-uEA43-brush-small {
+	@include icon(uEA43-brush-small);
+}
+.icon-uEA44-business-address-large {
+	@include icon(uEA44-business-address-large);
+}
+.icon-uEA45-business-address-small {
+	@include icon(uEA45-business-address-small);
+}
+.icon-uEA46-business-customer-large {
+	@include icon(uEA46-business-customer-large);
+}
+.icon-uEA47-business-customer-small {
+	@include icon(uEA47-business-customer-small);
+}
+.icon-uEA48-calculator-large {
+	@include icon(uEA48-calculator-large);
+}
+.icon-uEA49-calculator-small {
+	@include icon(uEA49-calculator-small);
+}
+.icon-uEA4A-calendar-events-large {
+	@include icon(uEA4A-calendar-events-large);
+}
+.icon-uEA4B-calendar-events-small {
+	@include icon(uEA4B-calendar-events-small);
+}
+.icon-uEA4C-camera-large {
+	@include icon(uEA4C-camera-large);
+}
+.icon-uEA4D-camera-small {
+	@include icon(uEA4D-camera-small);
+}
+.icon-uEA4E-cancel-large {
+	@include icon(uEA4E-cancel-large);
+}
+.icon-uEA4F-cancel-small {
+	@include icon(uEA4F-cancel-small);
+}
+.icon-uEA50-car-dimensions-large {
+	@include icon(uEA50-car-dimensions-large);
+}
+.icon-uEA51-car-dimensions-small {
+	@include icon(uEA51-car-dimensions-small);
+}
+.icon-uEA52-car-handover-large {
+	@include icon(uEA52-car-handover-large);
+}
+.icon-uEA53-car-handover-small {
+	@include icon(uEA53-car-handover-small);
+}
+.icon-uEA54-car-large {
+	@include icon(uEA54-car-large);
+}
+.icon-uEA55-car-search-large {
+	@include icon(uEA55-car-search-large);
+}
+.icon-uEA56-car-search-small {
+	@include icon(uEA56-car-search-small);
+}
+.icon-uEA57-car-small {
+	@include icon(uEA57-car-small);
+}
+.icon-uEA58-catalogue-large {
+	@include icon(uEA58-catalogue-large);
+}
+.icon-uEA59-catalogue-small {
+	@include icon(uEA59-catalogue-small);
+}
+.icon-uEA5A-caution-large {
+	@include icon(uEA5A-caution-large);
+}
+.icon-uEA5B-caution-small {
+	@include icon(uEA5B-caution-small);
+}
+.icon-uEA5C-charge-level-large {
+	@include icon(uEA5C-charge-level-large);
+}
+.icon-uEA5D-charge-level-small {
+	@include icon(uEA5D-charge-level-small);
+}
+.icon-uEA5E-charging-large {
+	@include icon(uEA5E-charging-large);
+}
+.icon-uEA5F-charging-plate-large {
+	@include icon(uEA5F-charging-plate-large);
+}
+.icon-uEA60-charging-plate-small {
+	@include icon(uEA60-charging-plate-small);
+}
+.icon-uEA61-charging-small {
+	@include icon(uEA61-charging-small);
+}
+.icon-uEA62-charging-station-large {
+	@include icon(uEA62-charging-station-large);
+}
+.icon-uEA63-charging-station-small {
+	@include icon(uEA63-charging-station-small);
+}
+.icon-uEA64-city-large {
+	@include icon(uEA64-city-large);
+}
+.icon-uEA65-city-small {
+	@include icon(uEA65-city-small);
+}
+.icon-uEA66-climate-auto-large {
+	@include icon(uEA66-climate-auto-large);
+}
+.icon-uEA67-climate-auto-small {
+	@include icon(uEA67-climate-auto-small);
+}
+.icon-uEA68-climate-electric-large {
+	@include icon(uEA68-climate-electric-large);
+}
+.icon-uEA69-climate-electric-small {
+	@include icon(uEA69-climate-electric-small);
+}
+.icon-uEA6A-climate-large {
+	@include icon(uEA6A-climate-large);
+}
+.icon-uEA6B-climate-small {
+	@include icon(uEA6B-climate-small);
+}
+.icon-uEA6C-clothing-large {
+	@include icon(uEA6C-clothing-large);
+}
+.icon-uEA6D-clothing-small {
+	@include icon(uEA6D-clothing-small);
+}
+.icon-uEA6E-co2-emission-large {
+	@include icon(uEA6E-co2-emission-large);
+}
+.icon-uEA6F-co2-emission-small {
+	@include icon(uEA6F-co2-emission-small);
+}
+.icon-uEA70-code-large {
+	@include icon(uEA70-code-large);
+}
+.icon-uEA71-code-small {
+	@include icon(uEA71-code-small);
+}
+.icon-uEA72-collapsed-tabs-large {
+	@include icon(uEA72-collapsed-tabs-large);
+}
+.icon-uEA73-collapsed-tabs-small {
+	@include icon(uEA73-collapsed-tabs-small);
+}
+.icon-uEA74-commute-large {
+	@include icon(uEA74-commute-large);
+}
+.icon-uEA75-commute-small {
+	@include icon(uEA75-commute-small);
+}
+.icon-uEA76-compare-large {
+	@include icon(uEA76-compare-large);
+}
+.icon-uEA77-compare-small {
+	@include icon(uEA77-compare-small);
+}
+.icon-uEA78-compass-large {
+	@include icon(uEA78-compass-large);
+}
+.icon-uEA79-compass-small {
+	@include icon(uEA79-compass-small);
+}
+.icon-uEA7A-connect-key-large {
+	@include icon(uEA7A-connect-key-large);
+}
+.icon-uEA7B-connect-key-small {
+	@include icon(uEA7B-connect-key-small);
+}
+.icon-uEA7C-consumption-large {
+	@include icon(uEA7C-consumption-large);
+}
+.icon-uEA7D-consumption-small {
+	@include icon(uEA7D-consumption-small);
+}
+.icon-uEA7E-content-activities-large {
+	@include icon(uEA7E-content-activities-large);
+}
+.icon-uEA7F-content-activities-small {
+	@include icon(uEA7F-content-activities-small);
+}
+.icon-uEA80-copy-large {
+	@include icon(uEA80-copy-large);
+}
+.icon-uEA81-copy-small {
+	@include icon(uEA81-copy-small);
+}
+.icon-uEA82-country-large {
+	@include icon(uEA82-country-large);
+}
+.icon-uEA83-country-small {
+	@include icon(uEA83-country-small);
+}
+.icon-uEA84-credit-card-large {
+	@include icon(uEA84-credit-card-large);
+}
+.icon-uEA85-credit-card-small {
+	@include icon(uEA85-credit-card-small);
+}
+.icon-uEA86-cross-traffic-assist-rear-large {
+	@include icon(uEA86-cross-traffic-assist-rear-large);
+}
+.icon-uEA87-cross-traffic-assist-rear-small {
+	@include icon(uEA87-cross-traffic-assist-rear-small);
+}
+.icon-uEA88-cubic-capacity-large {
+	@include icon(uEA88-cubic-capacity-large);
+}
+.icon-uEA89-cubic-capacity-small {
+	@include icon(uEA89-cubic-capacity-small);
+}
+.icon-uEA8A-damper-large {
+	@include icon(uEA8A-damper-large);
+}
+.icon-uEA8B-damper-small {
+	@include icon(uEA8B-damper-small);
+}
+.icon-uEA8C-dashboard-large {
+	@include icon(uEA8C-dashboard-large);
+}
+.icon-uEA8D-dashboard-small {
+	@include icon(uEA8D-dashboard-small);
+}
+.icon-uEA8E-dealer-request-large {
+	@include icon(uEA8E-dealer-request-large);
+}
+.icon-uEA8F-dealer-request-small {
+	@include icon(uEA8F-dealer-request-small);
+}
+.icon-uEA90-dealer-search-large {
+	@include icon(uEA90-dealer-search-large);
+}
+.icon-uEA91-dealer-search-small {
+	@include icon(uEA91-dealer-search-small);
+}
+.icon-uEA92-diagnostics-large {
+	@include icon(uEA92-diagnostics-large);
+}
+.icon-uEA93-diagnostics-small {
+	@include icon(uEA93-diagnostics-small);
+}
+.icon-uEA94-direct-mail-large {
+	@include icon(uEA94-direct-mail-large);
+}
+.icon-uEA95-direct-mail-small {
+	@include icon(uEA95-direct-mail-small);
+}
+.icon-uEA96-discussion-large {
+	@include icon(uEA96-discussion-large);
+}
+.icon-uEA97-discussion-small {
+	@include icon(uEA97-discussion-small);
+}
+.icon-uEA98-display-large {
+	@include icon(uEA98-display-large);
+}
+.icon-uEA99-display-small {
+	@include icon(uEA99-display-small);
+}
+.icon-uEA9A-distance-large {
+	@include icon(uEA9A-distance-large);
+}
+.icon-uEA9B-distance-small {
+	@include icon(uEA9B-distance-small);
+}
+.icon-uEA9C-document-pdf-large {
+	@include icon(uEA9C-document-pdf-large);
+}
+.icon-uEA9D-document-pdf-small {
+	@include icon(uEA9D-document-pdf-small);
+}
+.icon-uEA9E-document-pricelist-dollar-large {
+	@include icon(uEA9E-document-pricelist-dollar-large);
+}
+.icon-uEA9F-document-pricelist-dollar-small {
+	@include icon(uEA9F-document-pricelist-dollar-small);
+}
+.icon-uEAA0-document-pricelist-euro-large {
+	@include icon(uEAA0-document-pricelist-euro-large);
+}
+.icon-uEAA1-document-pricelist-euro-small {
+	@include icon(uEAA1-document-pricelist-euro-small);
+}
+.icon-uEAA2-document-taxation-large {
+	@include icon(uEAA2-document-taxation-large);
+}
+.icon-uEAA3-document-taxation-small {
+	@include icon(uEAA3-document-taxation-small);
+}
+.icon-uEAA4-documents-large {
+	@include icon(uEAA4-documents-large);
+}
+.icon-uEAA5-documents-small {
+	@include icon(uEAA5-documents-small);
+}
+.icon-uEAA6-door-open-large {
+	@include icon(uEAA6-door-open-large);
+}
+.icon-uEAA7-door-open-small {
+	@include icon(uEAA7-door-open-small);
+}
+.icon-uEAA8-download-large {
+	@include icon(uEAA8-download-large);
+}
+.icon-uEAA9-download-small {
+	@include icon(uEAA9-download-small);
+}
+.icon-uEAAA-drive-belt-large {
+	@include icon(uEAAA-drive-belt-large);
+}
+.icon-uEAAB-drive-belt-small {
+	@include icon(uEAAB-drive-belt-small);
+}
+.icon-uEAAC-eco-cycle-large {
+	@include icon(uEAAC-eco-cycle-large);
+}
+.icon-uEAAD-eco-cycle-small {
+	@include icon(uEAAD-eco-cycle-small);
+}
+.icon-uEAAE-eco-friendly-large {
+	@include icon(uEAAE-eco-friendly-large);
+}
+.icon-uEAAF-eco-friendly-small {
+	@include icon(uEAAF-eco-friendly-small);
+}
+.icon-uEAB0-edit-large {
+	@include icon(uEAB0-edit-large);
+}
+.icon-uEAB1-edit-small {
+	@include icon(uEAB1-edit-small);
+}
+.icon-uEAB2-editorial-large {
+	@include icon(uEAB2-editorial-large);
+}
+.icon-uEAB3-editorial-small {
+	@include icon(uEAB3-editorial-small);
+}
+.icon-uEAB4-electric-range-large {
+	@include icon(uEAB4-electric-range-large);
+}
+.icon-uEAB5-electric-range-small {
+	@include icon(uEAB5-electric-range-small);
+}
+.icon-uEAB6-energy-green-large {
+	@include icon(uEAB6-energy-green-large);
+}
+.icon-uEAB7-energy-green-small {
+	@include icon(uEAB7-energy-green-small);
+}
+.icon-uEAB8-engine-large {
+	@include icon(uEAB8-engine-large);
+}
+.icon-uEAB9-engine-small {
+	@include icon(uEAB9-engine-small);
+}
+.icon-uEABA-erase-large {
+	@include icon(uEABA-erase-large);
+}
+.icon-uEABB-erase-small {
+	@include icon(uEABB-erase-small);
+}
+.icon-uEABC-external-link-large {
+	@include icon(uEABC-external-link-large);
+}
+.icon-uEABD-external-link-small {
+	@include icon(uEABD-external-link-small);
+}
+.icon-uEABE-eye-crossed-large {
+	@include icon(uEABE-eye-crossed-large);
+}
+.icon-uEABF-eye-crossed-small {
+	@include icon(uEABF-eye-crossed-small);
+}
+.icon-uEAC0-eye-large {
+	@include icon(uEAC0-eye-large);
+}
+.icon-uEAC1-eye-small {
+	@include icon(uEAC1-eye-small);
+}
+.icon-uEAC2-facebook-large {
+	@include icon(uEAC2-facebook-large);
+}
+.icon-uEAC3-facebook-small {
+	@include icon(uEAC3-facebook-small);
+}
+.icon-uEAC4-factory-large {
+	@include icon(uEAC4-factory-large);
+}
+.icon-uEAC5-factory-small {
+	@include icon(uEAC5-factory-small);
+}
+.icon-uEAC6-favorite-filled-large {
+	@include icon(uEAC6-favorite-filled-large);
+}
+.icon-uEAC7-favorite-filled-small {
+	@include icon(uEAC7-favorite-filled-small);
+}
+.icon-uEAC8-favorite-large {
+	@include icon(uEAC8-favorite-large);
+}
+.icon-uEAC9-favorite-small {
+	@include icon(uEAC9-favorite-small);
+}
+.icon-uEACA-feature-on-demand-large {
+	@include icon(uEACA-feature-on-demand-large);
+}
+.icon-uEACB-feature-on-demand-small {
+	@include icon(uEACB-feature-on-demand-small);
+}
+.icon-uEACC-feed-large {
+	@include icon(uEACC-feed-large);
+}
+.icon-uEACD-feed-small {
+	@include icon(uEACD-feed-small);
+}
+.icon-uEACE-filter-large {
+	@include icon(uEACE-filter-large);
+}
+.icon-uEACF-filter-small {
+	@include icon(uEACF-filter-small);
+}
+.icon-uEAD0-financial-services-large {
+	@include icon(uEAD0-financial-services-large);
+}
+.icon-uEAD1-financial-services-small {
+	@include icon(uEAD1-financial-services-small);
+}
+.icon-uEAD2-first-aid-large {
+	@include icon(uEAD2-first-aid-large);
+}
+.icon-uEAD3-first-aid-small {
+	@include icon(uEAD3-first-aid-small);
+}
+.icon-uEAD4-flashlight-large {
+	@include icon(uEAD4-flashlight-large);
+}
+.icon-uEAD5-flashlight-small {
+	@include icon(uEAD5-flashlight-small);
+}
+.icon-uEAD6-forward-large {
+	@include icon(uEAD6-forward-large);
+}
+.icon-uEAD7-forward-small {
+	@include icon(uEAD7-forward-small);
+}
+.icon-uEAD8-fuel-range-large {
+	@include icon(uEAD8-fuel-range-large);
+}
+.icon-uEAD9-fuel-range-small {
+	@include icon(uEAD9-fuel-range-small);
+}
+.icon-uEADA-fuel-station-large {
+	@include icon(uEADA-fuel-station-large);
+}
+.icon-uEADB-fuel-station-small {
+	@include icon(uEADB-fuel-station-small);
+}
+.icon-uEADC-gas-station-large {
+	@include icon(uEADC-gas-station-large);
+}
+.icon-uEADD-gas-station-small {
+	@include icon(uEADD-gas-station-small);
+}
+.icon-uEADE-geofence-alert-large {
+	@include icon(uEADE-geofence-alert-large);
+}
+.icon-uEADF-geofence-alert-small {
+	@include icon(uEADF-geofence-alert-small);
+}
+.icon-uEAE0-geofence-large {
+	@include icon(uEAE0-geofence-large);
+}
+.icon-uEAE1-geofence-small {
+	@include icon(uEAE1-geofence-small);
+}
+.icon-uEAE2-gift-large {
+	@include icon(uEAE2-gift-large);
+}
+.icon-uEAE3-gift-small {
+	@include icon(uEAE3-gift-small);
+}
+.icon-uEAE4-google-plus-large {
+	@include icon(uEAE4-google-plus-large);
+}
+.icon-uEAE5-google-plus-small {
+	@include icon(uEAE5-google-plus-small);
+}
+.icon-uEAE6-gps-large {
+	@include icon(uEAE6-gps-large);
+}
+.icon-uEAE7-gps-small {
+	@include icon(uEAE7-gps-small);
+}
+.icon-uEAE8-grab-large {
+	@include icon(uEAE8-grab-large);
+}
+.icon-uEAE9-grab-small {
+	@include icon(uEAE9-grab-small);
+}
+.icon-uEAEA-group-discussion-large {
+	@include icon(uEAEA-group-discussion-large);
+}
+.icon-uEAEB-group-discussion-small {
+	@include icon(uEAEB-group-discussion-small);
+}
+.icon-uEAEC-groups-large {
+	@include icon(uEAEC-groups-large);
+}
+.icon-uEAED-groups-small {
+	@include icon(uEAED-groups-small);
+}
+.icon-uEAEE-handshake-large {
+	@include icon(uEAEE-handshake-large);
+}
+.icon-uEAEF-handshake-small {
+	@include icon(uEAEF-handshake-small);
+}
+.icon-uEAF0-history-large {
+	@include icon(uEAF0-history-large);
+}
+.icon-uEAF1-history-small {
+	@include icon(uEAF1-history-small);
+}
+.icon-uEAF2-home-large {
+	@include icon(uEAF2-home-large);
+}
+.icon-uEAF3-home-small {
+	@include icon(uEAF3-home-small);
+}
+.icon-uEAF4-honk-and-flash-large {
+	@include icon(uEAF4-honk-and-flash-large);
+}
+.icon-uEAF5-honk-and-flash-small {
+	@include icon(uEAF5-honk-and-flash-small);
+}
+.icon-uEAF6-honk-large {
+	@include icon(uEAF6-honk-large);
+}
+.icon-uEAF7-honk-small {
+	@include icon(uEAF7-honk-small);
+}
+.icon-uEAF8-hotline-large {
+	@include icon(uEAF8-hotline-large);
+}
+.icon-uEAF9-hotline-small {
+	@include icon(uEAF9-hotline-small);
+}
+.icon-uEAFA-idea-large {
+	@include icon(uEAFA-idea-large);
+}
+.icon-uEAFB-idea-small {
+	@include icon(uEAFB-idea-small);
+}
+.icon-uEAFC-indicators-large {
+	@include icon(uEAFC-indicators-large);
+}
+.icon-uEAFD-indicators-small {
+	@include icon(uEAFD-indicators-small);
+}
+.icon-uEAFE-inspection-large {
+	@include icon(uEAFE-inspection-large);
+}
+.icon-uEAFF-inspection-small {
+	@include icon(uEAFF-inspection-small);
+}
+.icon-uEB00-instagram-large {
+	@include icon(uEB00-instagram-large);
+}
+.icon-uEB01-instagram-small {
+	@include icon(uEB01-instagram-small);
+}
+.icon-uEB02-interior-configuration-large {
+	@include icon(uEB02-interior-configuration-large);
+}
+.icon-uEB03-interior-configuration-small {
+	@include icon(uEB03-interior-configuration-small);
+}
+.icon-uEB04-languages-large {
+	@include icon(uEB04-languages-large);
+}
+.icon-uEB05-languages-small {
+	@include icon(uEB05-languages-small);
+}
+.icon-uEB06-laptop-large {
+	@include icon(uEB06-laptop-large);
+}
+.icon-uEB07-laptop-small {
+	@include icon(uEB07-laptop-small);
+}
+.icon-uEB08-lights-crossed-large {
+	@include icon(uEB08-lights-crossed-large);
+}
+.icon-uEB09-lights-crossed-small {
+	@include icon(uEB09-lights-crossed-small);
+}
+.icon-uEB0A-lights-day-large {
+	@include icon(uEB0A-lights-day-large);
+}
+.icon-uEB0B-lights-day-small {
+	@include icon(uEB0B-lights-day-small);
+}
+.icon-uEB0C-lights-dim-large {
+	@include icon(uEB0C-lights-dim-large);
+}
+.icon-uEB0D-lights-dim-small {
+	@include icon(uEB0D-lights-dim-small);
+}
+.icon-uEB0E-lights-full-beam-large {
+	@include icon(uEB0E-lights-full-beam-large);
+}
+.icon-uEB0F-lights-full-beam-small {
+	@include icon(uEB0F-lights-full-beam-small);
+}
+.icon-uEB10-lights-led-large {
+	@include icon(uEB10-lights-led-large);
+}
+.icon-uEB11-lights-led-small {
+	@include icon(uEB11-lights-led-small);
+}
+.icon-uEB12-lights-xenon-large {
+	@include icon(uEB12-lights-xenon-large);
+}
+.icon-uEB13-lights-xenon-small {
+	@include icon(uEB13-lights-xenon-small);
+}
+.icon-uEB14-line-large {
+	@include icon(uEB14-line-large);
+}
+.icon-uEB15-line-me-large {
+	@include icon(uEB15-line-me-large);
+}
+.icon-uEB16-line-me-small {
+	@include icon(uEB16-line-me-small);
+}
+.icon-uEB17-line-small {
+	@include icon(uEB17-line-small);
+}
+.icon-uEB18-linkedin-large {
+	@include icon(uEB18-linkedin-large);
+}
+.icon-uEB19-linkedin-small {
+	@include icon(uEB19-linkedin-small);
+}
+.icon-uEB1A-list-large {
+	@include icon(uEB1A-list-large);
+}
+.icon-uEB1B-list-small {
+	@include icon(uEB1B-list-small);
+}
+.icon-uEB1C-lock-large {
+	@include icon(uEB1C-lock-large);
+}
+.icon-uEB1D-lock-small {
+	@include icon(uEB1D-lock-small);
+}
+.icon-uEB1E-lock-unlock-large {
+	@include icon(uEB1E-lock-unlock-large);
+}
+.icon-uEB1F-lock-unlock-small {
+	@include icon(uEB1F-lock-unlock-small);
+}
+.icon-uEB20-logbook-large {
+	@include icon(uEB20-logbook-large);
+}
+.icon-uEB21-logbook-small {
+	@include icon(uEB21-logbook-small);
+}
+.icon-uEB22-login-large {
+	@include icon(uEB22-login-large);
+}
+.icon-uEB23-login-small {
+	@include icon(uEB23-login-small);
+}
+.icon-uEB24-logout-large {
+	@include icon(uEB24-logout-large);
+}
+.icon-uEB25-logout-small {
+	@include icon(uEB25-logout-small);
+}
+.icon-uEB26-loose-wheel-indicator-large {
+	@include icon(uEB26-loose-wheel-indicator-large);
+}
+.icon-uEB27-loose-wheel-indicator-small {
+	@include icon(uEB27-loose-wheel-indicator-small);
+}
+.icon-uEB28-main-user-large {
+	@include icon(uEB28-main-user-large);
+}
+.icon-uEB29-main-user-small {
+	@include icon(uEB29-main-user-small);
+}
+.icon-uEB2A-maintenance-large {
+	@include icon(uEB2A-maintenance-large);
+}
+.icon-uEB2B-maintenance-small {
+	@include icon(uEB2B-maintenance-small);
+}
+.icon-uEB2C-maneuvering-assist-large {
+	@include icon(uEB2C-maneuvering-assist-large);
+}
+.icon-uEB2D-maneuvering-assist-small {
+	@include icon(uEB2D-maneuvering-assist-small);
+}
+.icon-uEB2E-map-layer-large {
+	@include icon(uEB2E-map-layer-large);
+}
+.icon-uEB2F-map-layer-small {
+	@include icon(uEB2F-map-layer-small);
+}
+.icon-uEB30-merchandise-large {
+	@include icon(uEB30-merchandise-large);
+}
+.icon-uEB31-merchandise-small {
+	@include icon(uEB31-merchandise-small);
+}
+.icon-uEB32-microphone-off-large {
+	@include icon(uEB32-microphone-off-large);
+}
+.icon-uEB33-microphone-off-small {
+	@include icon(uEB33-microphone-off-small);
+}
+.icon-uEB34-microphone-on-large {
+	@include icon(uEB34-microphone-on-large);
+}
+.icon-uEB35-microphone-on-small {
+	@include icon(uEB35-microphone-on-small);
+}
+.icon-uEB36-mileage-large {
+	@include icon(uEB36-mileage-large);
+}
+.icon-uEB37-mileage-small {
+	@include icon(uEB37-mileage-small);
+}
+.icon-uEB38-mmi-large {
+	@include icon(uEB38-mmi-large);
+}
+.icon-uEB39-mmi-small {
+	@include icon(uEB39-mmi-small);
+}
+.icon-uEB3A-mobile-phone-large {
+	@include icon(uEB3A-mobile-phone-large);
+}
+.icon-uEB3B-mobile-phone-small {
+	@include icon(uEB3B-mobile-phone-small);
+}
+.icon-uEB3C-more-large {
+	@include icon(uEB3C-more-large);
+}
+.icon-uEB3D-more-small {
+	@include icon(uEB3D-more-small);
+}
+.icon-uEB3E-motorway-large {
+	@include icon(uEB3E-motorway-large);
+}
+.icon-uEB3F-motorway-small {
+	@include icon(uEB3F-motorway-small);
+}
+.icon-uEB40-my-dealer-large {
+	@include icon(uEB40-my-dealer-large);
+}
+.icon-uEB41-my-dealer-small {
+	@include icon(uEB41-my-dealer-small);
+}
+.icon-uEB42-myaudi-destinations-large {
+	@include icon(uEB42-myaudi-destinations-large);
+}
+.icon-uEB43-myaudi-destinations-small {
+	@include icon(uEB43-myaudi-destinations-small);
+}
+.icon-uEB44-napster-large {
+	@include icon(uEB44-napster-large);
+}
+.icon-uEB45-napster-small {
+	@include icon(uEB45-napster-small);
+}
+.icon-uEB46-network-large {
+	@include icon(uEB46-network-large);
+}
+.icon-uEB47-network-small {
+	@include icon(uEB47-network-small);
+}
+.icon-uEB48-news-large {
+	@include icon(uEB48-news-large);
+}
+.icon-uEB49-news-small {
+	@include icon(uEB49-news-small);
+}
+.icon-uEB4A-nfc-inactive-large {
+	@include icon(uEB4A-nfc-inactive-large);
+}
+.icon-uEB4B-nfc-inactive-small {
+	@include icon(uEB4B-nfc-inactive-small);
+}
+.icon-uEB4C-nfc-large {
+	@include icon(uEB4C-nfc-large);
+}
+.icon-uEB4D-nfc-small {
+	@include icon(uEB4D-nfc-small);
+}
+.icon-uEB4E-notepad-large {
+	@include icon(uEB4E-notepad-large);
+}
+.icon-uEB4F-notepad-small {
+	@include icon(uEB4F-notepad-small);
+}
+.icon-uEB50-off-canvas-large {
+	@include icon(uEB50-off-canvas-large);
+}
+.icon-uEB51-off-canvas-small {
+	@include icon(uEB51-off-canvas-small);
+}
+.icon-uEB52-offline-maps-large {
+	@include icon(uEB52-offline-maps-large);
+}
+.icon-uEB53-offline-maps-small {
+	@include icon(uEB53-offline-maps-small);
+}
+.icon-uEB54-oil-change-large {
+	@include icon(uEB54-oil-change-large);
+}
+.icon-uEB55-oil-change-small {
+	@include icon(uEB55-oil-change-small);
+}
+.icon-uEB56-options-large {
+	@include icon(uEB56-options-large);
+}
+.icon-uEB57-options-small {
+	@include icon(uEB57-options-small);
+}
+.icon-uEB58-order-reverse-large {
+	@include icon(uEB58-order-reverse-large);
+}
+.icon-uEB59-order-reverse-small {
+	@include icon(uEB59-order-reverse-small);
+}
+.icon-uEB5A-over-the-air-car-large {
+	@include icon(uEB5A-over-the-air-car-large);
+}
+.icon-uEB5B-over-the-air-car-small {
+	@include icon(uEB5B-over-the-air-car-small);
+}
+.icon-uEB5C-over-the-air-large {
+	@include icon(uEB5C-over-the-air-large);
+}
+.icon-uEB5D-over-the-air-small {
+	@include icon(uEB5D-over-the-air-small);
+}
+.icon-uEB5E-parking-in-left-large {
+	@include icon(uEB5E-parking-in-left-large);
+}
+.icon-uEB5F-parking-in-left-long-large {
+	@include icon(uEB5F-parking-in-left-long-large);
+}
+.icon-uEB60-parking-in-left-long-small {
+	@include icon(uEB60-parking-in-left-long-small);
+}
+.icon-uEB61-parking-in-left-small {
+	@include icon(uEB61-parking-in-left-small);
+}
+.icon-uEB62-parking-in-right-large {
+	@include icon(uEB62-parking-in-right-large);
+}
+.icon-uEB63-parking-in-right-long-large {
+	@include icon(uEB63-parking-in-right-long-large);
+}
+.icon-uEB64-parking-in-right-long-small {
+	@include icon(uEB64-parking-in-right-long-small);
+}
+.icon-uEB65-parking-in-right-small {
+	@include icon(uEB65-parking-in-right-small);
+}
+.icon-uEB66-parking-in-straight-large {
+	@include icon(uEB66-parking-in-straight-large);
+}
+.icon-uEB67-parking-in-straight-small {
+	@include icon(uEB67-parking-in-straight-small);
+}
+.icon-uEB68-parking-large {
+	@include icon(uEB68-parking-large);
+}
+.icon-uEB69-parking-out-left-large {
+	@include icon(uEB69-parking-out-left-large);
+}
+.icon-uEB6A-parking-out-left-long-large {
+	@include icon(uEB6A-parking-out-left-long-large);
+}
+.icon-uEB6B-parking-out-left-long-small {
+	@include icon(uEB6B-parking-out-left-long-small);
+}
+.icon-uEB6C-parking-out-left-small {
+	@include icon(uEB6C-parking-out-left-small);
+}
+.icon-uEB6D-parking-out-right-large {
+	@include icon(uEB6D-parking-out-right-large);
+}
+.icon-uEB6E-parking-out-right-long-large {
+	@include icon(uEB6E-parking-out-right-long-large);
+}
+.icon-uEB6F-parking-out-right-long-small {
+	@include icon(uEB6F-parking-out-right-long-small);
+}
+.icon-uEB70-parking-out-right-small {
+	@include icon(uEB70-parking-out-right-small);
+}
+.icon-uEB71-parking-out-straight-large {
+	@include icon(uEB71-parking-out-straight-large);
+}
+.icon-uEB72-parking-out-straight-small {
+	@include icon(uEB72-parking-out-straight-small);
+}
+.icon-uEB73-parking-small {
+	@include icon(uEB73-parking-small);
+}
+.icon-uEB74-pause-large {
+	@include icon(uEB74-pause-large);
+}
+.icon-uEB75-pause-small {
+	@include icon(uEB75-pause-small);
+}
+.icon-uEB76-photo-large {
+	@include icon(uEB76-photo-large);
+}
+.icon-uEB77-photo-small {
+	@include icon(uEB77-photo-small);
+}
+.icon-uEB78-piloted-parking-large {
+	@include icon(uEB78-piloted-parking-large);
+}
+.icon-uEB79-piloted-parking-small {
+	@include icon(uEB79-piloted-parking-small);
+}
+.icon-uEB7A-pinterest-large {
+	@include icon(uEB7A-pinterest-large);
+}
+.icon-uEB7B-pinterest-small {
+	@include icon(uEB7B-pinterest-small);
+}
+.icon-uEB7C-plan-route-large {
+	@include icon(uEB7C-plan-route-large);
+}
+.icon-uEB7D-plan-route-small {
+	@include icon(uEB7D-plan-route-small);
+}
+.icon-uEB7E-play-large {
+	@include icon(uEB7E-play-large);
+}
+.icon-uEB7F-play-small {
+	@include icon(uEB7F-play-small);
+}
+.icon-uEB80-plug-ccs-dc-large {
+	@include icon(uEB80-plug-ccs-dc-large);
+}
+.icon-uEB81-plug-ccs-dc-small {
+	@include icon(uEB81-plug-ccs-dc-small);
+}
+.icon-uEB82-plug-ccs1-large {
+	@include icon(uEB82-plug-ccs1-large);
+}
+.icon-uEB83-plug-ccs1-small {
+	@include icon(uEB83-plug-ccs1-small);
+}
+.icon-uEB84-plug-cee3-large {
+	@include icon(uEB84-plug-cee3-large);
+}
+.icon-uEB85-plug-cee3-small {
+	@include icon(uEB85-plug-cee3-small);
+}
+.icon-uEB86-plug-cee5-large {
+	@include icon(uEB86-plug-cee5-large);
+}
+.icon-uEB87-plug-cee5-small {
+	@include icon(uEB87-plug-cee5-small);
+}
+.icon-uEB88-plug-chademo-dc-large {
+	@include icon(uEB88-plug-chademo-dc-large);
+}
+.icon-uEB89-plug-chademo-dc-small {
+	@include icon(uEB89-plug-chademo-dc-small);
+}
+.icon-uEB8A-plug-schuko-large {
+	@include icon(uEB8A-plug-schuko-large);
+}
+.icon-uEB8B-plug-schuko-small {
+	@include icon(uEB8B-plug-schuko-small);
+}
+.icon-uEB8C-plug-type1-ac-large {
+	@include icon(uEB8C-plug-type1-ac-large);
+}
+.icon-uEB8D-plug-type1-ac-small {
+	@include icon(uEB8D-plug-type1-ac-small);
+}
+.icon-uEB8E-plug-type2-ac-large {
+	@include icon(uEB8E-plug-type2-ac-large);
+}
+.icon-uEB8F-plug-type2-ac-small {
+	@include icon(uEB8F-plug-type2-ac-small);
+}
+.icon-uEB90-poi-calendar-large {
+	@include icon(uEB90-poi-calendar-large);
+}
+.icon-uEB91-poi-calendar-small {
+	@include icon(uEB91-poi-calendar-small);
+}
+.icon-uEB92-poi-car-large {
+	@include icon(uEB92-poi-car-large);
+}
+.icon-uEB93-poi-car-small {
+	@include icon(uEB93-poi-car-small);
+}
+.icon-uEB94-poi-contact-large {
+	@include icon(uEB94-poi-contact-large);
+}
+.icon-uEB95-poi-contact-small {
+	@include icon(uEB95-poi-contact-small);
+}
+.icon-uEB96-poi-favorite-large {
+	@include icon(uEB96-poi-favorite-large);
+}
+.icon-uEB97-poi-favorite-small {
+	@include icon(uEB97-poi-favorite-small);
+}
+.icon-uEB98-poi-home-large {
+	@include icon(uEB98-poi-home-large);
+}
+.icon-uEB99-poi-home-small {
+	@include icon(uEB99-poi-home-small);
+}
+.icon-uEB9A-poi-large {
+	@include icon(uEB9A-poi-large);
+}
+.icon-uEB9B-poi-last-destination-large {
+	@include icon(uEB9B-poi-last-destination-large);
+}
+.icon-uEB9C-poi-last-destination-small {
+	@include icon(uEB9C-poi-last-destination-small);
+}
+.icon-uEB9D-poi-on-map-large {
+	@include icon(uEB9D-poi-on-map-large);
+}
+.icon-uEB9E-poi-on-map-small {
+	@include icon(uEB9E-poi-on-map-small);
+}
+.icon-uEB9F-poi-search-large {
+	@include icon(uEB9F-poi-search-large);
+}
+.icon-uEBA0-poi-search-small {
+	@include icon(uEBA0-poi-search-small);
+}
+.icon-uEBA1-poi-small {
+	@include icon(uEBA1-poi-small);
+}
+.icon-uEBA2-poi-work-large {
+	@include icon(uEBA2-poi-work-large);
+}
+.icon-uEBA3-poi-work-small {
+	@include icon(uEBA3-poi-work-small);
+}
+.icon-uEBA4-pois-large {
+	@include icon(uEBA4-pois-large);
+}
+.icon-uEBA5-pois-small {
+	@include icon(uEBA5-pois-small);
+}
+.icon-uEBA6-polls-large {
+	@include icon(uEBA6-polls-large);
+}
+.icon-uEBA7-polls-small {
+	@include icon(uEBA7-polls-small);
+}
+.icon-uEBA8-power-large {
+	@include icon(uEBA8-power-large);
+}
+.icon-uEBA9-power-small {
+	@include icon(uEBA9-power-small);
+}
+.icon-uEBAA-pre-heating-large {
+	@include icon(uEBAA-pre-heating-large);
+}
+.icon-uEBAB-pre-heating-small {
+	@include icon(uEBAB-pre-heating-small);
+}
+.icon-uEBAC-print-large {
+	@include icon(uEBAC-print-large);
+}
+.icon-uEBAD-print-small {
+	@include icon(uEBAD-print-small);
+}
+.icon-uEBAE-privacy-mode-large {
+	@include icon(uEBAE-privacy-mode-large);
+}
+.icon-uEBAF-privacy-mode-small {
+	@include icon(uEBAF-privacy-mode-small);
+}
+.icon-uEBB0-private-customer-large {
+	@include icon(uEBB0-private-customer-large);
+}
+.icon-uEBB1-private-customer-small {
+	@include icon(uEBB1-private-customer-small);
+}
+.icon-uEBB2-profile-large {
+	@include icon(uEBB2-profile-large);
+}
+.icon-uEBB3-profile-small {
+	@include icon(uEBB3-profile-small);
+}
+.icon-uEBB4-projects-large {
+	@include icon(uEBB4-projects-large);
+}
+.icon-uEBB5-projects-small {
+	@include icon(uEBB5-projects-small);
+}
+.icon-uEBB6-public-transport-large {
+	@include icon(uEBB6-public-transport-large);
+}
+.icon-uEBB7-public-transport-small {
+	@include icon(uEBB7-public-transport-small);
+}
+.icon-uEBB8-quattro-large {
+	@include icon(uEBB8-quattro-large);
+}
+.icon-uEBB9-quattro-small {
+	@include icon(uEBB9-quattro-small);
+}
+.icon-uEBBA-rating-filled-50-large {
+	@include icon(uEBBA-rating-filled-50-large);
+}
+.icon-uEBBB-rating-filled-50-small {
+	@include icon(uEBBB-rating-filled-50-small);
+}
+.icon-uEBBC-rating-filled-large {
+	@include icon(uEBBC-rating-filled-large);
+}
+.icon-uEBBD-rating-filled-small {
+	@include icon(uEBBD-rating-filled-small);
+}
+.icon-uEBBE-rating-large {
+	@include icon(uEBBE-rating-large);
+}
+.icon-uEBBF-rating-small {
+	@include icon(uEBBF-rating-small);
+}
+.icon-uEBC0-receive-e-mail-notification-large {
+	@include icon(uEBC0-receive-e-mail-notification-large);
+}
+.icon-uEBC1-receive-e-mail-notification-small {
+	@include icon(uEBC1-receive-e-mail-notification-small);
+}
+.icon-uEBC2-recommended-destination-large {
+	@include icon(uEBC2-recommended-destination-large);
+}
+.icon-uEBC3-recommended-destination-small {
+	@include icon(uEBC3-recommended-destination-small);
+}
+.icon-uEBC4-refresh-large {
+	@include icon(uEBC4-refresh-large);
+}
+.icon-uEBC5-refresh-small {
+	@include icon(uEBC5-refresh-small);
+}
+.icon-uEBC6-replay-large {
+	@include icon(uEBC6-replay-large);
+}
+.icon-uEBC7-replay-small {
+	@include icon(uEBC7-replay-small);
+}
+.icon-uEBC8-resize-decrease-large {
+	@include icon(uEBC8-resize-decrease-large);
+}
+.icon-uEBC9-resize-decrease-small {
+	@include icon(uEBC9-resize-decrease-small);
+}
+.icon-uEBCA-resize-increase-large {
+	@include icon(uEBCA-resize-increase-large);
+}
+.icon-uEBCB-resize-increase-small {
+	@include icon(uEBCB-resize-increase-small);
+}
+.icon-uEBCC-restaurant-large {
+	@include icon(uEBCC-restaurant-large);
+}
+.icon-uEBCD-restaurant-small {
+	@include icon(uEBCD-restaurant-small);
+}
+.icon-uEBCE-restroom-large {
+	@include icon(uEBCE-restroom-large);
+}
+.icon-uEBCF-restroom-small {
+	@include icon(uEBCF-restroom-small);
+}
+.icon-uEBD0-results-list-large {
+	@include icon(uEBD0-results-list-large);
+}
+.icon-uEBD1-results-list-small {
+	@include icon(uEBD1-results-list-small);
+}
+.icon-uEBD2-roof-open-large {
+	@include icon(uEBD2-roof-open-large);
+}
+.icon-uEBD3-roof-open-small {
+	@include icon(uEBD3-roof-open-small);
+}
+.icon-uEBD4-rotate-device-large {
+	@include icon(uEBD4-rotate-device-large);
+}
+.icon-uEBD5-rotate-device-small {
+	@include icon(uEBD5-rotate-device-small);
+}
+.icon-uEBD6-rotate-image-left-large {
+	@include icon(uEBD6-rotate-image-left-large);
+}
+.icon-uEBD7-rotate-image-left-small {
+	@include icon(uEBD7-rotate-image-left-small);
+}
+.icon-uEBD8-rotate-image-right-large {
+	@include icon(uEBD8-rotate-image-right-large);
+}
+.icon-uEBD9-rotate-image-right-small {
+	@include icon(uEBD9-rotate-image-right-small);
+}
+.icon-uEBDA-rotate-left-large {
+	@include icon(uEBDA-rotate-left-large);
+}
+.icon-uEBDB-rotate-left-small {
+	@include icon(uEBDB-rotate-left-small);
+}
+.icon-uEBDC-rotate-right-large {
+	@include icon(uEBDC-rotate-right-large);
+}
+.icon-uEBDD-rotate-right-small {
+	@include icon(uEBDD-rotate-right-small);
+}
+.icon-uEBDE-roundabout-left-large {
+	@include icon(uEBDE-roundabout-left-large);
+}
+.icon-uEBDF-roundabout-left-small {
+	@include icon(uEBDF-roundabout-left-small);
+}
+.icon-uEBE0-roundabout-long-left-large {
+	@include icon(uEBE0-roundabout-long-left-large);
+}
+.icon-uEBE1-roundabout-long-left-small {
+	@include icon(uEBE1-roundabout-long-left-small);
+}
+.icon-uEBE2-roundabout-long-right-large {
+	@include icon(uEBE2-roundabout-long-right-large);
+}
+.icon-uEBE3-roundabout-long-right-small {
+	@include icon(uEBE3-roundabout-long-right-small);
+}
+.icon-uEBE4-roundabout-right-large {
+	@include icon(uEBE4-roundabout-right-large);
+}
+.icon-uEBE5-roundabout-right-small {
+	@include icon(uEBE5-roundabout-right-small);
+}
+.icon-uEBE6-roundabout-sharp-left-large {
+	@include icon(uEBE6-roundabout-sharp-left-large);
+}
+.icon-uEBE7-roundabout-sharp-left-small {
+	@include icon(uEBE7-roundabout-sharp-left-small);
+}
+.icon-uEBE8-roundabout-sharp-right-large {
+	@include icon(uEBE8-roundabout-sharp-right-large);
+}
+.icon-uEBE9-roundabout-sharp-right-small {
+	@include icon(uEBE9-roundabout-sharp-right-small);
+}
+.icon-uEBEA-roundabout-straight-large {
+	@include icon(uEBEA-roundabout-straight-large);
+}
+.icon-uEBEB-roundabout-straight-small {
+	@include icon(uEBEB-roundabout-straight-small);
+}
+.icon-uEBEC-search-large {
+	@include icon(uEBEC-search-large);
+}
+.icon-uEBED-search-small {
+	@include icon(uEBED-search-small);
+}
+.icon-uEBEE-select-all-large {
+	@include icon(uEBEE-select-all-large);
+}
+.icon-uEBEF-select-all-small {
+	@include icon(uEBEF-select-all-small);
+}
+.icon-uEBF0-select-large {
+	@include icon(uEBF0-select-large);
+}
+.icon-uEBF1-select-small {
+	@include icon(uEBF1-select-small);
+}
+.icon-uEBF2-send-large {
+	@include icon(uEBF2-send-large);
+}
+.icon-uEBF3-send-small {
+	@include icon(uEBF3-send-small);
+}
+.icon-uEBF4-send-to-vehicle-large {
+	@include icon(uEBF4-send-to-vehicle-large);
+}
+.icon-uEBF5-send-to-vehicle-small {
+	@include icon(uEBF5-send-to-vehicle-small);
+}
+.icon-uEBF6-settings-large {
+	@include icon(uEBF6-settings-large);
+}
+.icon-uEBF7-settings-small {
+	@include icon(uEBF7-settings-small);
+}
+.icon-uEBF8-share-android-large {
+	@include icon(uEBF8-share-android-large);
+}
+.icon-uEBF9-share-android-small {
+	@include icon(uEBF9-share-android-small);
+}
+.icon-uEBFA-share-large {
+	@include icon(uEBFA-share-large);
+}
+.icon-uEBFB-share-small {
+	@include icon(uEBFB-share-small);
+}
+.icon-uEBFC-shopping-basket-large {
+	@include icon(uEBFC-shopping-basket-large);
+}
+.icon-uEBFD-shopping-basket-small {
+	@include icon(uEBFD-shopping-basket-small);
+}
+.icon-uEBFE-shuffle-large {
+	@include icon(uEBFE-shuffle-large);
+}
+.icon-uEBFF-shuffle-small {
+	@include icon(uEBFF-shuffle-small);
+}
+.icon-uEC00-side-assist-large {
+	@include icon(uEC00-side-assist-large);
+}
+.icon-uEC01-side-assist-small {
+	@include icon(uEC01-side-assist-small);
+}
+.icon-uEC02-signal-large {
+	@include icon(uEC02-signal-large);
+}
+.icon-uEC03-signal-small {
+	@include icon(uEC03-signal-small);
+}
+.icon-uEC04-skip-next-large {
+	@include icon(uEC04-skip-next-large);
+}
+.icon-uEC05-skip-next-small {
+	@include icon(uEC05-skip-next-small);
+}
+.icon-uEC06-skip-previous-large {
+	@include icon(uEC06-skip-previous-large);
+}
+.icon-uEC07-skip-previous-small {
+	@include icon(uEC07-skip-previous-small);
+}
+.icon-uEC08-slider-large {
+	@include icon(uEC08-slider-large);
+}
+.icon-uEC09-slider-small {
+	@include icon(uEC09-slider-small);
+}
+.icon-uEC0A-smartwatch-large {
+	@include icon(uEC0A-smartwatch-large);
+}
+.icon-uEC0B-smartwatch-small {
+	@include icon(uEC0B-smartwatch-small);
+}
+.icon-uEC0C-smiley-happy-large {
+	@include icon(uEC0C-smiley-happy-large);
+}
+.icon-uEC0D-smiley-happy-small {
+	@include icon(uEC0D-smiley-happy-small);
+}
+.icon-uEC0E-smiley-neutral-large {
+	@include icon(uEC0E-smiley-neutral-large);
+}
+.icon-uEC0F-smiley-neutral-small {
+	@include icon(uEC0F-smiley-neutral-small);
+}
+.icon-uEC10-smiley-unhappy-large {
+	@include icon(uEC10-smiley-unhappy-large);
+}
+.icon-uEC11-smiley-unhappy-small {
+	@include icon(uEC11-smiley-unhappy-small);
+}
+.icon-uEC12-snapchat-large {
+	@include icon(uEC12-snapchat-large);
+}
+.icon-uEC13-snapchat-small {
+	@include icon(uEC13-snapchat-small);
+}
+.icon-uEC14-social-reader-large {
+	@include icon(uEC14-social-reader-large);
+}
+.icon-uEC15-social-reader-small {
+	@include icon(uEC15-social-reader-small);
+}
+.icon-uEC16-spark-plug-large {
+	@include icon(uEC16-spark-plug-large);
+}
+.icon-uEC17-spark-plug-small {
+	@include icon(uEC17-spark-plug-small);
+}
+.icon-uEC18-special-offer-large {
+	@include icon(uEC18-special-offer-large);
+}
+.icon-uEC19-special-offer-small {
+	@include icon(uEC19-special-offer-small);
+}
+.icon-uEC1A-split-large {
+	@include icon(uEC1A-split-large);
+}
+.icon-uEC1B-split-small {
+	@include icon(uEC1B-split-small);
+}
+.icon-uEC1C-status-update-large {
+	@include icon(uEC1C-status-update-large);
+}
+.icon-uEC1D-status-update-small {
+	@include icon(uEC1D-status-update-small);
+}
+.icon-uEC1E-sync-large {
+	@include icon(uEC1E-sync-large);
+}
+.icon-uEC1F-sync-off-large {
+	@include icon(uEC1F-sync-off-large);
+}
+.icon-uEC20-sync-off-small {
+	@include icon(uEC20-sync-off-small);
+}
+.icon-uEC21-sync-small {
+	@include icon(uEC21-sync-small);
+}
+.icon-uEC22-system-add-large {
+	@include icon(uEC22-system-add-large);
+}
+.icon-uEC23-system-add-small {
+	@include icon(uEC23-system-add-small);
+}
+.icon-uEC24-system-audio-off-large {
+	@include icon(uEC24-system-audio-off-large);
+}
+.icon-uEC25-system-audio-off-small {
+	@include icon(uEC25-system-audio-off-small);
+}
+.icon-uEC26-system-audio-on-large {
+	@include icon(uEC26-system-audio-on-large);
+}
+.icon-uEC27-system-audio-on-small {
+	@include icon(uEC27-system-audio-on-small);
+}
+.icon-uEC28-system-cancel-large {
+	@include icon(uEC28-system-cancel-large);
+}
+.icon-uEC29-system-cancel-small {
+	@include icon(uEC29-system-cancel-small);
+}
+.icon-uEC2A-system-code-large {
+	@include icon(uEC2A-system-code-large);
+}
+.icon-uEC2B-system-code-small {
+	@include icon(uEC2B-system-code-small);
+}
+.icon-uEC2C-system-compare-large {
+	@include icon(uEC2C-system-compare-large);
+}
+.icon-uEC2D-system-compare-small {
+	@include icon(uEC2D-system-compare-small);
+}
+.icon-uEC2E-system-download-large {
+	@include icon(uEC2E-system-download-large);
+}
+.icon-uEC2F-system-download-small {
+	@include icon(uEC2F-system-download-small);
+}
+.icon-uEC30-system-facebook-large {
+	@include icon(uEC30-system-facebook-large);
+}
+.icon-uEC31-system-facebook-small {
+	@include icon(uEC31-system-facebook-small);
+}
+.icon-uEC32-system-favorites-large {
+	@include icon(uEC32-system-favorites-large);
+}
+.icon-uEC33-system-favorites-small {
+	@include icon(uEC33-system-favorites-small);
+}
+.icon-uEC34-system-follow-large {
+	@include icon(uEC34-system-follow-large);
+}
+.icon-uEC35-system-follow-small {
+	@include icon(uEC35-system-follow-small);
+}
+.icon-uEC36-system-google-plus-large {
+	@include icon(uEC36-system-google-plus-large);
+}
+.icon-uEC37-system-google-plus-small {
+	@include icon(uEC37-system-google-plus-small);
+}
+.icon-uEC38-system-help-large {
+	@include icon(uEC38-system-help-large);
+}
+.icon-uEC39-system-help-small {
+	@include icon(uEC39-system-help-small);
+}
+.icon-uEC3A-system-info-large {
+	@include icon(uEC3A-system-info-large);
+}
+.icon-uEC3B-system-info-small {
+	@include icon(uEC3B-system-info-small);
+}
+.icon-uEC3C-system-instagram-large {
+	@include icon(uEC3C-system-instagram-large);
+}
+.icon-uEC3D-system-instagram-small {
+	@include icon(uEC3D-system-instagram-small);
+}
+.icon-uEC3E-system-line-me-large {
+	@include icon(uEC3E-system-line-me-large);
+}
+.icon-uEC3F-system-line-me-small {
+	@include icon(uEC3F-system-line-me-small);
+}
+.icon-uEC40-system-linkedin-large {
+	@include icon(uEC40-system-linkedin-large);
+}
+.icon-uEC41-system-linkedin-small {
+	@include icon(uEC41-system-linkedin-small);
+}
+.icon-uEC42-system-paragraph-large {
+	@include icon(uEC42-system-paragraph-large);
+}
+.icon-uEC43-system-paragraph-small {
+	@include icon(uEC43-system-paragraph-small);
+}
+.icon-uEC44-system-pause-large {
+	@include icon(uEC44-system-pause-large);
+}
+.icon-uEC45-system-pause-small {
+	@include icon(uEC45-system-pause-small);
+}
+.icon-uEC46-system-pinterest-large {
+	@include icon(uEC46-system-pinterest-large);
+}
+.icon-uEC47-system-pinterest-small {
+	@include icon(uEC47-system-pinterest-small);
+}
+.icon-uEC48-system-play-backwards-large {
+	@include icon(uEC48-system-play-backwards-large);
+}
+.icon-uEC49-system-play-backwards-small {
+	@include icon(uEC49-system-play-backwards-small);
+}
+.icon-uEC4A-system-play-large {
+	@include icon(uEC4A-system-play-large);
+}
+.icon-uEC4B-system-play-small {
+	@include icon(uEC4B-system-play-small);
+}
+.icon-uEC4C-system-print-large {
+	@include icon(uEC4C-system-print-large);
+}
+.icon-uEC4D-system-print-small {
+	@include icon(uEC4D-system-print-small);
+}
+.icon-uEC4E-system-remove-large {
+	@include icon(uEC4E-system-remove-large);
+}
+.icon-uEC4F-system-remove-small {
+	@include icon(uEC4F-system-remove-small);
+}
+.icon-uEC50-system-replay-large {
+	@include icon(uEC50-system-replay-large);
+}
+.icon-uEC51-system-replay-small {
+	@include icon(uEC51-system-replay-small);
+}
+.icon-uEC52-system-resize-decrease-large {
+	@include icon(uEC52-system-resize-decrease-large);
+}
+.icon-uEC53-system-resize-decrease-small {
+	@include icon(uEC53-system-resize-decrease-small);
+}
+.icon-uEC54-system-resize-increase-large {
+	@include icon(uEC54-system-resize-increase-large);
+}
+.icon-uEC55-system-resize-increase-small {
+	@include icon(uEC55-system-resize-increase-small);
+}
+.icon-uEC56-system-save-as-large {
+	@include icon(uEC56-system-save-as-large);
+}
+.icon-uEC57-system-save-as-small {
+	@include icon(uEC57-system-save-as-small);
+}
+.icon-uEC58-system-search-large {
+	@include icon(uEC58-system-search-large);
+}
+.icon-uEC59-system-search-small {
+	@include icon(uEC59-system-search-small);
+}
+.icon-uEC5A-system-select-large {
+	@include icon(uEC5A-system-select-large);
+}
+.icon-uEC5B-system-select-small {
+	@include icon(uEC5B-system-select-small);
+}
+.icon-uEC5C-system-settings-large {
+	@include icon(uEC5C-system-settings-large);
+}
+.icon-uEC5D-system-settings-small {
+	@include icon(uEC5D-system-settings-small);
+}
+.icon-uEC5E-system-share-android-large {
+	@include icon(uEC5E-system-share-android-large);
+}
+.icon-uEC5F-system-share-android-small {
+	@include icon(uEC5F-system-share-android-small);
+}
+.icon-uEC60-system-share-large {
+	@include icon(uEC60-system-share-large);
+}
+.icon-uEC61-system-share-small {
+	@include icon(uEC61-system-share-small);
+}
+.icon-uEC62-system-skip-next-large {
+	@include icon(uEC62-system-skip-next-large);
+}
+.icon-uEC63-system-skip-next-small {
+	@include icon(uEC63-system-skip-next-small);
+}
+.icon-uEC64-system-skip-previous-large {
+	@include icon(uEC64-system-skip-previous-large);
+}
+.icon-uEC65-system-skip-previous-small {
+	@include icon(uEC65-system-skip-previous-small);
+}
+.icon-uEC66-system-snapchat-large {
+	@include icon(uEC66-system-snapchat-large);
+}
+.icon-uEC67-system-snapchat-small {
+	@include icon(uEC67-system-snapchat-small);
+}
+.icon-uEC68-system-sync-large {
+	@include icon(uEC68-system-sync-large);
+}
+.icon-uEC69-system-sync-small {
+	@include icon(uEC69-system-sync-small);
+}
+.icon-uEC6A-system-twitter-large {
+	@include icon(uEC6A-system-twitter-large);
+}
+.icon-uEC6B-system-twitter-small {
+	@include icon(uEC6B-system-twitter-small);
+}
+.icon-uEC6C-system-upload-large {
+	@include icon(uEC6C-system-upload-large);
+}
+.icon-uEC6D-system-upload-small {
+	@include icon(uEC6D-system-upload-small);
+}
+.icon-uEC6E-system-vimeo-large {
+	@include icon(uEC6E-system-vimeo-large);
+}
+.icon-uEC6F-system-vimeo-small {
+	@include icon(uEC6F-system-vimeo-small);
+}
+.icon-uEC70-system-wechat-large {
+	@include icon(uEC70-system-wechat-large);
+}
+.icon-uEC71-system-wechat-small {
+	@include icon(uEC71-system-wechat-small);
+}
+.icon-uEC72-system-weibo-large {
+	@include icon(uEC72-system-weibo-large);
+}
+.icon-uEC73-system-weibo-small {
+	@include icon(uEC73-system-weibo-small);
+}
+.icon-uEC74-system-whatsapp-large {
+	@include icon(uEC74-system-whatsapp-large);
+}
+.icon-uEC75-system-whatsapp-small {
+	@include icon(uEC75-system-whatsapp-small);
+}
+.icon-uEC76-system-xing-large {
+	@include icon(uEC76-system-xing-large);
+}
+.icon-uEC77-system-xing-small {
+	@include icon(uEC77-system-xing-small);
+}
+.icon-uEC78-system-yelp-large {
+	@include icon(uEC78-system-yelp-large);
+}
+.icon-uEC79-system-yelp-small {
+	@include icon(uEC79-system-yelp-small);
+}
+.icon-uEC7A-system-youku-large {
+	@include icon(uEC7A-system-youku-large);
+}
+.icon-uEC7B-system-youku-small {
+	@include icon(uEC7B-system-youku-small);
+}
+.icon-uEC7C-system-youtube-large {
+	@include icon(uEC7C-system-youtube-large);
+}
+.icon-uEC7D-system-youtube-small {
+	@include icon(uEC7D-system-youtube-small);
+}
+.icon-uEC7E-system-zhihu-large {
+	@include icon(uEC7E-system-zhihu-large);
+}
+.icon-uEC7F-system-zhihu-small {
+	@include icon(uEC7F-system-zhihu-small);
+}
+.icon-uEC80-tag-large {
+	@include icon(uEC80-tag-large);
+}
+.icon-uEC81-tag-small {
+	@include icon(uEC81-tag-small);
+}
+.icon-uEC82-test-drive-large {
+	@include icon(uEC82-test-drive-large);
+}
+.icon-uEC83-test-drive-small {
+	@include icon(uEC83-test-drive-small);
+}
+.icon-uEC84-thumbs-down-large {
+	@include icon(uEC84-thumbs-down-large);
+}
+.icon-uEC85-thumbs-down-small {
+	@include icon(uEC85-thumbs-down-small);
+}
+.icon-uEC86-thumbs-up-large {
+	@include icon(uEC86-thumbs-up-large);
+}
+.icon-uEC87-thumbs-up-small {
+	@include icon(uEC87-thumbs-up-small);
+}
+.icon-uEC88-time-climate1-large {
+	@include icon(uEC88-time-climate1-large);
+}
+.icon-uEC89-time-climate1-small {
+	@include icon(uEC89-time-climate1-small);
+}
+.icon-uEC8A-time-climate2-large {
+	@include icon(uEC8A-time-climate2-large);
+}
+.icon-uEC8B-time-climate2-small {
+	@include icon(uEC8B-time-climate2-small);
+}
+.icon-uEC8C-time-large {
+	@include icon(uEC8C-time-large);
+}
+.icon-uEC8D-time-long-large {
+	@include icon(uEC8D-time-long-large);
+}
+.icon-uEC8E-time-long-small {
+	@include icon(uEC8E-time-long-small);
+}
+.icon-uEC8F-time-middle-large {
+	@include icon(uEC8F-time-middle-large);
+}
+.icon-uEC90-time-middle-small {
+	@include icon(uEC90-time-middle-small);
+}
+.icon-uEC91-time-short-large {
+	@include icon(uEC91-time-short-large);
+}
+.icon-uEC92-time-short-small {
+	@include icon(uEC92-time-short-small);
+}
+.icon-uEC93-time-small {
+	@include icon(uEC93-time-small);
+}
+.icon-uEC94-tire-battery-large {
+	@include icon(uEC94-tire-battery-large);
+}
+.icon-uEC95-tire-battery-small {
+	@include icon(uEC95-tire-battery-small);
+}
+.icon-uEC96-tire-large {
+	@include icon(uEC96-tire-large);
+}
+.icon-uEC97-tire-sealant-large {
+	@include icon(uEC97-tire-sealant-large);
+}
+.icon-uEC98-tire-sealant-small {
+	@include icon(uEC98-tire-sealant-small);
+}
+.icon-uEC99-tire-small {
+	@include icon(uEC99-tire-small);
+}
+.icon-uEC9A-top-speed-large {
+	@include icon(uEC9A-top-speed-large);
+}
+.icon-uEC9B-top-speed-small {
+	@include icon(uEC9B-top-speed-small);
+}
+.icon-uEC9C-torque-large {
+	@include icon(uEC9C-torque-large);
+}
+.icon-uEC9D-torque-small {
+	@include icon(uEC9D-torque-small);
+}
+.icon-uEC9E-tour-large {
+	@include icon(uEC9E-tour-large);
+}
+.icon-uEC9F-tour-small {
+	@include icon(uEC9F-tour-small);
+}
+.icon-uECA0-traffic-large {
+	@include icon(uECA0-traffic-large);
+}
+.icon-uECA1-traffic-sign-recognition-alert-large {
+	@include icon(uECA1-traffic-sign-recognition-alert-large);
+}
+.icon-uECA2-traffic-sign-recognition-alert-small {
+	@include icon(uECA2-traffic-sign-recognition-alert-small);
+}
+.icon-uECA3-traffic-sign-recognition-large {
+	@include icon(uECA3-traffic-sign-recognition-large);
+}
+.icon-uECA4-traffic-sign-recognition-small {
+	@include icon(uECA4-traffic-sign-recognition-small);
+}
+.icon-uECA5-traffic-small {
+	@include icon(uECA5-traffic-small);
+}
+.icon-uECA6-trailer-maneuver-large {
+	@include icon(uECA6-trailer-maneuver-large);
+}
+.icon-uECA7-trailer-maneuver-small {
+	@include icon(uECA7-trailer-maneuver-small);
+}
+.icon-uECA8-train-large {
+	@include icon(uECA8-train-large);
+}
+.icon-uECA9-train-small {
+	@include icon(uECA9-train-small);
+}
+.icon-uECAA-training-large {
+	@include icon(uECAA-training-large);
+}
+.icon-uECAB-training-small {
+	@include icon(uECAB-training-small);
+}
+.icon-uECAC-transmission-large {
+	@include icon(uECAC-transmission-large);
+}
+.icon-uECAD-transmission-small {
+	@include icon(uECAD-transmission-small);
+}
+.icon-uECAE-trunk-open-large {
+	@include icon(uECAE-trunk-open-large);
+}
+.icon-uECAF-trunk-open-small {
+	@include icon(uECAF-trunk-open-small);
+}
+.icon-uECB0-tube-large {
+	@include icon(uECB0-tube-large);
+}
+.icon-uECB1-tube-small {
+	@include icon(uECB1-tube-small);
+}
+.icon-uECB2-twitter-large {
+	@include icon(uECB2-twitter-large);
+}
+.icon-uECB3-twitter-small {
+	@include icon(uECB3-twitter-small);
+}
+.icon-uECB4-upload-large {
+	@include icon(uECB4-upload-large);
+}
+.icon-uECB5-upload-small {
+	@include icon(uECB5-upload-small);
+}
+.icon-uECB6-used-car-search-large {
+	@include icon(uECB6-used-car-search-large);
+}
+.icon-uECB7-used-car-search-small {
+	@include icon(uECB7-used-car-search-small);
+}
+.icon-uECB8-used-cars-large {
+	@include icon(uECB8-used-cars-large);
+}
+.icon-uECB9-used-cars-small {
+	@include icon(uECB9-used-cars-small);
+}
+.icon-uECBA-user-large {
+	@include icon(uECBA-user-large);
+}
+.icon-uECBB-user-small {
+	@include icon(uECBB-user-small);
+}
+.icon-uECBC-user-whole-body-large {
+	@include icon(uECBC-user-whole-body-large);
+}
+.icon-uECBD-user-whole-body-small {
+	@include icon(uECBD-user-whole-body-small);
+}
+.icon-uECBE-valet-parking-large {
+	@include icon(uECBE-valet-parking-large);
+}
+.icon-uECBF-valet-parking-small {
+	@include icon(uECBF-valet-parking-small);
+}
+.icon-uECC0-vehicle-signal-large {
+	@include icon(uECC0-vehicle-signal-large);
+}
+.icon-uECC1-vehicle-signal-small {
+	@include icon(uECC1-vehicle-signal-small);
+}
+.icon-uECC2-vehicle-wi-fi-1-large {
+	@include icon(uECC2-vehicle-wi-fi-1-large);
+}
+.icon-uECC3-vehicle-wi-fi-1-small {
+	@include icon(uECC3-vehicle-wi-fi-1-small);
+}
+.icon-uECC4-vehicle-wi-fi-2-large {
+	@include icon(uECC4-vehicle-wi-fi-2-large);
+}
+.icon-uECC5-vehicle-wi-fi-2-small {
+	@include icon(uECC5-vehicle-wi-fi-2-small);
+}
+.icon-uECC6-vehicle-wi-fi-3-large {
+	@include icon(uECC6-vehicle-wi-fi-3-large);
+}
+.icon-uECC7-vehicle-wi-fi-3-small {
+	@include icon(uECC7-vehicle-wi-fi-3-small);
+}
+.icon-uECC8-vehicle-wi-fi-4-large {
+	@include icon(uECC8-vehicle-wi-fi-4-large);
+}
+.icon-uECC9-vehicle-wi-fi-4-small {
+	@include icon(uECC9-vehicle-wi-fi-4-small);
+}
+.icon-uECCA-velocity-alert-large {
+	@include icon(uECCA-velocity-alert-large);
+}
+.icon-uECCB-velocity-alert-small {
+	@include icon(uECCB-velocity-alert-small);
+}
+.icon-uECCC-velocity-large {
+	@include icon(uECCC-velocity-large);
+}
+.icon-uECCD-velocity-small {
+	@include icon(uECCD-velocity-small);
+}
+.icon-uECCE-video-call-large {
+	@include icon(uECCE-video-call-large);
+}
+.icon-uECCF-video-call-small {
+	@include icon(uECCF-video-call-small);
+}
+.icon-uECD0-video-large {
+	@include icon(uECD0-video-large);
+}
+.icon-uECD1-video-small {
+	@include icon(uECD1-video-small);
+}
+.icon-uECD2-view-360-large {
+	@include icon(uECD2-view-360-large);
+}
+.icon-uECD3-view-360-small {
+	@include icon(uECD3-view-360-small);
+}
+.icon-uECD4-vimeo-large {
+	@include icon(uECD4-vimeo-large);
+}
+.icon-uECD5-vimeo-small {
+	@include icon(uECD5-vimeo-small);
+}
+.icon-uECD6-voice-call-1-large {
+	@include icon(uECD6-voice-call-1-large);
+}
+.icon-uECD7-voice-call-1-small {
+	@include icon(uECD7-voice-call-1-small);
+}
+.icon-uECD8-voice-call-2-large {
+	@include icon(uECD8-voice-call-2-large);
+}
+.icon-uECD9-voice-call-2-small {
+	@include icon(uECD9-voice-call-2-small);
+}
+.icon-uECDA-voice-call-3-large {
+	@include icon(uECDA-voice-call-3-large);
+}
+.icon-uECDB-voice-call-3-small {
+	@include icon(uECDB-voice-call-3-small);
+}
+.icon-uECDC-voice-call-large {
+	@include icon(uECDC-voice-call-large);
+}
+.icon-uECDD-voice-call-small {
+	@include icon(uECDD-voice-call-small);
+}
+.icon-uECDE-walk-large {
+	@include icon(uECDE-walk-large);
+}
+.icon-uECDF-walk-small {
+	@include icon(uECDF-walk-small);
+}
+.icon-uECE0-wallbox-large {
+	@include icon(uECE0-wallbox-large);
+}
+.icon-uECE1-wallbox-small {
+	@include icon(uECE1-wallbox-small);
+}
+.icon-uECE2-warranty-large {
+	@include icon(uECE2-warranty-large);
+}
+.icon-uECE3-warranty-small {
+	@include icon(uECE3-warranty-small);
+}
+.icon-uECE4-weblink-large {
+	@include icon(uECE4-weblink-large);
+}
+.icon-uECE5-weblink-small {
+	@include icon(uECE5-weblink-small);
+}
+.icon-uECE6-wechat-large {
+	@include icon(uECE6-wechat-large);
+}
+.icon-uECE7-wechat-small {
+	@include icon(uECE7-wechat-small);
+}
+.icon-uECE8-weibo-large {
+	@include icon(uECE8-weibo-large);
+}
+.icon-uECE9-weibo-small {
+	@include icon(uECE9-weibo-small);
+}
+.icon-uECEA-whatsapp-large {
+	@include icon(uECEA-whatsapp-large);
+}
+.icon-uECEB-whatsapp-small {
+	@include icon(uECEB-whatsapp-small);
+}
+.icon-uECEC-work-large {
+	@include icon(uECEC-work-large);
+}
+.icon-uECED-work-small {
+	@include icon(uECED-work-small);
+}
+.icon-uECEE-xing-large {
+	@include icon(uECEE-xing-large);
+}
+.icon-uECEF-xing-small {
+	@include icon(uECEF-xing-small);
+}
+.icon-uECF0-yelp-large {
+	@include icon(uECF0-yelp-large);
+}
+.icon-uECF1-yelp-small {
+	@include icon(uECF1-yelp-small);
+}
+.icon-uECF2-youku-large {
+	@include icon(uECF2-youku-large);
+}
+.icon-uECF3-youku-small {
+	@include icon(uECF3-youku-small);
+}
+.icon-uECF4-youtube-large {
+	@include icon(uECF4-youtube-large);
+}
+.icon-uECF5-youtube-small {
+	@include icon(uECF5-youtube-small);
+}
+.icon-uECF6-zhihu-large {
+	@include icon(uECF6-zhihu-large);
+}
+.icon-uECF7-zhihu-small {
+	@include icon(uECF7-zhihu-small);
+}
