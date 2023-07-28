@@ -119,10 +119,16 @@ npm install -g browser-sync
 npm run demo
 ```
 
-## Gulp Iconfont
+## Gulp tasks
+
+- font
+- Iconfont
+- svg
+- svg1
 
 ```bash
 npm run font
 # or
 gulp Iconfont
+gulp svg
 ```
