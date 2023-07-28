@@ -67,21 +67,15 @@ gulp.task('svg', function() {
         const svgContentKeys = Object.keys(svgContent)
 
         const dValues = extractDValuesFromSVG(svgContentValues);
+        const dKeys = removeSvgExtension(svgContentKeys);
 
         console.log(dValues);
-        console.log(svgContentKeys);
+        console.log(dKeys);
 
         // Combine the keys and values into an object
-        svgContentKeys.forEach((key, index) => {
+        dKeys.forEach((key, index) => {
           dataSVG[key] = dValues[index];
         });
-
-        //for (var i = 0; i < svgContentKeys.length; i++) {
-        //  objects.push({
-        //    name: svgContentKeys[i],
-        //    data: dValues[i]
-        //  });
-        //}
       }
 
       // Convert the object to JSON
@@ -105,6 +99,19 @@ function extractDValuesFromSVG(svgContent) {
   }
 
   return dValues;
+}
+
+// Remove .svg extension
+function removeSvgExtension(fileNames) {
+  const regex = /\.svg$/i;
+
+  return fileNames.map(fileName => {
+    const match = regex.exec(fileName);
+    if (match) {
+      return fileName.slice(0, match.index);
+    }
+    return fileName;
+  });
 }
 
 
