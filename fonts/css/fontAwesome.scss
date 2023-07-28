@@ -1,0 +1,1022 @@
+@font-face {
+	font-family: "fontAwesome";
+	src: url('../css/icons-css/fontAwesome.eot');
+	src: url('../css/icons-css/fontAwesome.eot?#iefix') format('eot'),
+		url('../css/icons-css/fontAwesome.woff2') format('woff2'),
+		url('../css/icons-css/fontAwesome.woff') format('woff'),
+		url('../css/icons-css/fontAwesome.ttf') format('truetype'),
+		url('../css/icons-css/fontAwesome.svg#fontAwesome') format('svg');
+}
+
+@mixin i-styles {
+	font-family: "fontAwesome";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%i {
+	@include i-styles;
+}
+
+@function i-char($filename) {
+	$char: "";
+
+	@if $filename == address-book {
+		$char: "\E001";
+	}
+	@if $filename == address-card {
+		$char: "\E002";
+	}
+	@if $filename == bell-slash {
+		$char: "\E003";
+	}
+	@if $filename == bell {
+		$char: "\E004";
+	}
+	@if $filename == bookmark {
+		$char: "\E005";
+	}
+	@if $filename == building {
+		$char: "\E006";
+	}
+	@if $filename == calendar-check {
+		$char: "\E007";
+	}
+	@if $filename == calendar-days {
+		$char: "\E008";
+	}
+	@if $filename == calendar-minus {
+		$char: "\E009";
+	}
+	@if $filename == calendar-plus {
+		$char: "\E00A";
+	}
+	@if $filename == calendar-xmark {
+		$char: "\E00B";
+	}
+	@if $filename == calendar {
+		$char: "\E00C";
+	}
+	@if $filename == chart-bar {
+		$char: "\E00D";
+	}
+	@if $filename == chess-bishop {
+		$char: "\E00E";
+	}
+	@if $filename == chess-king {
+		$char: "\E00F";
+	}
+	@if $filename == chess-knight {
+		$char: "\E010";
+	}
+	@if $filename == chess-pawn {
+		$char: "\E011";
+	}
+	@if $filename == chess-queen {
+		$char: "\E012";
+	}
+	@if $filename == chess-rook {
+		$char: "\E013";
+	}
+	@if $filename == circle-check {
+		$char: "\E014";
+	}
+	@if $filename == circle-dot {
+		$char: "\E015";
+	}
+	@if $filename == circle-down {
+		$char: "\E016";
+	}
+	@if $filename == circle-left {
+		$char: "\E017";
+	}
+	@if $filename == circle-pause {
+		$char: "\E018";
+	}
+	@if $filename == circle-play {
+		$char: "\E019";
+	}
+	@if $filename == circle-question {
+		$char: "\E01A";
+	}
+	@if $filename == circle-right {
+		$char: "\E01B";
+	}
+	@if $filename == circle-stop {
+		$char: "\E01C";
+	}
+	@if $filename == circle-up {
+		$char: "\E01D";
+	}
+	@if $filename == circle-user {
+		$char: "\E01E";
+	}
+	@if $filename == circle-xmark {
+		$char: "\E01F";
+	}
+	@if $filename == circle {
+		$char: "\E020";
+	}
+	@if $filename == clipboard {
+		$char: "\E021";
+	}
+	@if $filename == clock {
+		$char: "\E022";
+	}
+	@if $filename == clone {
+		$char: "\E023";
+	}
+	@if $filename == closed-captioning {
+		$char: "\E024";
+	}
+	@if $filename == comment-dots {
+		$char: "\E025";
+	}
+	@if $filename == comment {
+		$char: "\E026";
+	}
+	@if $filename == comments {
+		$char: "\E027";
+	}
+	@if $filename == compass {
+		$char: "\E028";
+	}
+	@if $filename == copy {
+		$char: "\E029";
+	}
+	@if $filename == copyright {
+		$char: "\E02A";
+	}
+	@if $filename == credit-card {
+		$char: "\E02B";
+	}
+	@if $filename == envelope-open {
+		$char: "\E02C";
+	}
+	@if $filename == envelope {
+		$char: "\E02D";
+	}
+	@if $filename == eye-slash {
+		$char: "\E02E";
+	}
+	@if $filename == eye {
+		$char: "\E02F";
+	}
+	@if $filename == face-angry {
+		$char: "\E030";
+	}
+	@if $filename == face-dizzy {
+		$char: "\E031";
+	}
+	@if $filename == face-flushed {
+		$char: "\E032";
+	}
+	@if $filename == face-frown-open {
+		$char: "\E033";
+	}
+	@if $filename == face-frown {
+		$char: "\E034";
+	}
+	@if $filename == face-grimace {
+		$char: "\E035";
+	}
+	@if $filename == face-grin-beam-sweat {
+		$char: "\E036";
+	}
+	@if $filename == face-grin-beam {
+		$char: "\E037";
+	}
+	@if $filename == face-grin-hearts {
+		$char: "\E038";
+	}
+	@if $filename == face-grin-squint-tears {
+		$char: "\E039";
+	}
+	@if $filename == face-grin-squint {
+		$char: "\E03A";
+	}
+	@if $filename == face-grin-stars {
+		$char: "\E03B";
+	}
+	@if $filename == face-grin-tears {
+		$char: "\E03C";
+	}
+	@if $filename == face-grin-tongue-squint {
+		$char: "\E03D";
+	}
+	@if $filename == face-grin-tongue-wink {
+		$char: "\E03E";
+	}
+	@if $filename == face-grin-tongue {
+		$char: "\E03F";
+	}
+	@if $filename == face-grin-wide {
+		$char: "\E040";
+	}
+	@if $filename == face-grin-wink {
+		$char: "\E041";
+	}
+	@if $filename == face-grin {
+		$char: "\E042";
+	}
+	@if $filename == face-kiss-beam {
+		$char: "\E043";
+	}
+	@if $filename == face-kiss-wink-heart {
+		$char: "\E044";
+	}
+	@if $filename == face-kiss {
+		$char: "\E045";
+	}
+	@if $filename == face-laugh-beam {
+		$char: "\E046";
+	}
+	@if $filename == face-laugh-squint {
+		$char: "\E047";
+	}
+	@if $filename == face-laugh-wink {
+		$char: "\E048";
+	}
+	@if $filename == face-laugh {
+		$char: "\E049";
+	}
+	@if $filename == face-meh-blank {
+		$char: "\E04A";
+	}
+	@if $filename == face-meh {
+		$char: "\E04B";
+	}
+	@if $filename == face-rolling-eyes {
+		$char: "\E04C";
+	}
+	@if $filename == face-sad-cry {
+		$char: "\E04D";
+	}
+	@if $filename == face-sad-tear {
+		$char: "\E04E";
+	}
+	@if $filename == face-smile-beam {
+		$char: "\E04F";
+	}
+	@if $filename == face-smile-wink {
+		$char: "\E050";
+	}
+	@if $filename == face-smile {
+		$char: "\E051";
+	}
+	@if $filename == face-surprise {
+		$char: "\E052";
+	}
+	@if $filename == face-tired {
+		$char: "\E053";
+	}
+	@if $filename == file-audio {
+		$char: "\E054";
+	}
+	@if $filename == file-code {
+		$char: "\E055";
+	}
+	@if $filename == file-excel {
+		$char: "\E056";
+	}
+	@if $filename == file-image {
+		$char: "\E057";
+	}
+	@if $filename == file-lines {
+		$char: "\E058";
+	}
+	@if $filename == file-pdf {
+		$char: "\E059";
+	}
+	@if $filename == file-powerpoint {
+		$char: "\E05A";
+	}
+	@if $filename == file-video {
+		$char: "\E05B";
+	}
+	@if $filename == file-word {
+		$char: "\E05C";
+	}
+	@if $filename == file-zipper {
+		$char: "\E05D";
+	}
+	@if $filename == file {
+		$char: "\E05E";
+	}
+	@if $filename == flag {
+		$char: "\E05F";
+	}
+	@if $filename == floppy-disk {
+		$char: "\E060";
+	}
+	@if $filename == folder-closed {
+		$char: "\E061";
+	}
+	@if $filename == folder-open {
+		$char: "\E062";
+	}
+	@if $filename == folder {
+		$char: "\E063";
+	}
+	@if $filename == font-awesome {
+		$char: "\E064";
+	}
+	@if $filename == futbol {
+		$char: "\E065";
+	}
+	@if $filename == gem {
+		$char: "\E066";
+	}
+	@if $filename == hand-back-fist {
+		$char: "\E067";
+	}
+	@if $filename == hand-lizard {
+		$char: "\E068";
+	}
+	@if $filename == hand-peace {
+		$char: "\E069";
+	}
+	@if $filename == hand-point-down {
+		$char: "\E06A";
+	}
+	@if $filename == hand-point-left {
+		$char: "\E06B";
+	}
+	@if $filename == hand-point-right {
+		$char: "\E06C";
+	}
+	@if $filename == hand-point-up {
+		$char: "\E06D";
+	}
+	@if $filename == hand-pointer {
+		$char: "\E06E";
+	}
+	@if $filename == hand-scissors {
+		$char: "\E06F";
+	}
+	@if $filename == hand-spock {
+		$char: "\E070";
+	}
+	@if $filename == hand {
+		$char: "\E071";
+	}
+	@if $filename == handshake {
+		$char: "\E072";
+	}
+	@if $filename == hard-drive {
+		$char: "\E073";
+	}
+	@if $filename == heart {
+		$char: "\E074";
+	}
+	@if $filename == hospital {
+		$char: "\E075";
+	}
+	@if $filename == hourglass-half {
+		$char: "\E076";
+	}
+	@if $filename == hourglass {
+		$char: "\E077";
+	}
+	@if $filename == id-badge {
+		$char: "\E078";
+	}
+	@if $filename == id-card {
+		$char: "\E079";
+	}
+	@if $filename == image {
+		$char: "\E07A";
+	}
+	@if $filename == images {
+		$char: "\E07B";
+	}
+	@if $filename == keyboard {
+		$char: "\E07C";
+	}
+	@if $filename == lemon {
+		$char: "\E07D";
+	}
+	@if $filename == life-ring {
+		$char: "\E07E";
+	}
+	@if $filename == lightbulb {
+		$char: "\E07F";
+	}
+	@if $filename == map {
+		$char: "\E080";
+	}
+	@if $filename == message {
+		$char: "\E081";
+	}
+	@if $filename == money-bill-1 {
+		$char: "\E082";
+	}
+	@if $filename == moon {
+		$char: "\E083";
+	}
+	@if $filename == newspaper {
+		$char: "\E084";
+	}
+	@if $filename == note-sticky {
+		$char: "\E085";
+	}
+	@if $filename == object-group {
+		$char: "\E086";
+	}
+	@if $filename == object-ungroup {
+		$char: "\E087";
+	}
+	@if $filename == paper-plane {
+		$char: "\E088";
+	}
+	@if $filename == paste {
+		$char: "\E089";
+	}
+	@if $filename == pen-to-square {
+		$char: "\E08A";
+	}
+	@if $filename == rectangle-list {
+		$char: "\E08B";
+	}
+	@if $filename == rectangle-xmark {
+		$char: "\E08C";
+	}
+	@if $filename == registered {
+		$char: "\E08D";
+	}
+	@if $filename == share-from-square {
+		$char: "\E08E";
+	}
+	@if $filename == snowflake {
+		$char: "\E08F";
+	}
+	@if $filename == square-caret-down {
+		$char: "\E090";
+	}
+	@if $filename == square-caret-left {
+		$char: "\E091";
+	}
+	@if $filename == square-caret-right {
+		$char: "\E092";
+	}
+	@if $filename == square-caret-up {
+		$char: "\E093";
+	}
+	@if $filename == square-check {
+		$char: "\E094";
+	}
+	@if $filename == square-full {
+		$char: "\E095";
+	}
+	@if $filename == square-minus {
+		$char: "\E096";
+	}
+	@if $filename == square-plus {
+		$char: "\E097";
+	}
+	@if $filename == square {
+		$char: "\E098";
+	}
+	@if $filename == star-half-stroke {
+		$char: "\E099";
+	}
+	@if $filename == star-half {
+		$char: "\E09A";
+	}
+	@if $filename == star {
+		$char: "\E09B";
+	}
+	@if $filename == sun {
+		$char: "\E09C";
+	}
+	@if $filename == thumbs-down {
+		$char: "\E09D";
+	}
+	@if $filename == thumbs-up {
+		$char: "\E09E";
+	}
+	@if $filename == trash-can {
+		$char: "\E09F";
+	}
+	@if $filename == user {
+		$char: "\E0A0";
+	}
+	@if $filename == window-maximize {
+		$char: "\E0A1";
+	}
+	@if $filename == window-minimize {
+		$char: "\E0A2";
+	}
+	@if $filename == window-restore {
+		$char: "\E0A3";
+	}
+
+	@return $char;
+}
+
+@mixin i($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %i;
+		} @else {
+			@include i-styles;
+		}
+		content: i-char($filename);
+	}
+}
+
+.i-address-book {
+	@include i(address-book);
+}
+.i-address-card {
+	@include i(address-card);
+}
+.i-bell-slash {
+	@include i(bell-slash);
+}
+.i-bell {
+	@include i(bell);
+}
+.i-bookmark {
+	@include i(bookmark);
+}
+.i-building {
+	@include i(building);
+}
+.i-calendar-check {
+	@include i(calendar-check);
+}
+.i-calendar-days {
+	@include i(calendar-days);
+}
+.i-calendar-minus {
+	@include i(calendar-minus);
+}
+.i-calendar-plus {
+	@include i(calendar-plus);
+}
+.i-calendar-xmark {
+	@include i(calendar-xmark);
+}
+.i-calendar {
+	@include i(calendar);
+}
+.i-chart-bar {
+	@include i(chart-bar);
+}
+.i-chess-bishop {
+	@include i(chess-bishop);
+}
+.i-chess-king {
+	@include i(chess-king);
+}
+.i-chess-knight {
+	@include i(chess-knight);
+}
+.i-chess-pawn {
+	@include i(chess-pawn);
+}
+.i-chess-queen {
+	@include i(chess-queen);
+}
+.i-chess-rook {
+	@include i(chess-rook);
+}
+.i-circle-check {
+	@include i(circle-check);
+}
+.i-circle-dot {
+	@include i(circle-dot);
+}
+.i-circle-down {
+	@include i(circle-down);
+}
+.i-circle-left {
+	@include i(circle-left);
+}
+.i-circle-pause {
+	@include i(circle-pause);
+}
+.i-circle-play {
+	@include i(circle-play);
+}
+.i-circle-question {
+	@include i(circle-question);
+}
+.i-circle-right {
+	@include i(circle-right);
+}
+.i-circle-stop {
+	@include i(circle-stop);
+}
+.i-circle-up {
+	@include i(circle-up);
+}
+.i-circle-user {
+	@include i(circle-user);
+}
+.i-circle-xmark {
+	@include i(circle-xmark);
+}
+.i-circle {
+	@include i(circle);
+}
+.i-clipboard {
+	@include i(clipboard);
+}
+.i-clock {
+	@include i(clock);
+}
+.i-clone {
+	@include i(clone);
+}
+.i-closed-captioning {
+	@include i(closed-captioning);
+}
+.i-comment-dots {
+	@include i(comment-dots);
+}
+.i-comment {
+	@include i(comment);
+}
+.i-comments {
+	@include i(comments);
+}
+.i-compass {
+	@include i(compass);
+}
+.i-copy {
+	@include i(copy);
+}
+.i-copyright {
+	@include i(copyright);
+}
+.i-credit-card {
+	@include i(credit-card);
+}
+.i-envelope-open {
+	@include i(envelope-open);
+}
+.i-envelope {
+	@include i(envelope);
+}
+.i-eye-slash {
+	@include i(eye-slash);
+}
+.i-eye {
+	@include i(eye);
+}
+.i-face-angry {
+	@include i(face-angry);
+}
+.i-face-dizzy {
+	@include i(face-dizzy);
+}
+.i-face-flushed {
+	@include i(face-flushed);
+}
+.i-face-frown-open {
+	@include i(face-frown-open);
+}
+.i-face-frown {
+	@include i(face-frown);
+}
+.i-face-grimace {
+	@include i(face-grimace);
+}
+.i-face-grin-beam-sweat {
+	@include i(face-grin-beam-sweat);
+}
+.i-face-grin-beam {
+	@include i(face-grin-beam);
+}
+.i-face-grin-hearts {
+	@include i(face-grin-hearts);
+}
+.i-face-grin-squint-tears {
+	@include i(face-grin-squint-tears);
+}
+.i-face-grin-squint {
+	@include i(face-grin-squint);
+}
+.i-face-grin-stars {
+	@include i(face-grin-stars);
+}
+.i-face-grin-tears {
+	@include i(face-grin-tears);
+}
+.i-face-grin-tongue-squint {
+	@include i(face-grin-tongue-squint);
+}
+.i-face-grin-tongue-wink {
+	@include i(face-grin-tongue-wink);
+}
+.i-face-grin-tongue {
+	@include i(face-grin-tongue);
+}
+.i-face-grin-wide {
+	@include i(face-grin-wide);
+}
+.i-face-grin-wink {
+	@include i(face-grin-wink);
+}
+.i-face-grin {
+	@include i(face-grin);
+}
+.i-face-kiss-beam {
+	@include i(face-kiss-beam);
+}
+.i-face-kiss-wink-heart {
+	@include i(face-kiss-wink-heart);
+}
+.i-face-kiss {
+	@include i(face-kiss);
+}
+.i-face-laugh-beam {
+	@include i(face-laugh-beam);
+}
+.i-face-laugh-squint {
+	@include i(face-laugh-squint);
+}
+.i-face-laugh-wink {
+	@include i(face-laugh-wink);
+}
+.i-face-laugh {
+	@include i(face-laugh);
+}
+.i-face-meh-blank {
+	@include i(face-meh-blank);
+}
+.i-face-meh {
+	@include i(face-meh);
+}
+.i-face-rolling-eyes {
+	@include i(face-rolling-eyes);
+}
+.i-face-sad-cry {
+	@include i(face-sad-cry);
+}
+.i-face-sad-tear {
+	@include i(face-sad-tear);
+}
+.i-face-smile-beam {
+	@include i(face-smile-beam);
+}
+.i-face-smile-wink {
+	@include i(face-smile-wink);
+}
+.i-face-smile {
+	@include i(face-smile);
+}
+.i-face-surprise {
+	@include i(face-surprise);
+}
+.i-face-tired {
+	@include i(face-tired);
+}
+.i-file-audio {
+	@include i(file-audio);
+}
+.i-file-code {
+	@include i(file-code);
+}
+.i-file-excel {
+	@include i(file-excel);
+}
+.i-file-image {
+	@include i(file-image);
+}
+.i-file-lines {
+	@include i(file-lines);
+}
+.i-file-pdf {
+	@include i(file-pdf);
+}
+.i-file-powerpoint {
+	@include i(file-powerpoint);
+}
+.i-file-video {
+	@include i(file-video);
+}
+.i-file-word {
+	@include i(file-word);
+}
+.i-file-zipper {
+	@include i(file-zipper);
+}
+.i-file {
+	@include i(file);
+}
+.i-flag {
+	@include i(flag);
+}
+.i-floppy-disk {
+	@include i(floppy-disk);
+}
+.i-folder-closed {
+	@include i(folder-closed);
+}
+.i-folder-open {
+	@include i(folder-open);
+}
+.i-folder {
+	@include i(folder);
+}
+.i-font-awesome {
+	@include i(font-awesome);
+}
+.i-futbol {
+	@include i(futbol);
+}
+.i-gem {
+	@include i(gem);
+}
+.i-hand-back-fist {
+	@include i(hand-back-fist);
+}
+.i-hand-lizard {
+	@include i(hand-lizard);
+}
+.i-hand-peace {
+	@include i(hand-peace);
+}
+.i-hand-point-down {
+	@include i(hand-point-down);
+}
+.i-hand-point-left {
+	@include i(hand-point-left);
+}
+.i-hand-point-right {
+	@include i(hand-point-right);
+}
+.i-hand-point-up {
+	@include i(hand-point-up);
+}
+.i-hand-pointer {
+	@include i(hand-pointer);
+}
+.i-hand-scissors {
+	@include i(hand-scissors);
+}
+.i-hand-spock {
+	@include i(hand-spock);
+}
+.i-hand {
+	@include i(hand);
+}
+.i-handshake {
+	@include i(handshake);
+}
+.i-hard-drive {
+	@include i(hard-drive);
+}
+.i-heart {
+	@include i(heart);
+}
+.i-hospital {
+	@include i(hospital);
+}
+.i-hourglass-half {
+	@include i(hourglass-half);
+}
+.i-hourglass {
+	@include i(hourglass);
+}
+.i-id-badge {
+	@include i(id-badge);
+}
+.i-id-card {
+	@include i(id-card);
+}
+.i-image {
+	@include i(image);
+}
+.i-images {
+	@include i(images);
+}
+.i-keyboard {
+	@include i(keyboard);
+}
+.i-lemon {
+	@include i(lemon);
+}
+.i-life-ring {
+	@include i(life-ring);
+}
+.i-lightbulb {
+	@include i(lightbulb);
+}
+.i-map {
+	@include i(map);
+}
+.i-message {
+	@include i(message);
+}
+.i-money-bill-1 {
+	@include i(money-bill-1);
+}
+.i-moon {
+	@include i(moon);
+}
+.i-newspaper {
+	@include i(newspaper);
+}
+.i-note-sticky {
+	@include i(note-sticky);
+}
+.i-object-group {
+	@include i(object-group);
+}
+.i-object-ungroup {
+	@include i(object-ungroup);
+}
+.i-paper-plane {
+	@include i(paper-plane);
+}
+.i-paste {
+	@include i(paste);
+}
+.i-pen-to-square {
+	@include i(pen-to-square);
+}
+.i-rectangle-list {
+	@include i(rectangle-list);
+}
+.i-rectangle-xmark {
+	@include i(rectangle-xmark);
+}
+.i-registered {
+	@include i(registered);
+}
+.i-share-from-square {
+	@include i(share-from-square);
+}
+.i-snowflake {
+	@include i(snowflake);
+}
+.i-square-caret-down {
+	@include i(square-caret-down);
+}
+.i-square-caret-left {
+	@include i(square-caret-left);
+}
+.i-square-caret-right {
+	@include i(square-caret-right);
+}
+.i-square-caret-up {
+	@include i(square-caret-up);
+}
+.i-square-check {
+	@include i(square-check);
+}
+.i-square-full {
+	@include i(square-full);
+}
+.i-square-minus {
+	@include i(square-minus);
+}
+.i-square-plus {
+	@include i(square-plus);
+}
+.i-square {
+	@include i(square);
+}
+.i-star-half-stroke {
+	@include i(star-half-stroke);
+}
+.i-star-half {
+	@include i(star-half);
+}
+.i-star {
+	@include i(star);
+}
+.i-sun {
+	@include i(sun);
+}
+.i-thumbs-down {
+	@include i(thumbs-down);
+}
+.i-thumbs-up {
+	@include i(thumbs-up);
+}
+.i-trash-can {
+	@include i(trash-can);
+}
+.i-user {
+	@include i(user);
+}
+.i-window-maximize {
+	@include i(window-maximize);
+}
+.i-window-minimize {
+	@include i(window-minimize);
+}
+.i-window-restore {
+	@include i(window-restore);
+}
