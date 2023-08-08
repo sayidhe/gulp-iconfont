@@ -1,13 +1,19 @@
 {
-  "name": "@audi/audi-icon",
+  "name": "@dg/dg-icon",
   "version": "3.18.0",
-  "description": "Audi Icons as SVG, PNG, Icon Font and EPS.",
-  "author": "Audi",
+  "description": "DG Icons as SVG, PNG, Icon Font and EPS.",
+  "author": "Sayid",
   "private": false,
-  "homepage": "https://github.com/audi/audi-icon",
+  "homepage": "https://github.com/sayidhe/gulp-iconfont",
   "repository": {
     "type": "git",
-    "url": "git://github.com/audi/audi-icon.git"
+    "url": "https://github.com/sayidhe/gulp-iconfont"
+  },
+  "scripts": {
+    "demo": "browser-sync start --server . --startPath ./demo/index.html",
+    "font": "gulp Iconfont",
+    "fontCss": "gulp Iconfont-Css",
+    "svg": "gulp svg"
   },
   "devDependencies": {
     "browser-sync": "^2.29.3",
@@ -17,17 +23,11 @@
     "gulp-iconfont-css": "^3.0.0",
     "gulp-json-transform": "^0.4.8"
   },
-  "scripts": {
-    "demo": "browser-sync start --server . --startPath ./demo/index.html",
-    "font": "gulp Iconfont",
-    "fontCss": "gulp Iconfont-Css",
-    "svg": "gulp svg"
-  },
   "engines": {
     "node": ">=6.0.0"
   },
   "bugs": {
-    "url": "https://github.com/audi/audi-icon/issues"
+    "url": "https://github.com/sayidhe/gulp-iconfont/issues"
   },
   "main": "index.js",
   "license": "Apache-2.0"
