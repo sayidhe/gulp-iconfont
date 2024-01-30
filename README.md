@@ -1,10 +1,12 @@
-# Audi Icon
+# Icon
 
 ## General Usage
 
-All Audi Icons come in two sizes
-- small: 24px
-- large: 48px
+Download font awesome icons from
+
+1. [Downloads](https://fontawesome.com/download)
+2. Choose `For The Web`, and download
+3. Extract and paste the `brands` and `regular` from **fontawesome-web / svgs** to **dist/svg** folder
 
 ## SVG
 

@@ -1,0 +1,2948 @@
+@font-face {
+	font-family: "Font";
+	src: url('../iconfont/Font.eot');
+	src: url('../iconfont/Font.eot?#iefix') format('eot'),
+		url('../iconfont/Font.woff2') format('woff2'),
+		url('../iconfont/Font.woff') format('woff'),
+		url('../iconfont/Font.ttf') format('truetype'),
+		url('../iconfont/Font.svg#Font') format('svg');
+}
+
+@mixin i-styles {
+	font-family: "Font";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%i {
+	@include i-styles;
+}
+
+@function i-char($filename) {
+	$char: "";
+
+	@if $filename == 42-group {
+		$char: "\E001";
+	}
+	@if $filename == 500px {
+		$char: "\E002";
+	}
+	@if $filename == accessible-icon {
+		$char: "\E003";
+	}
+	@if $filename == accusoft {
+		$char: "\E004";
+	}
+	@if $filename == adn {
+		$char: "\E005";
+	}
+	@if $filename == adversal {
+		$char: "\E006";
+	}
+	@if $filename == affiliatetheme {
+		$char: "\E007";
+	}
+	@if $filename == airbnb {
+		$char: "\E008";
+	}
+	@if $filename == algolia {
+		$char: "\E009";
+	}
+	@if $filename == alipay {
+		$char: "\E00A";
+	}
+	@if $filename == amazon-pay {
+		$char: "\E00B";
+	}
+	@if $filename == amazon {
+		$char: "\E00C";
+	}
+	@if $filename == amilia {
+		$char: "\E00D";
+	}
+	@if $filename == android {
+		$char: "\E00E";
+	}
+	@if $filename == angellist {
+		$char: "\E00F";
+	}
+	@if $filename == angrycreative {
+		$char: "\E010";
+	}
+	@if $filename == angular {
+		$char: "\E011";
+	}
+	@if $filename == app-store-ios {
+		$char: "\E012";
+	}
+	@if $filename == app-store {
+		$char: "\E013";
+	}
+	@if $filename == apper {
+		$char: "\E014";
+	}
+	@if $filename == apple-pay {
+		$char: "\E015";
+	}
+	@if $filename == apple {
+		$char: "\E016";
+	}
+	@if $filename == artstation {
+		$char: "\E017";
+	}
+	@if $filename == asymmetrik {
+		$char: "\E018";
+	}
+	@if $filename == atlassian {
+		$char: "\E019";
+	}
+	@if $filename == audible {
+		$char: "\E01A";
+	}
+	@if $filename == autoprefixer {
+		$char: "\E01B";
+	}
+	@if $filename == avianex {
+		$char: "\E01C";
+	}
+	@if $filename == aviato {
+		$char: "\E01D";
+	}
+	@if $filename == aws {
+		$char: "\E01E";
+	}
+	@if $filename == bandcamp {
+		$char: "\E01F";
+	}
+	@if $filename == battle-net {
+		$char: "\E020";
+	}
+	@if $filename == behance {
+		$char: "\E021";
+	}
+	@if $filename == bilibili {
+		$char: "\E022";
+	}
+	@if $filename == bimobject {
+		$char: "\E023";
+	}
+	@if $filename == bitbucket {
+		$char: "\E024";
+	}
+	@if $filename == bitcoin {
+		$char: "\E025";
+	}
+	@if $filename == bity {
+		$char: "\E026";
+	}
+	@if $filename == black-tie {
+		$char: "\E027";
+	}
+	@if $filename == blackberry {
+		$char: "\E028";
+	}
+	@if $filename == blogger-b {
+		$char: "\E029";
+	}
+	@if $filename == blogger {
+		$char: "\E02A";
+	}
+	@if $filename == bluetooth-b {
+		$char: "\E02B";
+	}
+	@if $filename == bluetooth {
+		$char: "\E02C";
+	}
+	@if $filename == bootstrap {
+		$char: "\E02D";
+	}
+	@if $filename == bots {
+		$char: "\E02E";
+	}
+	@if $filename == brave-reverse {
+		$char: "\E02F";
+	}
+	@if $filename == brave {
+		$char: "\E030";
+	}
+	@if $filename == btc {
+		$char: "\E031";
+	}
+	@if $filename == buffer {
+		$char: "\E032";
+	}
+	@if $filename == buromobelexperte {
+		$char: "\E033";
+	}
+	@if $filename == buy-n-large {
+		$char: "\E034";
+	}
+	@if $filename == buysellads {
+		$char: "\E035";
+	}
+	@if $filename == canadian-maple-leaf {
+		$char: "\E036";
+	}
+	@if $filename == cc-amazon-pay {
+		$char: "\E037";
+	}
+	@if $filename == cc-amex {
+		$char: "\E038";
+	}
+	@if $filename == cc-apple-pay {
+		$char: "\E039";
+	}
+	@if $filename == cc-diners-club {
+		$char: "\E03A";
+	}
+	@if $filename == cc-discover {
+		$char: "\E03B";
+	}
+	@if $filename == cc-jcb {
+		$char: "\E03C";
+	}
+	@if $filename == cc-mastercard {
+		$char: "\E03D";
+	}
+	@if $filename == cc-paypal {
+		$char: "\E03E";
+	}
+	@if $filename == cc-stripe {
+		$char: "\E03F";
+	}
+	@if $filename == cc-visa {
+		$char: "\E040";
+	}
+	@if $filename == centercode {
+		$char: "\E041";
+	}
+	@if $filename == centos {
+		$char: "\E042";
+	}
+	@if $filename == chrome {
+		$char: "\E043";
+	}
+	@if $filename == chromecast {
+		$char: "\E044";
+	}
+	@if $filename == cloudflare {
+		$char: "\E045";
+	}
+	@if $filename == cloudscale {
+		$char: "\E046";
+	}
+	@if $filename == cloudsmith {
+		$char: "\E047";
+	}
+	@if $filename == cloudversify {
+		$char: "\E048";
+	}
+	@if $filename == cmplid {
+		$char: "\E049";
+	}
+	@if $filename == codepen {
+		$char: "\E04A";
+	}
+	@if $filename == codiepie {
+		$char: "\E04B";
+	}
+	@if $filename == confluence {
+		$char: "\E04C";
+	}
+	@if $filename == connectdevelop {
+		$char: "\E04D";
+	}
+	@if $filename == contao {
+		$char: "\E04E";
+	}
+	@if $filename == cotton-bureau {
+		$char: "\E04F";
+	}
+	@if $filename == cpanel {
+		$char: "\E050";
+	}
+	@if $filename == creative-commons-by {
+		$char: "\E051";
+	}
+	@if $filename == creative-commons-nc-eu {
+		$char: "\E052";
+	}
+	@if $filename == creative-commons-nc-jp {
+		$char: "\E053";
+	}
+	@if $filename == creative-commons-nc {
+		$char: "\E054";
+	}
+	@if $filename == creative-commons-nd {
+		$char: "\E055";
+	}
+	@if $filename == creative-commons-pd-alt {
+		$char: "\E056";
+	}
+	@if $filename == creative-commons-pd {
+		$char: "\E057";
+	}
+	@if $filename == creative-commons-remix {
+		$char: "\E058";
+	}
+	@if $filename == creative-commons-sa {
+		$char: "\E059";
+	}
+	@if $filename == creative-commons-sampling-plus {
+		$char: "\E05A";
+	}
+	@if $filename == creative-commons-sampling {
+		$char: "\E05B";
+	}
+	@if $filename == creative-commons-share {
+		$char: "\E05C";
+	}
+	@if $filename == creative-commons-zero {
+		$char: "\E05D";
+	}
+	@if $filename == creative-commons {
+		$char: "\E05E";
+	}
+	@if $filename == critical-role {
+		$char: "\E05F";
+	}
+	@if $filename == css3-alt {
+		$char: "\E060";
+	}
+	@if $filename == css3 {
+		$char: "\E061";
+	}
+	@if $filename == cuttlefish {
+		$char: "\E062";
+	}
+	@if $filename == d-and-d-beyond {
+		$char: "\E063";
+	}
+	@if $filename == d-and-d {
+		$char: "\E064";
+	}
+	@if $filename == dailymotion {
+		$char: "\E065";
+	}
+	@if $filename == dashcube {
+		$char: "\E066";
+	}
+	@if $filename == debian {
+		$char: "\E067";
+	}
+	@if $filename == deezer {
+		$char: "\E068";
+	}
+	@if $filename == delicious {
+		$char: "\E069";
+	}
+	@if $filename == deploydog {
+		$char: "\E06A";
+	}
+	@if $filename == deskpro {
+		$char: "\E06B";
+	}
+	@if $filename == dev {
+		$char: "\E06C";
+	}
+	@if $filename == deviantart {
+		$char: "\E06D";
+	}
+	@if $filename == dhl {
+		$char: "\E06E";
+	}
+	@if $filename == diaspora {
+		$char: "\E06F";
+	}
+	@if $filename == digg {
+		$char: "\E070";
+	}
+	@if $filename == digital-ocean {
+		$char: "\E071";
+	}
+	@if $filename == discord {
+		$char: "\E072";
+	}
+	@if $filename == discourse {
+		$char: "\E073";
+	}
+	@if $filename == dochub {
+		$char: "\E074";
+	}
+	@if $filename == docker {
+		$char: "\E075";
+	}
+	@if $filename == draft2digital {
+		$char: "\E076";
+	}
+	@if $filename == dribbble {
+		$char: "\E077";
+	}
+	@if $filename == dropbox {
+		$char: "\E078";
+	}
+	@if $filename == drupal {
+		$char: "\E079";
+	}
+	@if $filename == dyalog {
+		$char: "\E07A";
+	}
+	@if $filename == earlybirds {
+		$char: "\E07B";
+	}
+	@if $filename == ebay {
+		$char: "\E07C";
+	}
+	@if $filename == edge-legacy {
+		$char: "\E07D";
+	}
+	@if $filename == edge {
+		$char: "\E07E";
+	}
+	@if $filename == elementor {
+		$char: "\E07F";
+	}
+	@if $filename == ello {
+		$char: "\E080";
+	}
+	@if $filename == ember {
+		$char: "\E081";
+	}
+	@if $filename == empire {
+		$char: "\E082";
+	}
+	@if $filename == envira {
+		$char: "\E083";
+	}
+	@if $filename == erlang {
+		$char: "\E084";
+	}
+	@if $filename == ethereum {
+		$char: "\E085";
+	}
+	@if $filename == etsy {
+		$char: "\E086";
+	}
+	@if $filename == evernote {
+		$char: "\E087";
+	}
+	@if $filename == expeditedssl {
+		$char: "\E088";
+	}
+	@if $filename == facebook-f {
+		$char: "\E089";
+	}
+	@if $filename == facebook-messenger {
+		$char: "\E08A";
+	}
+	@if $filename == facebook {
+		$char: "\E08B";
+	}
+	@if $filename == fantasy-flight-games {
+		$char: "\E08C";
+	}
+	@if $filename == fedex {
+		$char: "\E08D";
+	}
+	@if $filename == fedora {
+		$char: "\E08E";
+	}
+	@if $filename == figma {
+		$char: "\E08F";
+	}
+	@if $filename == firefox-browser {
+		$char: "\E090";
+	}
+	@if $filename == firefox {
+		$char: "\E091";
+	}
+	@if $filename == first-order-alt {
+		$char: "\E092";
+	}
+	@if $filename == first-order {
+		$char: "\E093";
+	}
+	@if $filename == firstdraft {
+		$char: "\E094";
+	}
+	@if $filename == flickr {
+		$char: "\E095";
+	}
+	@if $filename == flipboard {
+		$char: "\E096";
+	}
+	@if $filename == fly {
+		$char: "\E097";
+	}
+	@if $filename == font-awesome {
+		$char: "\E098";
+	}
+	@if $filename == fonticons-fi {
+		$char: "\E099";
+	}
+	@if $filename == fonticons {
+		$char: "\E09A";
+	}
+	@if $filename == fort-awesome-alt {
+		$char: "\E09B";
+	}
+	@if $filename == fort-awesome {
+		$char: "\E09C";
+	}
+	@if $filename == forumbee {
+		$char: "\E09D";
+	}
+	@if $filename == foursquare {
+		$char: "\E09E";
+	}
+	@if $filename == free-code-camp {
+		$char: "\E09F";
+	}
+	@if $filename == freebsd {
+		$char: "\E0A0";
+	}
+	@if $filename == fulcrum {
+		$char: "\E0A1";
+	}
+	@if $filename == galactic-republic {
+		$char: "\E0A2";
+	}
+	@if $filename == galactic-senate {
+		$char: "\E0A3";
+	}
+	@if $filename == get-pocket {
+		$char: "\E0A4";
+	}
+	@if $filename == gg-circle {
+		$char: "\E0A5";
+	}
+	@if $filename == gg {
+		$char: "\E0A6";
+	}
+	@if $filename == git-alt {
+		$char: "\E0A7";
+	}
+	@if $filename == git {
+		$char: "\E0A8";
+	}
+	@if $filename == github-alt {
+		$char: "\E0A9";
+	}
+	@if $filename == github {
+		$char: "\E0AA";
+	}
+	@if $filename == gitkraken {
+		$char: "\E0AB";
+	}
+	@if $filename == gitlab {
+		$char: "\E0AC";
+	}
+	@if $filename == gitter {
+		$char: "\E0AD";
+	}
+	@if $filename == glide-g {
+		$char: "\E0AE";
+	}
+	@if $filename == glide {
+		$char: "\E0AF";
+	}
+	@if $filename == gofore {
+		$char: "\E0B0";
+	}
+	@if $filename == golang {
+		$char: "\E0B1";
+	}
+	@if $filename == goodreads-g {
+		$char: "\E0B2";
+	}
+	@if $filename == goodreads {
+		$char: "\E0B3";
+	}
+	@if $filename == google-drive {
+		$char: "\E0B4";
+	}
+	@if $filename == google-pay {
+		$char: "\E0B5";
+	}
+	@if $filename == google-play {
+		$char: "\E0B6";
+	}
+	@if $filename == google-plus-g {
+		$char: "\E0B7";
+	}
+	@if $filename == google-plus {
+		$char: "\E0B8";
+	}
+	@if $filename == google-scholar {
+		$char: "\E0B9";
+	}
+	@if $filename == google-wallet {
+		$char: "\E0BA";
+	}
+	@if $filename == google {
+		$char: "\E0BB";
+	}
+	@if $filename == gratipay {
+		$char: "\E0BC";
+	}
+	@if $filename == grav {
+		$char: "\E0BD";
+	}
+	@if $filename == gripfire {
+		$char: "\E0BE";
+	}
+	@if $filename == grunt {
+		$char: "\E0BF";
+	}
+	@if $filename == guilded {
+		$char: "\E0C0";
+	}
+	@if $filename == gulp {
+		$char: "\E0C1";
+	}
+	@if $filename == hacker-news {
+		$char: "\E0C2";
+	}
+	@if $filename == hackerrank {
+		$char: "\E0C3";
+	}
+	@if $filename == hashnode {
+		$char: "\E0C4";
+	}
+	@if $filename == hips {
+		$char: "\E0C5";
+	}
+	@if $filename == hire-a-helper {
+		$char: "\E0C6";
+	}
+	@if $filename == hive {
+		$char: "\E0C7";
+	}
+	@if $filename == hooli {
+		$char: "\E0C8";
+	}
+	@if $filename == hornbill {
+		$char: "\E0C9";
+	}
+	@if $filename == hotjar {
+		$char: "\E0CA";
+	}
+	@if $filename == houzz {
+		$char: "\E0CB";
+	}
+	@if $filename == html5 {
+		$char: "\E0CC";
+	}
+	@if $filename == hubspot {
+		$char: "\E0CD";
+	}
+	@if $filename == ideal {
+		$char: "\E0CE";
+	}
+	@if $filename == imdb {
+		$char: "\E0CF";
+	}
+	@if $filename == instagram {
+		$char: "\E0D0";
+	}
+	@if $filename == instalod {
+		$char: "\E0D1";
+	}
+	@if $filename == intercom {
+		$char: "\E0D2";
+	}
+	@if $filename == internet-explorer {
+		$char: "\E0D3";
+	}
+	@if $filename == invision {
+		$char: "\E0D4";
+	}
+	@if $filename == ioxhost {
+		$char: "\E0D5";
+	}
+	@if $filename == itch-io {
+		$char: "\E0D6";
+	}
+	@if $filename == itunes-note {
+		$char: "\E0D7";
+	}
+	@if $filename == itunes {
+		$char: "\E0D8";
+	}
+	@if $filename == java {
+		$char: "\E0D9";
+	}
+	@if $filename == jedi-order {
+		$char: "\E0DA";
+	}
+	@if $filename == jenkins {
+		$char: "\E0DB";
+	}
+	@if $filename == jira {
+		$char: "\E0DC";
+	}
+	@if $filename == joget {
+		$char: "\E0DD";
+	}
+	@if $filename == joomla {
+		$char: "\E0DE";
+	}
+	@if $filename == js {
+		$char: "\E0DF";
+	}
+	@if $filename == jsfiddle {
+		$char: "\E0E0";
+	}
+	@if $filename == kaggle {
+		$char: "\E0E1";
+	}
+	@if $filename == keybase {
+		$char: "\E0E2";
+	}
+	@if $filename == keycdn {
+		$char: "\E0E3";
+	}
+	@if $filename == kickstarter-k {
+		$char: "\E0E4";
+	}
+	@if $filename == kickstarter {
+		$char: "\E0E5";
+	}
+	@if $filename == korvue {
+		$char: "\E0E6";
+	}
+	@if $filename == laravel {
+		$char: "\E0E7";
+	}
+	@if $filename == lastfm {
+		$char: "\E0E8";
+	}
+	@if $filename == leanpub {
+		$char: "\E0E9";
+	}
+	@if $filename == less {
+		$char: "\E0EA";
+	}
+	@if $filename == letterboxd {
+		$char: "\E0EB";
+	}
+	@if $filename == line {
+		$char: "\E0EC";
+	}
+	@if $filename == linkedin-in {
+		$char: "\E0ED";
+	}
+	@if $filename == linkedin {
+		$char: "\E0EE";
+	}
+	@if $filename == linode {
+		$char: "\E0EF";
+	}
+	@if $filename == linux {
+		$char: "\E0F0";
+	}
+	@if $filename == lyft {
+		$char: "\E0F1";
+	}
+	@if $filename == magento {
+		$char: "\E0F2";
+	}
+	@if $filename == mailchimp {
+		$char: "\E0F3";
+	}
+	@if $filename == mandalorian {
+		$char: "\E0F4";
+	}
+	@if $filename == markdown {
+		$char: "\E0F5";
+	}
+	@if $filename == mastodon {
+		$char: "\E0F6";
+	}
+	@if $filename == maxcdn {
+		$char: "\E0F7";
+	}
+	@if $filename == mdb {
+		$char: "\E0F8";
+	}
+	@if $filename == medapps {
+		$char: "\E0F9";
+	}
+	@if $filename == medium {
+		$char: "\E0FA";
+	}
+	@if $filename == medrt {
+		$char: "\E0FB";
+	}
+	@if $filename == meetup {
+		$char: "\E0FC";
+	}
+	@if $filename == megaport {
+		$char: "\E0FD";
+	}
+	@if $filename == mendeley {
+		$char: "\E0FE";
+	}
+	@if $filename == meta {
+		$char: "\E0FF";
+	}
+	@if $filename == microblog {
+		$char: "\E100";
+	}
+	@if $filename == microsoft {
+		$char: "\E101";
+	}
+	@if $filename == mintbit {
+		$char: "\E102";
+	}
+	@if $filename == mix {
+		$char: "\E103";
+	}
+	@if $filename == mixcloud {
+		$char: "\E104";
+	}
+	@if $filename == mixer {
+		$char: "\E105";
+	}
+	@if $filename == mizuni {
+		$char: "\E106";
+	}
+	@if $filename == modx {
+		$char: "\E107";
+	}
+	@if $filename == monero {
+		$char: "\E108";
+	}
+	@if $filename == napster {
+		$char: "\E109";
+	}
+	@if $filename == neos {
+		$char: "\E10A";
+	}
+	@if $filename == nfc-directional {
+		$char: "\E10B";
+	}
+	@if $filename == nfc-symbol {
+		$char: "\E10C";
+	}
+	@if $filename == nimblr {
+		$char: "\E10D";
+	}
+	@if $filename == node-js {
+		$char: "\E10E";
+	}
+	@if $filename == node {
+		$char: "\E10F";
+	}
+	@if $filename == npm {
+		$char: "\E110";
+	}
+	@if $filename == ns8 {
+		$char: "\E111";
+	}
+	@if $filename == nutritionix {
+		$char: "\E112";
+	}
+	@if $filename == octopus-deploy {
+		$char: "\E113";
+	}
+	@if $filename == odnoklassniki {
+		$char: "\E114";
+	}
+	@if $filename == odysee {
+		$char: "\E115";
+	}
+	@if $filename == old-republic {
+		$char: "\E116";
+	}
+	@if $filename == opencart {
+		$char: "\E117";
+	}
+	@if $filename == openid {
+		$char: "\E118";
+	}
+	@if $filename == opensuse {
+		$char: "\E119";
+	}
+	@if $filename == opera {
+		$char: "\E11A";
+	}
+	@if $filename == optin-monster {
+		$char: "\E11B";
+	}
+	@if $filename == orcid {
+		$char: "\E11C";
+	}
+	@if $filename == osi {
+		$char: "\E11D";
+	}
+	@if $filename == padlet {
+		$char: "\E11E";
+	}
+	@if $filename == page4 {
+		$char: "\E11F";
+	}
+	@if $filename == pagelines {
+		$char: "\E120";
+	}
+	@if $filename == palfed {
+		$char: "\E121";
+	}
+	@if $filename == patreon {
+		$char: "\E122";
+	}
+	@if $filename == paypal {
+		$char: "\E123";
+	}
+	@if $filename == perbyte {
+		$char: "\E124";
+	}
+	@if $filename == periscope {
+		$char: "\E125";
+	}
+	@if $filename == phabricator {
+		$char: "\E126";
+	}
+	@if $filename == phoenix-framework {
+		$char: "\E127";
+	}
+	@if $filename == phoenix-squadron {
+		$char: "\E128";
+	}
+	@if $filename == php {
+		$char: "\E129";
+	}
+	@if $filename == pied-piper-alt {
+		$char: "\E12A";
+	}
+	@if $filename == pied-piper-hat {
+		$char: "\E12B";
+	}
+	@if $filename == pied-piper-pp {
+		$char: "\E12C";
+	}
+	@if $filename == pied-piper {
+		$char: "\E12D";
+	}
+	@if $filename == pinterest-p {
+		$char: "\E12E";
+	}
+	@if $filename == pinterest {
+		$char: "\E12F";
+	}
+	@if $filename == pix {
+		$char: "\E130";
+	}
+	@if $filename == pixiv {
+		$char: "\E131";
+	}
+	@if $filename == playstation {
+		$char: "\E132";
+	}
+	@if $filename == product-hunt {
+		$char: "\E133";
+	}
+	@if $filename == pushed {
+		$char: "\E134";
+	}
+	@if $filename == python {
+		$char: "\E135";
+	}
+	@if $filename == qq {
+		$char: "\E136";
+	}
+	@if $filename == quinscape {
+		$char: "\E137";
+	}
+	@if $filename == quora {
+		$char: "\E138";
+	}
+	@if $filename == r-project {
+		$char: "\E139";
+	}
+	@if $filename == raspberry-pi {
+		$char: "\E13A";
+	}
+	@if $filename == ravelry {
+		$char: "\E13B";
+	}
+	@if $filename == react {
+		$char: "\E13C";
+	}
+	@if $filename == reacteurope {
+		$char: "\E13D";
+	}
+	@if $filename == readme {
+		$char: "\E13E";
+	}
+	@if $filename == rebel {
+		$char: "\E13F";
+	}
+	@if $filename == red-river {
+		$char: "\E140";
+	}
+	@if $filename == reddit-alien {
+		$char: "\E141";
+	}
+	@if $filename == reddit {
+		$char: "\E142";
+	}
+	@if $filename == redhat {
+		$char: "\E143";
+	}
+	@if $filename == renren {
+		$char: "\E144";
+	}
+	@if $filename == replyd {
+		$char: "\E145";
+	}
+	@if $filename == researchgate {
+		$char: "\E146";
+	}
+	@if $filename == resolving {
+		$char: "\E147";
+	}
+	@if $filename == rev {
+		$char: "\E148";
+	}
+	@if $filename == rocketchat {
+		$char: "\E149";
+	}
+	@if $filename == rockrms {
+		$char: "\E14A";
+	}
+	@if $filename == rust {
+		$char: "\E14B";
+	}
+	@if $filename == safari {
+		$char: "\E14C";
+	}
+	@if $filename == salesforce {
+		$char: "\E14D";
+	}
+	@if $filename == sass {
+		$char: "\E14E";
+	}
+	@if $filename == schlix {
+		$char: "\E14F";
+	}
+	@if $filename == screenpal {
+		$char: "\E150";
+	}
+	@if $filename == scribd {
+		$char: "\E151";
+	}
+	@if $filename == searchengin {
+		$char: "\E152";
+	}
+	@if $filename == sellcast {
+		$char: "\E153";
+	}
+	@if $filename == sellsy {
+		$char: "\E154";
+	}
+	@if $filename == servicestack {
+		$char: "\E155";
+	}
+	@if $filename == shirtsinbulk {
+		$char: "\E156";
+	}
+	@if $filename == shoelace {
+		$char: "\E157";
+	}
+	@if $filename == shopify {
+		$char: "\E158";
+	}
+	@if $filename == shopware {
+		$char: "\E159";
+	}
+	@if $filename == signal-messenger {
+		$char: "\E15A";
+	}
+	@if $filename == simplybuilt {
+		$char: "\E15B";
+	}
+	@if $filename == sistrix {
+		$char: "\E15C";
+	}
+	@if $filename == sith {
+		$char: "\E15D";
+	}
+	@if $filename == sitrox {
+		$char: "\E15E";
+	}
+	@if $filename == sketch {
+		$char: "\E15F";
+	}
+	@if $filename == skyatlas {
+		$char: "\E160";
+	}
+	@if $filename == skype {
+		$char: "\E161";
+	}
+	@if $filename == slack {
+		$char: "\E162";
+	}
+	@if $filename == slideshare {
+		$char: "\E163";
+	}
+	@if $filename == snapchat {
+		$char: "\E164";
+	}
+	@if $filename == soundcloud {
+		$char: "\E165";
+	}
+	@if $filename == sourcetree {
+		$char: "\E166";
+	}
+	@if $filename == space-awesome {
+		$char: "\E167";
+	}
+	@if $filename == speakap {
+		$char: "\E168";
+	}
+	@if $filename == speaker-deck {
+		$char: "\E169";
+	}
+	@if $filename == spotify {
+		$char: "\E16A";
+	}
+	@if $filename == square-behance {
+		$char: "\E16B";
+	}
+	@if $filename == square-dribbble {
+		$char: "\E16C";
+	}
+	@if $filename == square-facebook {
+		$char: "\E16D";
+	}
+	@if $filename == square-font-awesome-stroke {
+		$char: "\E16E";
+	}
+	@if $filename == square-font-awesome {
+		$char: "\E16F";
+	}
+	@if $filename == square-git {
+		$char: "\E170";
+	}
+	@if $filename == square-github {
+		$char: "\E171";
+	}
+	@if $filename == square-gitlab {
+		$char: "\E172";
+	}
+	@if $filename == square-google-plus {
+		$char: "\E173";
+	}
+	@if $filename == square-hacker-news {
+		$char: "\E174";
+	}
+	@if $filename == square-instagram {
+		$char: "\E175";
+	}
+	@if $filename == square-js {
+		$char: "\E176";
+	}
+	@if $filename == square-lastfm {
+		$char: "\E177";
+	}
+	@if $filename == square-letterboxd {
+		$char: "\E178";
+	}
+	@if $filename == square-odnoklassniki {
+		$char: "\E179";
+	}
+	@if $filename == square-pied-piper {
+		$char: "\E17A";
+	}
+	@if $filename == square-pinterest {
+		$char: "\E17B";
+	}
+	@if $filename == square-reddit {
+		$char: "\E17C";
+	}
+	@if $filename == square-snapchat {
+		$char: "\E17D";
+	}
+	@if $filename == square-steam {
+		$char: "\E17E";
+	}
+	@if $filename == square-threads {
+		$char: "\E17F";
+	}
+	@if $filename == square-tumblr {
+		$char: "\E180";
+	}
+	@if $filename == square-twitter {
+		$char: "\E181";
+	}
+	@if $filename == square-viadeo {
+		$char: "\E182";
+	}
+	@if $filename == square-vimeo {
+		$char: "\E183";
+	}
+	@if $filename == square-whatsapp {
+		$char: "\E184";
+	}
+	@if $filename == square-x-twitter {
+		$char: "\E185";
+	}
+	@if $filename == square-xing {
+		$char: "\E186";
+	}
+	@if $filename == square-youtube {
+		$char: "\E187";
+	}
+	@if $filename == squarespace {
+		$char: "\E188";
+	}
+	@if $filename == stack-exchange {
+		$char: "\E189";
+	}
+	@if $filename == stack-overflow {
+		$char: "\E18A";
+	}
+	@if $filename == stackpath {
+		$char: "\E18B";
+	}
+	@if $filename == staylinked {
+		$char: "\E18C";
+	}
+	@if $filename == steam-symbol {
+		$char: "\E18D";
+	}
+	@if $filename == steam {
+		$char: "\E18E";
+	}
+	@if $filename == sticker-mule {
+		$char: "\E18F";
+	}
+	@if $filename == strava {
+		$char: "\E190";
+	}
+	@if $filename == stripe-s {
+		$char: "\E191";
+	}
+	@if $filename == stripe {
+		$char: "\E192";
+	}
+	@if $filename == stubber {
+		$char: "\E193";
+	}
+	@if $filename == studiovinari {
+		$char: "\E194";
+	}
+	@if $filename == stumbleupon-circle {
+		$char: "\E195";
+	}
+	@if $filename == stumbleupon {
+		$char: "\E196";
+	}
+	@if $filename == superpowers {
+		$char: "\E197";
+	}
+	@if $filename == supple {
+		$char: "\E198";
+	}
+	@if $filename == suse {
+		$char: "\E199";
+	}
+	@if $filename == swift {
+		$char: "\E19A";
+	}
+	@if $filename == symfony {
+		$char: "\E19B";
+	}
+	@if $filename == teamspeak {
+		$char: "\E19C";
+	}
+	@if $filename == telegram {
+		$char: "\E19D";
+	}
+	@if $filename == tencent-weibo {
+		$char: "\E19E";
+	}
+	@if $filename == the-red-yeti {
+		$char: "\E19F";
+	}
+	@if $filename == themeco {
+		$char: "\E1A0";
+	}
+	@if $filename == themeisle {
+		$char: "\E1A1";
+	}
+	@if $filename == think-peaks {
+		$char: "\E1A2";
+	}
+	@if $filename == threads {
+		$char: "\E1A3";
+	}
+	@if $filename == tiktok {
+		$char: "\E1A4";
+	}
+	@if $filename == trade-federation {
+		$char: "\E1A5";
+	}
+	@if $filename == trello {
+		$char: "\E1A6";
+	}
+	@if $filename == tumblr {
+		$char: "\E1A7";
+	}
+	@if $filename == twitch {
+		$char: "\E1A8";
+	}
+	@if $filename == twitter {
+		$char: "\E1A9";
+	}
+	@if $filename == typo3 {
+		$char: "\E1AA";
+	}
+	@if $filename == uber {
+		$char: "\E1AB";
+	}
+	@if $filename == ubuntu {
+		$char: "\E1AC";
+	}
+	@if $filename == uikit {
+		$char: "\E1AD";
+	}
+	@if $filename == umbraco {
+		$char: "\E1AE";
+	}
+	@if $filename == uncharted {
+		$char: "\E1AF";
+	}
+	@if $filename == uniregistry {
+		$char: "\E1B0";
+	}
+	@if $filename == unity {
+		$char: "\E1B1";
+	}
+	@if $filename == unsplash {
+		$char: "\E1B2";
+	}
+	@if $filename == untappd {
+		$char: "\E1B3";
+	}
+	@if $filename == ups {
+		$char: "\E1B4";
+	}
+	@if $filename == upwork {
+		$char: "\E1B5";
+	}
+	@if $filename == usb {
+		$char: "\E1B6";
+	}
+	@if $filename == usps {
+		$char: "\E1B7";
+	}
+	@if $filename == ussunnah {
+		$char: "\E1B8";
+	}
+	@if $filename == vaadin {
+		$char: "\E1B9";
+	}
+	@if $filename == viacoin {
+		$char: "\E1BA";
+	}
+	@if $filename == viadeo {
+		$char: "\E1BB";
+	}
+	@if $filename == viber {
+		$char: "\E1BC";
+	}
+	@if $filename == vimeo-v {
+		$char: "\E1BD";
+	}
+	@if $filename == vimeo {
+		$char: "\E1BE";
+	}
+	@if $filename == vine {
+		$char: "\E1BF";
+	}
+	@if $filename == vk {
+		$char: "\E1C0";
+	}
+	@if $filename == vnv {
+		$char: "\E1C1";
+	}
+	@if $filename == vuejs {
+		$char: "\E1C2";
+	}
+	@if $filename == watchman-monitoring {
+		$char: "\E1C3";
+	}
+	@if $filename == waze {
+		$char: "\E1C4";
+	}
+	@if $filename == webflow {
+		$char: "\E1C5";
+	}
+	@if $filename == weebly {
+		$char: "\E1C6";
+	}
+	@if $filename == weibo {
+		$char: "\E1C7";
+	}
+	@if $filename == weixin {
+		$char: "\E1C8";
+	}
+	@if $filename == whatsapp {
+		$char: "\E1C9";
+	}
+	@if $filename == whmcs {
+		$char: "\E1CA";
+	}
+	@if $filename == wikipedia-w {
+		$char: "\E1CB";
+	}
+	@if $filename == windows {
+		$char: "\E1CC";
+	}
+	@if $filename == wirsindhandwerk {
+		$char: "\E1CD";
+	}
+	@if $filename == wix {
+		$char: "\E1CE";
+	}
+	@if $filename == wizards-of-the-coast {
+		$char: "\E1CF";
+	}
+	@if $filename == wodu {
+		$char: "\E1D0";
+	}
+	@if $filename == wolf-pack-battalion {
+		$char: "\E1D1";
+	}
+	@if $filename == wordpress-simple {
+		$char: "\E1D2";
+	}
+	@if $filename == wordpress {
+		$char: "\E1D3";
+	}
+	@if $filename == wpbeginner {
+		$char: "\E1D4";
+	}
+	@if $filename == wpexplorer {
+		$char: "\E1D5";
+	}
+	@if $filename == wpforms {
+		$char: "\E1D6";
+	}
+	@if $filename == wpressr {
+		$char: "\E1D7";
+	}
+	@if $filename == x-twitter {
+		$char: "\E1D8";
+	}
+	@if $filename == xbox {
+		$char: "\E1D9";
+	}
+	@if $filename == xing {
+		$char: "\E1DA";
+	}
+	@if $filename == y-combinator {
+		$char: "\E1DB";
+	}
+	@if $filename == yahoo {
+		$char: "\E1DC";
+	}
+	@if $filename == yammer {
+		$char: "\E1DD";
+	}
+	@if $filename == yandex-international {
+		$char: "\E1DE";
+	}
+	@if $filename == yandex {
+		$char: "\E1DF";
+	}
+	@if $filename == yarn {
+		$char: "\E1E0";
+	}
+	@if $filename == yelp {
+		$char: "\E1E1";
+	}
+	@if $filename == yoast {
+		$char: "\E1E2";
+	}
+	@if $filename == youtube {
+		$char: "\E1E3";
+	}
+	@if $filename == zhihu {
+		$char: "\E1E4";
+	}
+
+	@return $char;
+}
+
+@mixin i($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %i;
+		} @else {
+			@include i-styles;
+		}
+		content: i-char($filename);
+	}
+}
+
+.i-42-group {
+	@include i(42-group);
+}
+.i-500px {
+	@include i(500px);
+}
+.i-accessible-icon {
+	@include i(accessible-icon);
+}
+.i-accusoft {
+	@include i(accusoft);
+}
+.i-adn {
+	@include i(adn);
+}
+.i-adversal {
+	@include i(adversal);
+}
+.i-affiliatetheme {
+	@include i(affiliatetheme);
+}
+.i-airbnb {
+	@include i(airbnb);
+}
+.i-algolia {
+	@include i(algolia);
+}
+.i-alipay {
+	@include i(alipay);
+}
+.i-amazon-pay {
+	@include i(amazon-pay);
+}
+.i-amazon {
+	@include i(amazon);
+}
+.i-amilia {
+	@include i(amilia);
+}
+.i-android {
+	@include i(android);
+}
+.i-angellist {
+	@include i(angellist);
+}
+.i-angrycreative {
+	@include i(angrycreative);
+}
+.i-angular {
+	@include i(angular);
+}
+.i-app-store-ios {
+	@include i(app-store-ios);
+}
+.i-app-store {
+	@include i(app-store);
+}
+.i-apper {
+	@include i(apper);
+}
+.i-apple-pay {
+	@include i(apple-pay);
+}
+.i-apple {
+	@include i(apple);
+}
+.i-artstation {
+	@include i(artstation);
+}
+.i-asymmetrik {
+	@include i(asymmetrik);
+}
+.i-atlassian {
+	@include i(atlassian);
+}
+.i-audible {
+	@include i(audible);
+}
+.i-autoprefixer {
+	@include i(autoprefixer);
+}
+.i-avianex {
+	@include i(avianex);
+}
+.i-aviato {
+	@include i(aviato);
+}
+.i-aws {
+	@include i(aws);
+}
+.i-bandcamp {
+	@include i(bandcamp);
+}
+.i-battle-net {
+	@include i(battle-net);
+}
+.i-behance {
+	@include i(behance);
+}
+.i-bilibili {
+	@include i(bilibili);
+}
+.i-bimobject {
+	@include i(bimobject);
+}
+.i-bitbucket {
+	@include i(bitbucket);
+}
+.i-bitcoin {
+	@include i(bitcoin);
+}
+.i-bity {
+	@include i(bity);
+}
+.i-black-tie {
+	@include i(black-tie);
+}
+.i-blackberry {
+	@include i(blackberry);
+}
+.i-blogger-b {
+	@include i(blogger-b);
+}
+.i-blogger {
+	@include i(blogger);
+}
+.i-bluetooth-b {
+	@include i(bluetooth-b);
+}
+.i-bluetooth {
+	@include i(bluetooth);
+}
+.i-bootstrap {
+	@include i(bootstrap);
+}
+.i-bots {
+	@include i(bots);
+}
+.i-brave-reverse {
+	@include i(brave-reverse);
+}
+.i-brave {
+	@include i(brave);
+}
+.i-btc {
+	@include i(btc);
+}
+.i-buffer {
+	@include i(buffer);
+}
+.i-buromobelexperte {
+	@include i(buromobelexperte);
+}
+.i-buy-n-large {
+	@include i(buy-n-large);
+}
+.i-buysellads {
+	@include i(buysellads);
+}
+.i-canadian-maple-leaf {
+	@include i(canadian-maple-leaf);
+}
+.i-cc-amazon-pay {
+	@include i(cc-amazon-pay);
+}
+.i-cc-amex {
+	@include i(cc-amex);
+}
+.i-cc-apple-pay {
+	@include i(cc-apple-pay);
+}
+.i-cc-diners-club {
+	@include i(cc-diners-club);
+}
+.i-cc-discover {
+	@include i(cc-discover);
+}
+.i-cc-jcb {
+	@include i(cc-jcb);
+}
+.i-cc-mastercard {
+	@include i(cc-mastercard);
+}
+.i-cc-paypal {
+	@include i(cc-paypal);
+}
+.i-cc-stripe {
+	@include i(cc-stripe);
+}
+.i-cc-visa {
+	@include i(cc-visa);
+}
+.i-centercode {
+	@include i(centercode);
+}
+.i-centos {
+	@include i(centos);
+}
+.i-chrome {
+	@include i(chrome);
+}
+.i-chromecast {
+	@include i(chromecast);
+}
+.i-cloudflare {
+	@include i(cloudflare);
+}
+.i-cloudscale {
+	@include i(cloudscale);
+}
+.i-cloudsmith {
+	@include i(cloudsmith);
+}
+.i-cloudversify {
+	@include i(cloudversify);
+}
+.i-cmplid {
+	@include i(cmplid);
+}
+.i-codepen {
+	@include i(codepen);
+}
+.i-codiepie {
+	@include i(codiepie);
+}
+.i-confluence {
+	@include i(confluence);
+}
+.i-connectdevelop {
+	@include i(connectdevelop);
+}
+.i-contao {
+	@include i(contao);
+}
+.i-cotton-bureau {
+	@include i(cotton-bureau);
+}
+.i-cpanel {
+	@include i(cpanel);
+}
+.i-creative-commons-by {
+	@include i(creative-commons-by);
+}
+.i-creative-commons-nc-eu {
+	@include i(creative-commons-nc-eu);
+}
+.i-creative-commons-nc-jp {
+	@include i(creative-commons-nc-jp);
+}
+.i-creative-commons-nc {
+	@include i(creative-commons-nc);
+}
+.i-creative-commons-nd {
+	@include i(creative-commons-nd);
+}
+.i-creative-commons-pd-alt {
+	@include i(creative-commons-pd-alt);
+}
+.i-creative-commons-pd {
+	@include i(creative-commons-pd);
+}
+.i-creative-commons-remix {
+	@include i(creative-commons-remix);
+}
+.i-creative-commons-sa {
+	@include i(creative-commons-sa);
+}
+.i-creative-commons-sampling-plus {
+	@include i(creative-commons-sampling-plus);
+}
+.i-creative-commons-sampling {
+	@include i(creative-commons-sampling);
+}
+.i-creative-commons-share {
+	@include i(creative-commons-share);
+}
+.i-creative-commons-zero {
+	@include i(creative-commons-zero);
+}
+.i-creative-commons {
+	@include i(creative-commons);
+}
+.i-critical-role {
+	@include i(critical-role);
+}
+.i-css3-alt {
+	@include i(css3-alt);
+}
+.i-css3 {
+	@include i(css3);
+}
+.i-cuttlefish {
+	@include i(cuttlefish);
+}
+.i-d-and-d-beyond {
+	@include i(d-and-d-beyond);
+}
+.i-d-and-d {
+	@include i(d-and-d);
+}
+.i-dailymotion {
+	@include i(dailymotion);
+}
+.i-dashcube {
+	@include i(dashcube);
+}
+.i-debian {
+	@include i(debian);
+}
+.i-deezer {
+	@include i(deezer);
+}
+.i-delicious {
+	@include i(delicious);
+}
+.i-deploydog {
+	@include i(deploydog);
+}
+.i-deskpro {
+	@include i(deskpro);
+}
+.i-dev {
+	@include i(dev);
+}
+.i-deviantart {
+	@include i(deviantart);
+}
+.i-dhl {
+	@include i(dhl);
+}
+.i-diaspora {
+	@include i(diaspora);
+}
+.i-digg {
+	@include i(digg);
+}
+.i-digital-ocean {
+	@include i(digital-ocean);
+}
+.i-discord {
+	@include i(discord);
+}
+.i-discourse {
+	@include i(discourse);
+}
+.i-dochub {
+	@include i(dochub);
+}
+.i-docker {
+	@include i(docker);
+}
+.i-draft2digital {
+	@include i(draft2digital);
+}
+.i-dribbble {
+	@include i(dribbble);
+}
+.i-dropbox {
+	@include i(dropbox);
+}
+.i-drupal {
+	@include i(drupal);
+}
+.i-dyalog {
+	@include i(dyalog);
+}
+.i-earlybirds {
+	@include i(earlybirds);
+}
+.i-ebay {
+	@include i(ebay);
+}
+.i-edge-legacy {
+	@include i(edge-legacy);
+}
+.i-edge {
+	@include i(edge);
+}
+.i-elementor {
+	@include i(elementor);
+}
+.i-ello {
+	@include i(ello);
+}
+.i-ember {
+	@include i(ember);
+}
+.i-empire {
+	@include i(empire);
+}
+.i-envira {
+	@include i(envira);
+}
+.i-erlang {
+	@include i(erlang);
+}
+.i-ethereum {
+	@include i(ethereum);
+}
+.i-etsy {
+	@include i(etsy);
+}
+.i-evernote {
+	@include i(evernote);
+}
+.i-expeditedssl {
+	@include i(expeditedssl);
+}
+.i-facebook-f {
+	@include i(facebook-f);
+}
+.i-facebook-messenger {
+	@include i(facebook-messenger);
+}
+.i-facebook {
+	@include i(facebook);
+}
+.i-fantasy-flight-games {
+	@include i(fantasy-flight-games);
+}
+.i-fedex {
+	@include i(fedex);
+}
+.i-fedora {
+	@include i(fedora);
+}
+.i-figma {
+	@include i(figma);
+}
+.i-firefox-browser {
+	@include i(firefox-browser);
+}
+.i-firefox {
+	@include i(firefox);
+}
+.i-first-order-alt {
+	@include i(first-order-alt);
+}
+.i-first-order {
+	@include i(first-order);
+}
+.i-firstdraft {
+	@include i(firstdraft);
+}
+.i-flickr {
+	@include i(flickr);
+}
+.i-flipboard {
+	@include i(flipboard);
+}
+.i-fly {
+	@include i(fly);
+}
+.i-font-awesome {
+	@include i(font-awesome);
+}
+.i-fonticons-fi {
+	@include i(fonticons-fi);
+}
+.i-fonticons {
+	@include i(fonticons);
+}
+.i-fort-awesome-alt {
+	@include i(fort-awesome-alt);
+}
+.i-fort-awesome {
+	@include i(fort-awesome);
+}
+.i-forumbee {
+	@include i(forumbee);
+}
+.i-foursquare {
+	@include i(foursquare);
+}
+.i-free-code-camp {
+	@include i(free-code-camp);
+}
+.i-freebsd {
+	@include i(freebsd);
+}
+.i-fulcrum {
+	@include i(fulcrum);
+}
+.i-galactic-republic {
+	@include i(galactic-republic);
+}
+.i-galactic-senate {
+	@include i(galactic-senate);
+}
+.i-get-pocket {
+	@include i(get-pocket);
+}
+.i-gg-circle {
+	@include i(gg-circle);
+}
+.i-gg {
+	@include i(gg);
+}
+.i-git-alt {
+	@include i(git-alt);
+}
+.i-git {
+	@include i(git);
+}
+.i-github-alt {
+	@include i(github-alt);
+}
+.i-github {
+	@include i(github);
+}
+.i-gitkraken {
+	@include i(gitkraken);
+}
+.i-gitlab {
+	@include i(gitlab);
+}
+.i-gitter {
+	@include i(gitter);
+}
+.i-glide-g {
+	@include i(glide-g);
+}
+.i-glide {
+	@include i(glide);
+}
+.i-gofore {
+	@include i(gofore);
+}
+.i-golang {
+	@include i(golang);
+}
+.i-goodreads-g {
+	@include i(goodreads-g);
+}
+.i-goodreads {
+	@include i(goodreads);
+}
+.i-google-drive {
+	@include i(google-drive);
+}
+.i-google-pay {
+	@include i(google-pay);
+}
+.i-google-play {
+	@include i(google-play);
+}
+.i-google-plus-g {
+	@include i(google-plus-g);
+}
+.i-google-plus {
+	@include i(google-plus);
+}
+.i-google-scholar {
+	@include i(google-scholar);
+}
+.i-google-wallet {
+	@include i(google-wallet);
+}
+.i-google {
+	@include i(google);
+}
+.i-gratipay {
+	@include i(gratipay);
+}
+.i-grav {
+	@include i(grav);
+}
+.i-gripfire {
+	@include i(gripfire);
+}
+.i-grunt {
+	@include i(grunt);
+}
+.i-guilded {
+	@include i(guilded);
+}
+.i-gulp {
+	@include i(gulp);
+}
+.i-hacker-news {
+	@include i(hacker-news);
+}
+.i-hackerrank {
+	@include i(hackerrank);
+}
+.i-hashnode {
+	@include i(hashnode);
+}
+.i-hips {
+	@include i(hips);
+}
+.i-hire-a-helper {
+	@include i(hire-a-helper);
+}
+.i-hive {
+	@include i(hive);
+}
+.i-hooli {
+	@include i(hooli);
+}
+.i-hornbill {
+	@include i(hornbill);
+}
+.i-hotjar {
+	@include i(hotjar);
+}
+.i-houzz {
+	@include i(houzz);
+}
+.i-html5 {
+	@include i(html5);
+}
+.i-hubspot {
+	@include i(hubspot);
+}
+.i-ideal {
+	@include i(ideal);
+}
+.i-imdb {
+	@include i(imdb);
+}
+.i-instagram {
+	@include i(instagram);
+}
+.i-instalod {
+	@include i(instalod);
+}
+.i-intercom {
+	@include i(intercom);
+}
+.i-internet-explorer {
+	@include i(internet-explorer);
+}
+.i-invision {
+	@include i(invision);
+}
+.i-ioxhost {
+	@include i(ioxhost);
+}
+.i-itch-io {
+	@include i(itch-io);
+}
+.i-itunes-note {
+	@include i(itunes-note);
+}
+.i-itunes {
+	@include i(itunes);
+}
+.i-java {
+	@include i(java);
+}
+.i-jedi-order {
+	@include i(jedi-order);
+}
+.i-jenkins {
+	@include i(jenkins);
+}
+.i-jira {
+	@include i(jira);
+}
+.i-joget {
+	@include i(joget);
+}
+.i-joomla {
+	@include i(joomla);
+}
+.i-js {
+	@include i(js);
+}
+.i-jsfiddle {
+	@include i(jsfiddle);
+}
+.i-kaggle {
+	@include i(kaggle);
+}
+.i-keybase {
+	@include i(keybase);
+}
+.i-keycdn {
+	@include i(keycdn);
+}
+.i-kickstarter-k {
+	@include i(kickstarter-k);
+}
+.i-kickstarter {
+	@include i(kickstarter);
+}
+.i-korvue {
+	@include i(korvue);
+}
+.i-laravel {
+	@include i(laravel);
+}
+.i-lastfm {
+	@include i(lastfm);
+}
+.i-leanpub {
+	@include i(leanpub);
+}
+.i-less {
+	@include i(less);
+}
+.i-letterboxd {
+	@include i(letterboxd);
+}
+.i-line {
+	@include i(line);
+}
+.i-linkedin-in {
+	@include i(linkedin-in);
+}
+.i-linkedin {
+	@include i(linkedin);
+}
+.i-linode {
+	@include i(linode);
+}
+.i-linux {
+	@include i(linux);
+}
+.i-lyft {
+	@include i(lyft);
+}
+.i-magento {
+	@include i(magento);
+}
+.i-mailchimp {
+	@include i(mailchimp);
+}
+.i-mandalorian {
+	@include i(mandalorian);
+}
+.i-markdown {
+	@include i(markdown);
+}
+.i-mastodon {
+	@include i(mastodon);
+}
+.i-maxcdn {
+	@include i(maxcdn);
+}
+.i-mdb {
+	@include i(mdb);
+}
+.i-medapps {
+	@include i(medapps);
+}
+.i-medium {
+	@include i(medium);
+}
+.i-medrt {
+	@include i(medrt);
+}
+.i-meetup {
+	@include i(meetup);
+}
+.i-megaport {
+	@include i(megaport);
+}
+.i-mendeley {
+	@include i(mendeley);
+}
+.i-meta {
+	@include i(meta);
+}
+.i-microblog {
+	@include i(microblog);
+}
+.i-microsoft {
+	@include i(microsoft);
+}
+.i-mintbit {
+	@include i(mintbit);
+}
+.i-mix {
+	@include i(mix);
+}
+.i-mixcloud {
+	@include i(mixcloud);
+}
+.i-mixer {
+	@include i(mixer);
+}
+.i-mizuni {
+	@include i(mizuni);
+}
+.i-modx {
+	@include i(modx);
+}
+.i-monero {
+	@include i(monero);
+}
+.i-napster {
+	@include i(napster);
+}
+.i-neos {
+	@include i(neos);
+}
+.i-nfc-directional {
+	@include i(nfc-directional);
+}
+.i-nfc-symbol {
+	@include i(nfc-symbol);
+}
+.i-nimblr {
+	@include i(nimblr);
+}
+.i-node-js {
+	@include i(node-js);
+}
+.i-node {
+	@include i(node);
+}
+.i-npm {
+	@include i(npm);
+}
+.i-ns8 {
+	@include i(ns8);
+}
+.i-nutritionix {
+	@include i(nutritionix);
+}
+.i-octopus-deploy {
+	@include i(octopus-deploy);
+}
+.i-odnoklassniki {
+	@include i(odnoklassniki);
+}
+.i-odysee {
+	@include i(odysee);
+}
+.i-old-republic {
+	@include i(old-republic);
+}
+.i-opencart {
+	@include i(opencart);
+}
+.i-openid {
+	@include i(openid);
+}
+.i-opensuse {
+	@include i(opensuse);
+}
+.i-opera {
+	@include i(opera);
+}
+.i-optin-monster {
+	@include i(optin-monster);
+}
+.i-orcid {
+	@include i(orcid);
+}
+.i-osi {
+	@include i(osi);
+}
+.i-padlet {
+	@include i(padlet);
+}
+.i-page4 {
+	@include i(page4);
+}
+.i-pagelines {
+	@include i(pagelines);
+}
+.i-palfed {
+	@include i(palfed);
+}
+.i-patreon {
+	@include i(patreon);
+}
+.i-paypal {
+	@include i(paypal);
+}
+.i-perbyte {
+	@include i(perbyte);
+}
+.i-periscope {
+	@include i(periscope);
+}
+.i-phabricator {
+	@include i(phabricator);
+}
+.i-phoenix-framework {
+	@include i(phoenix-framework);
+}
+.i-phoenix-squadron {
+	@include i(phoenix-squadron);
+}
+.i-php {
+	@include i(php);
+}
+.i-pied-piper-alt {
+	@include i(pied-piper-alt);
+}
+.i-pied-piper-hat {
+	@include i(pied-piper-hat);
+}
+.i-pied-piper-pp {
+	@include i(pied-piper-pp);
+}
+.i-pied-piper {
+	@include i(pied-piper);
+}
+.i-pinterest-p {
+	@include i(pinterest-p);
+}
+.i-pinterest {
+	@include i(pinterest);
+}
+.i-pix {
+	@include i(pix);
+}
+.i-pixiv {
+	@include i(pixiv);
+}
+.i-playstation {
+	@include i(playstation);
+}
+.i-product-hunt {
+	@include i(product-hunt);
+}
+.i-pushed {
+	@include i(pushed);
+}
+.i-python {
+	@include i(python);
+}
+.i-qq {
+	@include i(qq);
+}
+.i-quinscape {
+	@include i(quinscape);
+}
+.i-quora {
+	@include i(quora);
+}
+.i-r-project {
+	@include i(r-project);
+}
+.i-raspberry-pi {
+	@include i(raspberry-pi);
+}
+.i-ravelry {
+	@include i(ravelry);
+}
+.i-react {
+	@include i(react);
+}
+.i-reacteurope {
+	@include i(reacteurope);
+}
+.i-readme {
+	@include i(readme);
+}
+.i-rebel {
+	@include i(rebel);
+}
+.i-red-river {
+	@include i(red-river);
+}
+.i-reddit-alien {
+	@include i(reddit-alien);
+}
+.i-reddit {
+	@include i(reddit);
+}
+.i-redhat {
+	@include i(redhat);
+}
+.i-renren {
+	@include i(renren);
+}
+.i-replyd {
+	@include i(replyd);
+}
+.i-researchgate {
+	@include i(researchgate);
+}
+.i-resolving {
+	@include i(resolving);
+}
+.i-rev {
+	@include i(rev);
+}
+.i-rocketchat {
+	@include i(rocketchat);
+}
+.i-rockrms {
+	@include i(rockrms);
+}
+.i-rust {
+	@include i(rust);
+}
+.i-safari {
+	@include i(safari);
+}
+.i-salesforce {
+	@include i(salesforce);
+}
+.i-sass {
+	@include i(sass);
+}
+.i-schlix {
+	@include i(schlix);
+}
+.i-screenpal {
+	@include i(screenpal);
+}
+.i-scribd {
+	@include i(scribd);
+}
+.i-searchengin {
+	@include i(searchengin);
+}
+.i-sellcast {
+	@include i(sellcast);
+}
+.i-sellsy {
+	@include i(sellsy);
+}
+.i-servicestack {
+	@include i(servicestack);
+}
+.i-shirtsinbulk {
+	@include i(shirtsinbulk);
+}
+.i-shoelace {
+	@include i(shoelace);
+}
+.i-shopify {
+	@include i(shopify);
+}
+.i-shopware {
+	@include i(shopware);
+}
+.i-signal-messenger {
+	@include i(signal-messenger);
+}
+.i-simplybuilt {
+	@include i(simplybuilt);
+}
+.i-sistrix {
+	@include i(sistrix);
+}
+.i-sith {
+	@include i(sith);
+}
+.i-sitrox {
+	@include i(sitrox);
+}
+.i-sketch {
+	@include i(sketch);
+}
+.i-skyatlas {
+	@include i(skyatlas);
+}
+.i-skype {
+	@include i(skype);
+}
+.i-slack {
+	@include i(slack);
+}
+.i-slideshare {
+	@include i(slideshare);
+}
+.i-snapchat {
+	@include i(snapchat);
+}
+.i-soundcloud {
+	@include i(soundcloud);
+}
+.i-sourcetree {
+	@include i(sourcetree);
+}
+.i-space-awesome {
+	@include i(space-awesome);
+}
+.i-speakap {
+	@include i(speakap);
+}
+.i-speaker-deck {
+	@include i(speaker-deck);
+}
+.i-spotify {
+	@include i(spotify);
+}
+.i-square-behance {
+	@include i(square-behance);
+}
+.i-square-dribbble {
+	@include i(square-dribbble);
+}
+.i-square-facebook {
+	@include i(square-facebook);
+}
+.i-square-font-awesome-stroke {
+	@include i(square-font-awesome-stroke);
+}
+.i-square-font-awesome {
+	@include i(square-font-awesome);
+}
+.i-square-git {
+	@include i(square-git);
+}
+.i-square-github {
+	@include i(square-github);
+}
+.i-square-gitlab {
+	@include i(square-gitlab);
+}
+.i-square-google-plus {
+	@include i(square-google-plus);
+}
+.i-square-hacker-news {
+	@include i(square-hacker-news);
+}
+.i-square-instagram {
+	@include i(square-instagram);
+}
+.i-square-js {
+	@include i(square-js);
+}
+.i-square-lastfm {
+	@include i(square-lastfm);
+}
+.i-square-letterboxd {
+	@include i(square-letterboxd);
+}
+.i-square-odnoklassniki {
+	@include i(square-odnoklassniki);
+}
+.i-square-pied-piper {
+	@include i(square-pied-piper);
+}
+.i-square-pinterest {
+	@include i(square-pinterest);
+}
+.i-square-reddit {
+	@include i(square-reddit);
+}
+.i-square-snapchat {
+	@include i(square-snapchat);
+}
+.i-square-steam {
+	@include i(square-steam);
+}
+.i-square-threads {
+	@include i(square-threads);
+}
+.i-square-tumblr {
+	@include i(square-tumblr);
+}
+.i-square-twitter {
+	@include i(square-twitter);
+}
+.i-square-viadeo {
+	@include i(square-viadeo);
+}
+.i-square-vimeo {
+	@include i(square-vimeo);
+}
+.i-square-whatsapp {
+	@include i(square-whatsapp);
+}
+.i-square-x-twitter {
+	@include i(square-x-twitter);
+}
+.i-square-xing {
+	@include i(square-xing);
+}
+.i-square-youtube {
+	@include i(square-youtube);
+}
+.i-squarespace {
+	@include i(squarespace);
+}
+.i-stack-exchange {
+	@include i(stack-exchange);
+}
+.i-stack-overflow {
+	@include i(stack-overflow);
+}
+.i-stackpath {
+	@include i(stackpath);
+}
+.i-staylinked {
+	@include i(staylinked);
+}
+.i-steam-symbol {
+	@include i(steam-symbol);
+}
+.i-steam {
+	@include i(steam);
+}
+.i-sticker-mule {
+	@include i(sticker-mule);
+}
+.i-strava {
+	@include i(strava);
+}
+.i-stripe-s {
+	@include i(stripe-s);
+}
+.i-stripe {
+	@include i(stripe);
+}
+.i-stubber {
+	@include i(stubber);
+}
+.i-studiovinari {
+	@include i(studiovinari);
+}
+.i-stumbleupon-circle {
+	@include i(stumbleupon-circle);
+}
+.i-stumbleupon {
+	@include i(stumbleupon);
+}
+.i-superpowers {
+	@include i(superpowers);
+}
+.i-supple {
+	@include i(supple);
+}
+.i-suse {
+	@include i(suse);
+}
+.i-swift {
+	@include i(swift);
+}
+.i-symfony {
+	@include i(symfony);
+}
+.i-teamspeak {
+	@include i(teamspeak);
+}
+.i-telegram {
+	@include i(telegram);
+}
+.i-tencent-weibo {
+	@include i(tencent-weibo);
+}
+.i-the-red-yeti {
+	@include i(the-red-yeti);
+}
+.i-themeco {
+	@include i(themeco);
+}
+.i-themeisle {
+	@include i(themeisle);
+}
+.i-think-peaks {
+	@include i(think-peaks);
+}
+.i-threads {
+	@include i(threads);
+}
+.i-tiktok {
+	@include i(tiktok);
+}
+.i-trade-federation {
+	@include i(trade-federation);
+}
+.i-trello {
+	@include i(trello);
+}
+.i-tumblr {
+	@include i(tumblr);
+}
+.i-twitch {
+	@include i(twitch);
+}
+.i-twitter {
+	@include i(twitter);
+}
+.i-typo3 {
+	@include i(typo3);
+}
+.i-uber {
+	@include i(uber);
+}
+.i-ubuntu {
+	@include i(ubuntu);
+}
+.i-uikit {
+	@include i(uikit);
+}
+.i-umbraco {
+	@include i(umbraco);
+}
+.i-uncharted {
+	@include i(uncharted);
+}
+.i-uniregistry {
+	@include i(uniregistry);
+}
+.i-unity {
+	@include i(unity);
+}
+.i-unsplash {
+	@include i(unsplash);
+}
+.i-untappd {
+	@include i(untappd);
+}
+.i-ups {
+	@include i(ups);
+}
+.i-upwork {
+	@include i(upwork);
+}
+.i-usb {
+	@include i(usb);
+}
+.i-usps {
+	@include i(usps);
+}
+.i-ussunnah {
+	@include i(ussunnah);
+}
+.i-vaadin {
+	@include i(vaadin);
+}
+.i-viacoin {
+	@include i(viacoin);
+}
+.i-viadeo {
+	@include i(viadeo);
+}
+.i-viber {
+	@include i(viber);
+}
+.i-vimeo-v {
+	@include i(vimeo-v);
+}
+.i-vimeo {
+	@include i(vimeo);
+}
+.i-vine {
+	@include i(vine);
+}
+.i-vk {
+	@include i(vk);
+}
+.i-vnv {
+	@include i(vnv);
+}
+.i-vuejs {
+	@include i(vuejs);
+}
+.i-watchman-monitoring {
+	@include i(watchman-monitoring);
+}
+.i-waze {
+	@include i(waze);
+}
+.i-webflow {
+	@include i(webflow);
+}
+.i-weebly {
+	@include i(weebly);
+}
+.i-weibo {
+	@include i(weibo);
+}
+.i-weixin {
+	@include i(weixin);
+}
+.i-whatsapp {
+	@include i(whatsapp);
+}
+.i-whmcs {
+	@include i(whmcs);
+}
+.i-wikipedia-w {
+	@include i(wikipedia-w);
+}
+.i-windows {
+	@include i(windows);
+}
+.i-wirsindhandwerk {
+	@include i(wirsindhandwerk);
+}
+.i-wix {
+	@include i(wix);
+}
+.i-wizards-of-the-coast {
+	@include i(wizards-of-the-coast);
+}
+.i-wodu {
+	@include i(wodu);
+}
+.i-wolf-pack-battalion {
+	@include i(wolf-pack-battalion);
+}
+.i-wordpress-simple {
+	@include i(wordpress-simple);
+}
+.i-wordpress {
+	@include i(wordpress);
+}
+.i-wpbeginner {
+	@include i(wpbeginner);
+}
+.i-wpexplorer {
+	@include i(wpexplorer);
+}
+.i-wpforms {
+	@include i(wpforms);
+}
+.i-wpressr {
+	@include i(wpressr);
+}
+.i-x-twitter {
+	@include i(x-twitter);
+}
+.i-xbox {
+	@include i(xbox);
+}
+.i-xing {
+	@include i(xing);
+}
+.i-y-combinator {
+	@include i(y-combinator);
+}
+.i-yahoo {
+	@include i(yahoo);
+}
+.i-yammer {
+	@include i(yammer);
+}
+.i-yandex-international {
+	@include i(yandex-international);
+}
+.i-yandex {
+	@include i(yandex);
+}
+.i-yarn {
+	@include i(yarn);
+}
+.i-yelp {
+	@include i(yelp);
+}
+.i-yoast {
+	@include i(yoast);
+}
+.i-youtube {
+	@include i(youtube);
+}
+.i-zhihu {
+	@include i(zhihu);
+}

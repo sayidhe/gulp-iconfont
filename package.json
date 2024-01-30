@@ -10,18 +10,20 @@
     "url": "https://github.com/sayidhe/gulp-iconfont"
   },
   "scripts": {
-    "demo": "browser-sync start --server . --startPath ./demo/index.html",
+    "demo": "browser-sync start --server ./dist --startPath index.html",
     "font": "gulp Iconfont",
-    "fontCss": "gulp Iconfont-Css",
-    "svg": "gulp svg"
+    "svg": "gulp svg-to-json",
+    "svg-full": "gulp svg-to-json-full"
   },
   "devDependencies": {
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.2",
     "gulp": "^4.0.2",
+    "gulp-cheerio": "^1.0.0",
     "gulp-file-contents-to-json": "^0.2.2",
     "gulp-iconfont": "^11.0.1",
     "gulp-iconfont-css": "^3.0.0",
-    "gulp-json-transform": "^0.4.8"
+    "gulp-json-transform": "^0.4.8",
+    "gulp-plumber": "^1.2.1"
   },
   "engines": {
     "node": ">=6.0.0"
